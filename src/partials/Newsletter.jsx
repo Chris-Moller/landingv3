@@ -3,8 +3,8 @@ import React from 'react';
 function Newsletter() {
   return (
     <section>
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="pb-12 md:pb-20">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 ">
+        <div className="pb-12 md:pb-20 p-10">
 
           {/* CTA box */}
           <div className="relative bg-gray-900 rounded py-10 px-8 md:py-16 md:px-12 shadow-2xl overflow-hidden" data-aos="zoom-y-out">
@@ -38,14 +38,14 @@ function Newsletter() {
             <div className="relative flex flex-col lg:flex-row justify-between items-center">
 
               {/* CTA content */}
-              <div className="text-center lg:text-left lg:max-w-xl">
-                <h3 className="h3 text-white mb-2">Looking to join our team:</h3>
-                <p className="text-gray-300 text-lg mb-6">Come help us build the platforms for innovation and the next generation of features and applications on blockchains.</p>
+              <div className="text-center lg:text-left lg:max-w-xl p-2">
+                <h3 className="h3 text-white mb-2">Looking to join our team?</h3>
+                <p className="text-gray-300 text-lg mb-6">Come help us build the platforms for the next generation of features and applications on blockchains.</p>
 
                 {/* CTA form */}
                 <form className="w-full lg:w-auto">
                   <div className="flex flex-col sm:flex-row justify-left max-w-xs mx-auto sm:max-w-md lg:mx-0">
-                    <a className="btn text-white bg-blue-600 hover:bg-blue-700 shadow px-4 py-3 mb-2 sm:mb-0 sm:mr-2" href="https://angel.co/company/layrlabs">Current Openings:</a>
+                    <a className="btn text-white bg-blue-600 hover:bg-blue-700 shadow px-4 py-3 mb-2 sm:mb-0 sm:mr-2" href="https://angel.co/company/layrlabs">Current Openings</a>
                   </div>
                   {/* Success message */}
                   {/* <p className="text-sm text-gray-400 mt-3">Thanks for subscribing!</p> */}

@@ -42,8 +42,8 @@ function Features() {
             {/* Content */}
             <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 md:mt-6" data-aos="fade-right">
               <div className="md:pr-4 lg:pr-12 xl:pr-16 mb-8">
-                <h3 className="h3 mb-3">Powerful suite of tools</h3>
-                <p className="text-xl text-gray-600">LayrLabs is currently building multiple products addressing problems in the blockchain industry.</p>
+                <h3 className="h3 mb-3">Redefining Infrastructure</h3>
+                <p className="text-xl text-gray-600">Our products provide cryptoeconomic security for services and companies in modular blockchain layers.</p>
               </div>
               {/* Tabs buttons */}
               <div className="mb-8 md:mb-0">
@@ -54,7 +54,7 @@ function Features() {
                 >
                   <div>
                     <div className="font-bold leading-snug tracking-tight mb-1 ">EigenLayr</div>
-                    <div className="text-gray-600">A platform to leverage Ethereum security through the propietary method of restaking. Earn additional rewards and yield for provide additional services to middlewares.</div>
+                    <div className="text-gray-600">A platform to leverage Ethereum security through the innovative method of restaking.</div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
                     <svg className="w-3 h-3 fill-current" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
@@ -69,7 +69,7 @@ function Features() {
                 >
                   <div>
                     <div className="font-bold leading-snug tracking-tight mb-1">DataLayr</div>
-                    <div className="text-gray-600">The first middleware operating on EigenLayr, a highly customizeable hyperscale data availability service catered to optimistic and ZK rollups.</div>
+                    <div className="text-gray-600">A highly customizeable and hyperscaling data availability service on Eigenlayr, designed for OPptimistic and ZK rollups.</div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
                     <svg className="w-3 h-3 fill-current" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
