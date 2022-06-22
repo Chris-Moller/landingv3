@@ -25,7 +25,7 @@ function HeroHome() {
             <circle cx="155" cy="443" r="64" />
           </g>
         </svg> */}
-        <img src={HeroImage} margin-left="10px" alt="name" width="600px" height="600px" />
+        <img src={HeroImage} auto alt="name" width={400} height={400} />
       </div>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 bg-gray-900">
