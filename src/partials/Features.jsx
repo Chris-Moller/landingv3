@@ -32,44 +32,46 @@ function Features() {
         <div className="pt-12 md:pt-20">
 
           {/* Section header */}
-          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h1 className="h2 mb-4">Explore the solutions</h1>
+          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-2 ">
+            <h1 className="h2 mb-4 text-white">Explore the solutions</h1>
           </div>
 
           {/* Section content */}
-          <div className="md:grid md:grid-cols-12 md:gap-6">
+          <div className="md:grid md:grid-cols-12 md:gap-6 ">
 
             {/* Content */}
             <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 md:mt-6" data-aos="fade-right">
               <div className="md:pr-4 lg:pr-12 xl:pr-16 mb-8">
-                <h3 className="h3 mb-3">Powerful suite of tools</h3>
-                <p className="text-xl text-gray-600">LayrLabs is currently building multiple products addressing problems in the blockchain industry.</p>
+              <p className="text-md text-white text-left ">Our products provide cryptoeconomic security for services and companies in modular blockchain layers.</p>
               </div>
               {/* Tabs buttons */}
-              <div className="mb-8 md:mb-0">
+              <div className="mb-8 md:mb-25">
                 <a
-                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${tab !== 1 ? 'bg-white shadow-md border-gray-200 hover:shadow-lg' : 'bg-gray-200 border-transparent'}`}
+                  className={`flex items-center text-md p-5 rounded border bg-gradient-to-r from-gray-100 to-orange-100 via-gray-100 transition duration-300 ease-in-out mb-3 ${tab !== 1 ? 'bg-white shadow-md border-gray-200 hover:shadow-lg' : 'bg-gray-200 border-transparent'}`}
                   href="#0"
                   onClick={(e) => { e.preventDefault(); setTab(1); }}
                 >
                   <div>
-                    <div className="font-bold leading-snug tracking-tight mb-1 ">EigenLayr</div>
-                    <div className="text-gray-600">A platform to leverage Ethereum security through the propietary method of restaking. Earn additional rewards and yield for provide additional services to middlewares.</div>
+                    <div className="font-bold text-white leading-snug tracking-tight mb-1 ">EigenLayr</div>
+                    <div className="text-white">A platform to leverage Ethereum security through the innovative method of restaking.</div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
                     <svg className="w-3 h-3 fill-current" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                       <path d="M11.953 4.29a.5.5 0 00-.454-.292H6.14L6.984.62A.5.5 0 006.12.173l-6 7a.5.5 0 00.379.825h5.359l-.844 3.38a.5.5 0 00.864.445l6-7a.5.5 0 00.075-.534z" />
                     </svg>
                   </div>
+
+      
+
                 </a>
                 <a
-                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${tab !== 2 ? 'bg-white shadow-md border-gray-200 hover:shadow-lg' : 'bg-gray-200 border-transparent'}`}
+                  className={`flex items-center text-md p-5 rounded border bg-gradient-to-r from-gray-100 to-green-100 via-gray-100 transition duration-300 ease-in-out mb-3 ${tab !== 2 ? 'bg-white shadow-md border-gray-200 hover:shadow-lg' : 'bg-gray-200 border-transparent'}`}
                   href="#0"
                   onClick={(e) => { e.preventDefault(); setTab(2); }}
                 >
                   <div>
-                    <div className="font-bold leading-snug tracking-tight mb-1">DataLayr</div>
-                    <div className="text-gray-600">The first middleware operating on EigenLayr, a highly customizeable hyperscale data availability service catered to optimistic and ZK rollups.</div>
+                    <div className="font-bold text-white leading-snug tracking-tight mb-1">DataLayr</div>
+                    <div className="text-white">A highly customizable and hyperscaling data availability service on EigenLayr, designed for Optimistic and ZK rollups.</div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
                     <svg className="w-3 h-3 fill-current" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
