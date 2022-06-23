@@ -45,7 +45,7 @@ function Features() {
               {/* Tabs buttons */}
               <div className="mb-8 md:mb-25">
                 <a
-                  className={`flex items-center text-md p-5 rounded border bg-gradient-to-r from-gray-100 to-orange-100 via-gray-100 transition duration-300 ease-in-out mb-3 ${tab !== 1 ? 'bg-white shadow-md border-gray-200 hover:shadow-lg' : 'bg-gray-200 border-transparent'}`}
+                  className={`flex items-center text-md p-5 rounded border bg-gradient-to-b from-gray-100 to-orange-100 via-gray-100 transition duration-300 ease-in-out mb-3 ${tab !== 1 ? 'bg-white shadow-md border-gray-200 hover:shadow-lg' : 'bg-gray-200 border-transparent'}`}
                   href="#0"
                   onClick={(e) => { e.preventDefault(); setTab(1); }}
                 >
@@ -58,12 +58,9 @@ function Features() {
                       <path d="M11.953 4.29a.5.5 0 00-.454-.292H6.14L6.984.62A.5.5 0 006.12.173l-6 7a.5.5 0 00.379.825h5.359l-.844 3.38a.5.5 0 00.864.445l6-7a.5.5 0 00.075-.534z" />
                     </svg>
                   </div>
-
-      
-
                 </a>
                 <a
-                  className={`flex items-center text-md p-5 rounded border bg-gradient-to-r from-gray-100 to-green-100 via-gray-100 transition duration-300 ease-in-out mb-3 ${tab !== 2 ? 'bg-white shadow-md border-gray-200 hover:shadow-lg' : 'bg-gray-200 border-transparent'}`}
+                  className={`flex justify-end items-center text-md p-5 rounded border bg-gradient-to-b from-gray-100 to-green-100 via-gray-100 transition duration-300 ease-in-out mb-3 ${tab !== 2 ? 'bg-white shadow-md border-gray-200 hover:shadow-lg' : 'bg-gray-200 border-transparent'}`}
                   href="#0"
                   onClick={(e) => { e.preventDefault(); setTab(2); }}
                 >

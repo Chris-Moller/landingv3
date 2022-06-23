@@ -1,18 +1,4 @@
-import React, { useState } from 'react';
-import Modal from '../utils/Modal';
-
-import HeroImage from '../images/HeroImage.svg';
-
-function HeroHome() {
-
-  const [videoModalOpen, setVideoModalOpen] = useState(false);
-
-  return (
-    <section className="relative">
-
-      {/* Illustration behind hero content */}
-      <div className="absolute inset-y-10 right-0 transform -translate-x-1/2 bottom-0 pointer-events-none" aria-hidden="true">
-      <svg xmlns="http://www.w3.org/2000/svg" width="287.269" height="303.467" viewBox="0 0 587.269 553.467">
+<svg xmlns="http://www.w3.org/2000/svg" width="587.269" height="553.467" viewBox="0 0 587.269 553.467">
   <g id="Group_1" data-name="Group 1" transform="translate(-0.333 -0.2)">
     <path id="Path_1" data-name="Path 1" d="M261.673,146.091,118.332,64.922l-.665,74.377,143.341,81.169Z" fill="#fff" opacity="0.2"/>
     <path id="Path_2" data-name="Path 2" d="M154.849,103.609l43.1,24.437-.067,8.922-43.1-24.437Z" fill="#fff" opacity="0.15"/>
@@ -42,34 +28,3 @@ function HeroHome() {
     <path id="Path_26" data-name="Path 26" d="M155.647,320.414c3.991,2.264,7.184,7.858,7.184,12.452v20.309l13.436,7.724c3.991,2.264,7.184,7.857,7.184,12.452s-3.193,6.459-7.184,4.195l-13.436-7.724v20.309c0,4.594-3.193,6.458-7.184,4.195s-7.184-7.858-7.184-12.452V361.565l-13.436-7.791c-3.991-2.264-7.183-7.857-7.183-12.451s3.192-6.459,7.183-4.2l13.436,7.724V324.543C148.463,320.015,151.656,318.151,155.647,320.414Z" fill="#fff" opacity="0.2"/>
   </g>
 </svg>
-
-        {/* <img src={HeroImage} auto alt="name" width={300} height={300} right={50} /> */}
-      </div>
-
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 bg-gray-900">
-
-        {/* Hero content */}
-        <div className="pt-32 pb-12 md:pt-40 md:pb-20">
-
-          {/* Section header */}
-          <div className="text-left pb-12 md:pb-16">
-          <h1 className="text-5xl md:text-6xl text-center font-extrabold leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out"> <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-blue-500">LayrLabs</span></h1>
-
-            <h1 className="text-lg md:text-lg leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out"> <span className="bg-clip-text text-white">Leveraging trust.</span></h1>
-            <h1 className="text-lg md:text-lg leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out"> <span className="bg-clip-text text-white font-extrabold">Enabling open innovation.</span></h1>
-            {/* <div className="max-w-3xl mx-auto">
-              <p className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">Removing the capital ineffiencies of by leveraging trust. Enabling the era of open innovation on blockchains.</p>
-              <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center" data-aos="zoom-y-out" data-aos-delay="300">
-              </div>
-            </div> */}
-          </div>
-
-
-        </div>
-
-      </div>
-    </section>
-  );
-}
-
-export default HeroHome;
