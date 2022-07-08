@@ -112,7 +112,7 @@ export default function Footer() {
                   <Link to="/careers">Careers</Link>
                 </Box>
               </Grid>
-              <Grid
+              {/* <Grid
                 item
                 sx={{
                   marginLeft: "220px",
@@ -146,7 +146,7 @@ export default function Footer() {
                     Terms & Conditions
                   </Link>
                 </Box>
-              </Grid>
+              </Grid> */}
             </Grid>
           </Grid>
           <Grid

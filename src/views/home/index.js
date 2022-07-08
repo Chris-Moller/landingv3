@@ -68,18 +68,11 @@ export default function Home() {
                   Leveraging <span>trust.</span>
                   <br />                  
                   Hyperscaling <span>blockchains.</span>
+                  <br />
+                  Unleashing <span> open innovation.</span>
                 </Typography>
               </Box>
-              <Box sx={{ margin: "10px 0 35px" }}>
-                <Typography
-                  sx={{
-                    fontSize: "20px",
-                    [theme.breakpoints.down("lg")]: { fontSize: "18px" },
-                  }}
-                >
-                  Unleashing open innovation.
-                </Typography>
-              </Box>
+              <br />
               <Box>
               <Link to="/solutions"><BlueButton sx={{ width: 154, position: "relative", zIndex: 2 }}>Learn More</BlueButton></Link>                
               </Box>
