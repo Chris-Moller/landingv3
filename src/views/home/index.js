@@ -47,7 +47,7 @@ export default function Home() {
                 <Typography
                   variant="h2"
                   sx={{
-                    fontSize: "36px",
+                    fontSize: "32px",
                     lineHeight: 1.25,
                     fontWeight: 400,
                     marginTop: "100px",
