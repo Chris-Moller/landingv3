@@ -21,7 +21,7 @@ export default function JoinTeam() {
           Come work with us at Eigenlayer to build the platforms for innovation
           and the next generation of features and applications on blockchains.
         </Typography>
-        <BlueButton sx={{ width: 140, marginTop: "20px" }}>
+        <BlueButton sx={{ width: 140, marginTop: "20px" }} href="https://angel.co/company/layrlabs">
           Apply Now
         </BlueButton>
       </MainContainer>
