@@ -59,7 +59,7 @@ export default function Home() {
                       marginTop: "70px",
                     },
                     [theme.breakpoints.down("lg")]: {
-                      fontSize: "36px",
+                      fontSize: "32px",
                       marginTop: "20px",
                     },
                     [theme.breakpoints.down("sm")]: { fontSize: "28px" },
@@ -69,7 +69,7 @@ export default function Home() {
                   <br />                  
                   Hyperscaling <span>blockchains.</span>
                   <br />
-                  Unleashing <span> open innovation.</span>
+                  Unleashing <span>open innovation.</span>
                 </Typography>
               </Box>
               <br />
@@ -193,7 +193,7 @@ export default function Home() {
                     variant="h4"
                     sx={{ "&:after": { backgroundColor: "#CE8921" } }}
                   >
-                    <span>Eigen</span>layer
+                    <span>Eigen</span>Layer
                   </Typography>
                   <Typography>
                     A platform to leverage Ethereum security through the
