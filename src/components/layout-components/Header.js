@@ -157,8 +157,8 @@ export default function TemporaryDrawer() {
                 onClick={() => navigate("/")}
                 sx={{ padding: 0, minWidth: "unset" }}
               >
-                <img src="/images/logo.svg" alt="Logo" />
-              </Button>
+                <img src="/images/logo.svg" width={64} height={64} alt="Logo" />
+              </Button>              
             </Grid>
             <Grid
               item
@@ -174,7 +174,7 @@ export default function TemporaryDrawer() {
                   <Link to="/">Home</Link>
                 </Grid>
                 <Grid item component="li">
-                  <Link to="/solutions">Solutions</Link>
+                  <Link to="/solutions">Resources</Link>
                 </Grid>
                 <Grid item component="li">
                   <Link to="/careers">Careers</Link>

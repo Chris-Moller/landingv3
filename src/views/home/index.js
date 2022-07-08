@@ -19,7 +19,7 @@ export default function Home() {
                 <Typography
                   variant="h2"
                   sx={{
-                    fontSize: "48px",
+                    fontSize: "36px",
                     lineHeight: 1.25,
                     fontWeight: 400,
                     marginTop: "100px",
@@ -39,7 +39,7 @@ export default function Home() {
                 >
                   Leveraging <span>trust.</span>
                   <br />
-                  Enabling open <span>innovation.</span>
+                  Building hyperscale <span>applications.</span>
                 </Typography>
               </Box>
               <Box sx={{ margin: "10px 0 35px" }}>
@@ -49,18 +49,18 @@ export default function Home() {
                     [theme.breakpoints.down("lg")]: { fontSize: "18px" },
                   }}
                 >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Enabling the era of open innovation on blockchains.
                 </Typography>
               </Box>
               <Box>
-                <BlueButton sx={{ width: 154, position: "relative", zIndex: 2 }}>Learn More</BlueButton>
+                <BlueButton sx={{ width: 154, position: "relative", zIndex: 2 }} onClick={event =>  window.location.href='/solutions'}>Learn More</BlueButton>
               </Box>
             </Grid>
             <Grid item md={6} xs={12}>
               <Box
                 sx={{
                   "& img": {
-                    width: 554,
+                    width: 444,
                     [theme.breakpoints.down("xl")]: {
                       width: 420,
                       marginLeft: "30px",
@@ -174,7 +174,7 @@ export default function Home() {
                     variant="h4"
                     sx={{ "&:after": { backgroundColor: "#CE8921" } }}
                   >
-                    <span>Eigen</span>Layr
+                    <span>Eigen</span>Layer
                   </Typography>
                   <Typography>
                     A platform to leverage Ethereum security through the
@@ -197,11 +197,11 @@ export default function Home() {
                     variant="h4"
                     sx={{ "&:after": { backgroundColor: "#2C8A62" } }}
                   >
-                    <span>Data</span>Layr
+                    <span>Data</span>Layer
                   </Typography>
                   <Typography>
                     A highly customizable and hyperscaling data availability
-                    service on EigenLayr, designed for OPptimistic and ZK
+                    service on EigenLayer, designed for Optimistic and ZK
                     rollups.
                   </Typography>
                 </Paper>

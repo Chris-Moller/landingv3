@@ -18,7 +18,7 @@ export default function JoinTeam() {
             maxWidth: 550,
           }}
         >
-          Come work with us at LayrLabs to build the platforms for innovation
+          Come work with us at Eigenlayer to build the platforms for innovation
           and the next generation of features and applications on blockchains.
         </Typography>
         <BlueButton sx={{ width: 140, marginTop: "20px" }}>

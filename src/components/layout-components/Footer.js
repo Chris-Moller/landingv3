@@ -66,6 +66,7 @@ export default function Footer() {
               }}
             >
               Leveraging <span>trust.</span> <br />
+              Building hyperscale <span>architecture.</span> <br />
               Enabling open <span>innovation.</span>
             </Typography>
             <Typography
@@ -76,7 +77,7 @@ export default function Footer() {
                 [theme.breakpoints.down("md")]: { display: "none" },
               }}
             >
-              © 2022 LayrLabs, all rights reserved
+              © 2022 Eigenlayer, all rights reserved
             </Typography>
           </Grid>
           <Grid
@@ -90,7 +91,7 @@ export default function Footer() {
             <Grid container>
               <Grid item>
                 <Box>
-                  <Typography>Navigation</Typography>
+                  <Typography>Eigenlayer:</Typography>
                   <Box
                     sx={{
                       width: 25,
@@ -105,7 +106,7 @@ export default function Footer() {
                   <Link to="/">Home</Link>
                 </Box>
                 <Box>
-                  <Link to="/solutions">Solutions</Link>
+                  <Link to="/solutions">Resources</Link>
                 </Box>
                 <Box>
                   <Link to="/careers">Careers</Link>
@@ -154,6 +155,7 @@ export default function Footer() {
           >
             <Grid container>
               <Grid item>
+                
                 <IconButton
                   sx={{
                     width: 30,
@@ -163,7 +165,7 @@ export default function Footer() {
                     padding: 0,
                   }}
                 >
-                  <TwitterIcon sx={{ width: 19 }} />
+                  <TwitterIcon sx={{ width: 19 }} onClick={event =>  window.location.href='https://twitter.com/eigenlayer'} />
                 </IconButton>
               </Grid>
               <Grid item>
@@ -206,7 +208,7 @@ export default function Footer() {
           [theme.breakpoints.up("md")]: { display: "none" },
         }}
       >
-        © 2022 LayrLabs, all rights reserved
+        © 2022 Eigenlayer, all rights reserved
       </Typography>
     </Box>
   );
