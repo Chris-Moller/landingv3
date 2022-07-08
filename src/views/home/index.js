@@ -218,7 +218,7 @@ export default function Home() {
                   Eigen<span>space</span>
                   </Typography>
                   <Typography>
-                    A highly customizable and hyperscaling data availability
+                    A highly customizable and hyperscaled data availability
                     service on EigenLayer, designed for Optimistic and ZK
                     rollups.
                   </Typography>
