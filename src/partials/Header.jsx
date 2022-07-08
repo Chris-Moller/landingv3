@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import tiny from '../images/logo.svg';
+import tiny from '../images/logo.png';
 
 function Header() {
 

@@ -65,9 +65,9 @@ export default function Footer() {
                 "& span": { fontWeight: 700 },
               }}
             >
-              Leveraging <span>trust.</span> <br />
-              Building hyperscale <span>architecture.</span> <br />
-              Enabling open <span>innovation.</span>
+              Leveraging <span>trust.</span> <br />              
+              Hyperscaling <span>blockchains.</span> <br />
+              Unleashing open <span>innovation.</span>
             </Typography>
             <Typography
               sx={{

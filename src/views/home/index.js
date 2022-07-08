@@ -66,8 +66,8 @@ export default function Home() {
                   }}
                 >
                   Leveraging <span>trust.</span>
-                  <br />
-                  Building hyperscale <span>applications.</span>
+                  <br />                  
+                  Hyperscaling <span>blockchains.</span>
                 </Typography>
               </Box>
               <Box sx={{ margin: "10px 0 35px" }}>
@@ -77,7 +77,7 @@ export default function Home() {
                     [theme.breakpoints.down("lg")]: { fontSize: "18px" },
                   }}
                 >
-                  Enabling the era of open innovation on blockchains.
+                  Unleashing open innovation.
                 </Typography>
               </Box>
               <Box>
@@ -229,7 +229,10 @@ export default function Home() {
                     service on EigenLayer, designed for Optimistic and ZK
                     rollups.
                   </Typography>
-                </Paper>
+                  <BlueButton sx={{ width: 140, marginTop: "20px" }} href="https://angel.co/company/layrlabs">
+          Try Now!
+              </BlueButton>
+                </Paper>              
               </Grid>
             </Grid>
           </Box>
