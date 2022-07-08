@@ -55,7 +55,7 @@ export default function Home() {
                       fontWeight: 700,
                     },
                     [theme.breakpoints.down("xl")]: {
-                      fontSize: "40px",
+                      fontSize: "32px",
                       marginTop: "70px",
                     },
                     [theme.breakpoints.down("lg")]: {
