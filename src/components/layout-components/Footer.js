@@ -168,7 +168,7 @@ export default function Footer() {
                   <TwitterIcon sx={{ width: 19 }} onClick={event =>  window.location.href='https://twitter.com/eigenlayer'} />
                 </IconButton>
               </Grid>
-              <Grid item>
+              {/* <Grid item>
                 <IconButton
                   sx={{
                     width: 30,
@@ -194,7 +194,7 @@ export default function Footer() {
                 >
                   <img src="/icons/f.svg" alt="f" />
                 </IconButton>
-              </Grid>
+              </Grid> */}
             </Grid>
           </Grid>
         </Grid>
