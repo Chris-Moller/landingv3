@@ -5,10 +5,7 @@ import Grid from "@mui/material/Grid";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import MainContainer from "components/shared-components/MainContainer";
-import LockIcon from "@mui/icons-material/Lock";
-import MenuIcon from "@mui/icons-material/Menu";
 import TwitterIcon from "@mui/icons-material/Twitter";
-import GoogleIcon from "@mui/icons-material/Google";
 import IconButton from "@mui/material/IconButton";
 
 const Link = styled(RouterLink)(() => ({
