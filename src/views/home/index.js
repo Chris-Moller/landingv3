@@ -193,7 +193,7 @@ export default function Home() {
                     variant="h4"
                     sx={{ "&:after": { backgroundColor: "#CE8921" } }}
                   >
-                    <span>Eigen</span>Layer
+                    <span>Eigen</span>layer
                   </Typography>
                   <Typography>
                     A platform to leverage Ethereum security through the
@@ -215,7 +215,7 @@ export default function Home() {
                     variant="h4"
                     sx={{ "&:after": { backgroundColor: "#2C8A62" } }}
                   >
-                    <span>Data</span>Layer
+                  Eigen<span>space</span>
                   </Typography>
                   <Typography>
                     A highly customizable and hyperscaling data availability
