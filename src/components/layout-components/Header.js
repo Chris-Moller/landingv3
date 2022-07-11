@@ -103,16 +103,16 @@ export default function TemporaryDrawer() {
             <ListItemText primary="Careers" />
           </ListItemButton>
         </ListItem>
-        <ListItem key="privacy" disablePadding>
-          <ListItemButton onClick={() => navigate("/privacy")}>
-            <ListItemText primary="Privacy Policy" />
+        <ListItem key="research" disablePadding>
+          <ListItemButton onClick={() => navigate("/research")}>
+            <ListItemText primary="Research" />
           </ListItemButton>
         </ListItem>
-        <ListItem key="terms" disablePadding>
+        {/* <ListItem key="terms" disablePadding>
           <ListItemButton onClick={() => navigate("/terms")}>
             <ListItemText primary="Terms & Conditions" />
           </ListItemButton>
-        </ListItem>
+        </ListItem> */}
       </List>
     </Box>
   );
@@ -179,6 +179,9 @@ export default function TemporaryDrawer() {
                 <Grid item component="li">
                   <Link to="/careers">Careers</Link>
                 </Grid>
+                <Grid item component="li">
+                  <Link to="/research">Research</Link>
+                </Grid>
               </Grid>
             </Grid>
             <Grid
@@ -211,7 +214,7 @@ export default function TemporaryDrawer() {
             letterSpacing: "2px",
           }}
         >
-          LayrLabs
+          Eigenlayer
         </Typography>
         {list()}
       </Drawer>

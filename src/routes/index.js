@@ -36,6 +36,10 @@ export default function Router() {
           path: "terms",
           element: <Terms />,
         },
+        {
+          path: "research",
+          element: <Research />,
+        },
       ]
     }
   ]);
@@ -56,4 +60,7 @@ const Privacy = Loadable(
 );
 const Terms = Loadable(
   lazy(() => import("views/terms"))
+);
+const Research = Loadable(
+  lazy(() => import("views/research"))
 );
