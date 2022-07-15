@@ -232,10 +232,9 @@ Permissionless fair ordering
                 <Paper
                   className="my-card"
                   sx={{
-                    cursor: "pointer",
-                    
+                    cursor: "pointer",                    
                       background:
-                        "linear-gradient(180deg, rgba(18, 25, 39, 0) 0%, rgba(18, 25, 39, 0.25) 54.69%, rgba(44, 138, 98, 0.5) 100%)",                    
+                        "linear-gradient(180deg, rgba(18, 25, 39, 0) 0%, rgba(18, 25, 39, 0.25) 54.69%, rgba(206, 137, 33, 0.5) 100%)",                  
                   }}
                 >
                   <Typography
