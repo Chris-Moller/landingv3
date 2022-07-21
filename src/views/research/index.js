@@ -35,7 +35,7 @@ import BlueButton from "components/shared-components/BlueButton";
 // }));
 
 
-export default function Solutions() {
+export default function Research() {
   const theme = useTheme();
 
   return (

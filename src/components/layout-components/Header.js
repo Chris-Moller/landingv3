@@ -93,9 +93,9 @@ export default function TemporaryDrawer() {
             <ListItemText primary="Home" />
           </ListItemButton>
         </ListItem>
-        <ListItem key="solutions" disablePadding>
-          <ListItemButton onClick={() => navigate("/solutions")}>
-            <ListItemText primary="Solutions" />
+        <ListItem key="resources" disablePadding>
+          <ListItemButton onClick={() => navigate("/resources")}>
+            <ListItemText primary="Resources" />
           </ListItemButton>
         </ListItem>
         <ListItem key="careers" disablePadding>
@@ -175,7 +175,7 @@ export default function TemporaryDrawer() {
                   <Link to="/">Home</Link>
                 </Grid>
                 <Grid item component="li">
-                  <Link to="/solutions">Resources</Link>
+                  <Link to="/resources">Resources</Link>
                 </Grid>
                 <Grid item component="li">
                   <Link to="/careers">Careers</Link>

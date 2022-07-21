@@ -103,7 +103,7 @@ export default function Footer() {
                   <Link to="/">Home</Link>
                 </Box>
                 <Box>
-                  <Link to="/solutions">Resources</Link>
+                  <Link to="/resources">Resources</Link>
                 </Box>
                 <Box>
                   <Link to="/careers">Careers</Link>

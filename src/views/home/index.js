@@ -74,7 +74,7 @@ export default function Home() {
               </Box>
               <br />
               <Box>
-              <Link to="/solutions"><BlueButton sx={{ width: 154, position: "relative", zIndex: 2 }}>Learn More</BlueButton></Link>                
+              <Link to="/resources"><BlueButton sx={{ width: 154, position: "relative", zIndex: 2 }}>Learn More</BlueButton></Link>                
               </Box>
             </Grid>
             <Grid item md={6} xs={12}>
@@ -134,7 +134,7 @@ export default function Home() {
               "& span": { fontWeight: 700 },
             }}
           >
-            Explore the <span>Solutions</span>
+            Explore the <span>solutions:</span>
           </Typography>
           <Typography
             sx={{ textAlign: "center", marginTop: "28px", fontWeight: 600 }}

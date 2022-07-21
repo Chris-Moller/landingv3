@@ -22,7 +22,7 @@ export default function Router() {
         },
         {
           path: "resources",
-          element: <Solutions />,
+          element: <Resources />,
         },
         {
           path: "careers",
@@ -49,8 +49,8 @@ export default function Router() {
 const Home = Loadable(
   lazy(() => import("views/home"))
 );
-const Solutions = Loadable(
-  lazy(() => import("views/solutions"))
+const Resources = Loadable(
+  lazy(() => import("views/resources"))
 );
 const Careers = Loadable(
   lazy(() => import("views/careers"))
