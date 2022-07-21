@@ -108,6 +108,9 @@ export default function Footer() {
                 <Box>
                   <Link to="/careers">Careers</Link>
                 </Box>
+                <Box>
+                  <Link to="/research">Research</Link>
+                </Box>
               </Grid>
               {/* <Grid
                 item
