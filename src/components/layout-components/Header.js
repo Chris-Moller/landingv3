@@ -153,12 +153,13 @@ export default function TemporaryDrawer() {
             sx={{ justifyContent: "space-between", alignItems: "center" }}
           >
             <Grid item sx={{ width: 50 }}>
-              <Button
+              {/* <Button
                 onClick={() => navigate("/")}
                 sx={{ padding: 0, minWidth: "unset" }}
               >
                 <img src="/images/logo.svg" width={64} height={64} alt="Logo" />
-              </Button>              
+              </Button>               */}
+              <h1>Eigenlayer</h1>
             </Grid>
             <Grid
               item

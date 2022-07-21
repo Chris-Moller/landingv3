@@ -21,7 +21,7 @@ export default function Router() {
           element: <Home />,
         },
         {
-          path: "solutions",
+          path: "resources",
           element: <Solutions />,
         },
         {
