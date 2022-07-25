@@ -44,11 +44,13 @@ export default function Research() {
          <Box>        
           <h1>Research:</h1>
         <p align="center"></p>
+        <h3>The Eigenlayer team is comprised of researchers pushing the edge of innovation in the blockchain landscape.</h3>
+        <h3>Eigenlayer is comprised of a plethora of open-source peer-reviewed research carried out by several members of the Eigenlayer team in the past. Some research highlights are shown here. Please visit blockchain.ece.uw.edu for more details.</h3>        
         </Box>
          <Box
         component="section"
         sx={{
-          marginTop: "226px",
+          marginTop: "26px",
           paddingBottom: "105px",
           [theme.breakpoints.down("xl")]: {
             marginTop: "200px",
