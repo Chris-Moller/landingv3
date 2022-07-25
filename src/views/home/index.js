@@ -4,7 +4,7 @@ import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
-import BlueButton from "components/shared-components/BlueButton";
+// import BlueButton from "components/shared-components/BlueButton";
 import MainContainer from "components/shared-components/MainContainer";
 
 const Link = styled(RouterLink)(() => ({
