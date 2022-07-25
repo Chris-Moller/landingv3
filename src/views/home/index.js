@@ -222,9 +222,9 @@ export default function Home() {
                     service on EigenLayer, designed for Optimistic and ZK
                     rollups.
                   </Typography>
-                  <BlueButton sx={{ width: 140, marginTop: "20px" }} href="http://18.224.169.114:3000/">
+                  {/* <BlueButton sx={{ width: 140, marginTop: "20px" }} href="http://18.224.169.114:3000/">
           Try Now!
-              </BlueButton>
+              </BlueButton> */}
                 </Paper>              
               </Grid>
             </Grid>
