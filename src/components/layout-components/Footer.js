@@ -1,8 +1,7 @@
-import { useNavigate, Link as RouterLink } from "react-router-dom";
+import { Link as RouterLink } from "react-router-dom";
 import { styled, useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
-import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import MainContainer from "components/shared-components/MainContainer";
 import TwitterIcon from "@mui/icons-material/Twitter";
@@ -24,7 +23,6 @@ const Link = styled(RouterLink)(() => ({
 }));
 
 export default function Footer() {
-  const navigate = useNavigate();
   const theme = useTheme();
 
   return (
