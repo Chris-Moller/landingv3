@@ -46,14 +46,6 @@ export default function Footer() {
           }}
         >
           <Grid item>
-            <Box sx={{ "& img": { width: 30 } }}>
-              <Button
-                onClick={() => navigate("/")}
-                sx={{ padding: 0, minWidth: "unset" }}
-              >
-                <img src="/images/logo.svg" alt="Logo" />
-              </Button>
-            </Box>
             <Typography
               sx={{
                 fontSize: "10px",
@@ -74,7 +66,7 @@ export default function Footer() {
                 [theme.breakpoints.down("md")]: { display: "none" },
               }}
             >
-              © 2022 Eigenlayer, all rights reserved
+              © 2022 EigenLayer, all rights reserved
             </Typography>
           </Grid>
           <Grid
@@ -88,7 +80,7 @@ export default function Footer() {
             <Grid container>
               <Grid item>
                 <Box>
-                  <Typography>Eigenlayer:</Typography>
+                  <Typography>EigenLayer:</Typography>
                   <Box
                     sx={{
                       width: 25,

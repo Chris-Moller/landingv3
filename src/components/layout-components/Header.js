@@ -159,7 +159,7 @@ export default function TemporaryDrawer() {
               >
                 <img src="/images/logo.svg" width={64} height={64} alt="Logo" />
               </Button>               */}
-              <h1>Eigenlayer</h1>
+              <h1>EigenLayer</h1>
             </Grid>
             <Grid
               item
