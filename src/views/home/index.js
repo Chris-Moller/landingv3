@@ -255,7 +255,8 @@ export default function Home() {
                 >                  
                 <span>Subscribe to our newsletter:</span>
                 <br />
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdLKTn5zy4Eyf9mG_puv7WL-0mPOkxuzRNjvcyAKP_cCPXWuQ/viewform?embedded=true" width="400" height="300" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+              <iframe title="Newsletter" src="https://docs.google.com/forms/d/e/1FAIpQLSdLKTn5zy4Eyf9mG_puv7WL-0mPOkxuzRNjvcyAKP_cCPXWuQ/viewform?embedded=true" width="400" height="300" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
               </Typography>              
           </Box>
