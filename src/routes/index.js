@@ -64,3 +64,4 @@ const Terms = Loadable(
 const Research = Loadable(
   lazy(() => import("views/research"))
 );
+

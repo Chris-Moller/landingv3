@@ -215,7 +215,7 @@ export default function Home() {
                     variant="h4"
                     sx={{ "&:after": { backgroundColor: "#2C8A62" } }}
                   >
-                  <span>EigenSpace</span>
+                  Eigen<span>DA</span>
                   </Typography>
                   <Typography>
                     A highly customizable and hyperscaled data availability
