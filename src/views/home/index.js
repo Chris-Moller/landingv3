@@ -75,7 +75,7 @@ export default function Home() {
               <br />
               <Box>
               <Link to="/resources"><BlueButton sx={{ width: 154, position: "relative", zIndex: 2 }}>Learn More</BlueButton></Link>                
-              </Box>
+              </Box>              
             </Grid>
             <Grid item md={6} xs={12}>
               <Box
@@ -228,6 +228,36 @@ export default function Home() {
                 </Paper>              
               </Grid>
             </Grid>
+            <br />
+              <br />
+              <Typography
+              
+                  variant="h4"
+                  sx={{
+                    fontSize: "12px",
+                    textAlign: "center",
+                    lineHeight: 1.25,
+                    fontWeight: 400,
+                    marginTop: "100px",
+                    "& span": {
+                      fontWeight: 700,
+                    },
+                    [theme.breakpoints.down("xl")]: {
+                      fontSize: "32px",
+                      marginTop: "70px",
+                    },
+                    [theme.breakpoints.down("lg")]: {
+                      fontSize: "32px",
+                      marginTop: "20px",
+                    },
+                    [theme.breakpoints.down("sm")]: { fontSize: "28px" },
+                  }}
+                >                  
+                <span>Subscribe to our newsletter:</span>
+                <br />
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdLKTn5zy4Eyf9mG_puv7WL-0mPOkxuzRNjvcyAKP_cCPXWuQ/viewform?embedded=true" width="400" height="300" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+              </Typography>              
           </Box>
         </MainContainer>
       </Box>
