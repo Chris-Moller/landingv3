@@ -39,28 +39,34 @@ export default function Home() {
 
   return (
     <>
-      <Box component="section">
+      <Box component="section"
+
+      >
         <MainContainer>
           <Grid container>
-            <Grid item md={6} xs={12}>
-              <Box>
+            <Grid>
+              <Box
+              >
                 <Typography
                   variant="h2"
                   sx={{
                     fontSize: "32px",
                     lineHeight: 1.25,
-                    fontWeight: 400,
+                    fontWeight: "lighter",
                     marginTop: "100px",
+                    color: "white",
                     "& span": {
-                      fontWeight: 700,
+                      fontWeight: "bold",
+                      color: "#9da7ff",
                     },
                     [theme.breakpoints.down("xl")]: {
-                      fontSize: "32px",
+                      fontSize: "36px",
                       marginTop: "70px",
                     },
                     [theme.breakpoints.down("lg")]: {
-                      fontSize: "32px",
+                      fontSize: "36px",
                       marginTop: "20px",
+                      width: "100%"
                     },
                     [theme.breakpoints.down("sm")]: { fontSize: "28px" },
                   }}
@@ -77,18 +83,18 @@ export default function Home() {
               <Link to="/resources"><BlueButton sx={{ width: 154, position: "relative", zIndex: 2 }}>Learn More</BlueButton></Link>                
               </Box>              
             </Grid>
-            <Grid item md={6} xs={12}>
+            <Grid item md={8} xs={12}>
               <Box
                 sx={{
                   "& img": {
-                    width: 444,
+                    width: "1200px",
                     [theme.breakpoints.down("xl")]: {
-                      width: 420,
-                      marginLeft: "30px",
+                      width: 800,
+                      marginLeft: "200px",
                     },
-                    [theme.breakpoints.down("lg")]: { width: 360 },
-                    [theme.breakpoints.down("md")]: { width: 240 },
-                    [theme.breakpoints.down("sm")]: { width: 200 },
+                    [theme.breakpoints.down("lg")]: { width: 560, marginLeft: "250px" },
+                    [theme.breakpoints.down("md")]: { width: 740, marginLeft: "30px" },
+                    [theme.breakpoints.down("sm")]: { width: 300, marginLeft: "100px" },
                   },
                   [theme.breakpoints.down("md")]: {
                     textAlign: "right",
@@ -98,8 +104,14 @@ export default function Home() {
                     transform: "translateY(-70px)",
                   },
                 }}
+                // sx={{
+                //   backgroundImage: `url(${"/images/layr-hero-asset.png"})`,
+                //   backgroundSize: "contain",
+                //   backgroundRepeat: "no-repeat",
+                //   height: "800px"
+                // }}
               >
-                <img src="/images/home-mv.svg" alt="Background" />
+                <img src="/images/layr-hero-asset.png" alt="Background" />
               </Box>
             </Grid>
           </Grid>
@@ -108,13 +120,13 @@ export default function Home() {
       <Box
         component="section"
         sx={{
-          marginTop: "226px",
+          marginTop: "120px",
           paddingBottom: "105px",
           [theme.breakpoints.down("xl")]: {
-            marginTop: "200px",
+            marginTop: "100px",
           },
           [theme.breakpoints.down("lg")]: {
-            marginTop: "170px",
+            marginTop: "80px",
           },
           [theme.breakpoints.down("md")]: {
             marginTop: "30px",

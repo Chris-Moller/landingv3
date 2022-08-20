@@ -16,7 +16,7 @@ function DashboardLayout() {
       <Box
         component="main"
         sx={{
-          paddingTop: "249px",
+          paddingTop: "200px",
           [theme.breakpoints.down("xl")]: {
             paddingTop: "200px",
           },

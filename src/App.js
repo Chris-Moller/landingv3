@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.scss";
+import "./App.css";
 
 import ThemeProvider from "theme";
 import { SettingsProvider } from "contexts/SettingsContext";

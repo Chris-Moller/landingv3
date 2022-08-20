@@ -29,7 +29,7 @@ export default function Footer() {
     <Box
       component="footer"
       sx={{
-        backgroundColor: "#121927",
+        backgroundColor: "black",
         padding: "52px 0 85px",
         [theme.breakpoints.down("md")]: { paddingBottom: 0 },
       }}
@@ -49,12 +49,12 @@ export default function Footer() {
                 fontSize: "10px",
                 lineHeight: 1.25,
                 marginTop: "18px",
-                "& span": { fontWeight: 700 },
+                "& span": { fontWeight: 700, color: "#9da7ff", },
               }}
             >
               Leveraging <span>trust.</span> <br />              
               Hyperscaling <span>blockchains.</span> <br />
-              Unleashing open <span>innovation.</span>
+              Unleashing <span>open innovation.</span>
             </Typography>
             <Typography
               sx={{

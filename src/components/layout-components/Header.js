@@ -17,8 +17,8 @@ import Typography from "@mui/material/Typography";
 const Link = styled(RouterLink)(() => ({
   textDecoration: "none",
   fontSize: "16px",
-  fontWeight: 600,
-  color: "#D8F8FF",
+  fontWeight: 400,
+  color: "white",
   position: "relative",
   "&:after": {
     content: "''",
@@ -33,7 +33,7 @@ const Link = styled(RouterLink)(() => ({
     transition: "all .2s ease-out",
   },
   "&:hover": {
-    fontWeight: 700,
+    fontWeight: 500,
     color: "#ECFCFF",
     "&:after": {
       width: 25,
@@ -120,32 +120,35 @@ export default function TemporaryDrawer() {
   return (
     <Box>
       <Box
+      className="bg-black text-2xl backdrop-blur-sm"
         sx={{
-          backgroundColor: "#0D1520",
           position: "fixed",
           top: 0,
           right: 0,
           left: 0,
           zIndex: 99,
+          height: "70px"
         }}
       >
         <MainContainer
           sx={{
-            transition: "all .3s ease-out",
-            marginTop: scrollPosition > 100 ? "20px" : "69px",
-            marginBottom: scrollPosition > 100 ? "20px" : "30px",
-            [theme.breakpoints.down("xl")]: {
-              marginTop: scrollPosition > 100 ? "20px" : "54px",
-              marginBottom: scrollPosition > 100 ? "20px" : "30px",
-            },
-            [theme.breakpoints.down("lg")]: {
-              marginTop: scrollPosition > 100 ? "20px" : "42px",
-              marginBottom: scrollPosition > 100 ? "20px" : "24px",
-            },
-            [theme.breakpoints.down("sm")]: {
-              marginTop: "20px",
-              marginBottom: "20px",
-            },
+            height: "70px",
+            display: "flex"
+            // transition: "all .3s ease-out",
+            // marginTop: scrollPosition > 100 ? "20px" : "69px",
+            // marginBottom: scrollPosition > 100 ? "20px" : "30px",
+            // [theme.breakpoints.down("xl")]: {
+            //   marginTop: scrollPosition > 100 ? "20px" : "54px",
+            //   marginBottom: scrollPosition > 100 ? "20px" : "30px",
+            // },
+            // [theme.breakpoints.down("lg")]: {
+            //   marginTop: scrollPosition > 100 ? "20px" : "42px",
+            //   marginBottom: scrollPosition > 100 ? "20px" : "24px",
+            // },
+            // [theme.breakpoints.down("sm")]: {
+            //   marginTop: "20px",
+            //   marginBottom: "20px",
+            // },
           }}
         >
           <Grid

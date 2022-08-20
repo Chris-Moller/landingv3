@@ -4,7 +4,7 @@ const palette = {
   },
   dark: {
     mode: "dark",
-    background: { paper: "#0D1520", default: "#0D1520", neutral: "#0D1520" },
+    background: { paper: "#131226", default: "#131226", neutral: "#131226" },
   },
 };
 
