@@ -92,10 +92,10 @@ export default function Home() {
                 sx={{
                   "& img": {
                     position: "absolute",
-                    left: "150px",
                     top: "100px",
+                    marginLeft: "60px",
                     zIndex: -99,
-                    width: "1200px",
+                    width: "1000px",
                     [theme.breakpoints.down("xl")]: {
                       width: 800,
                       marginLeft: "200px",
@@ -106,7 +106,7 @@ export default function Home() {
                     },
                     [theme.breakpoints.down("md")]: {
                       width: 740,
-                      marginLeft: "30px",
+                      marginLeft: "-100px",
                       position: "absolute",
                       left: "150px",
                       top: "100px",
@@ -140,7 +140,7 @@ export default function Home() {
       <Box
         component="section"
         sx={{
-          marginTop: "120px",
+          marginTop: "470px",
           paddingBottom: "105px",
           [theme.breakpoints.down("xl")]: {
             marginTop: "250px",
