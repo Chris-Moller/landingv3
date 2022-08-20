@@ -8,7 +8,7 @@ module.exports = {
     colors: {
       'black':  'rgba(0,0,0,0.75)',
       'blueish': '#7f1d1d',
-      'purple': '#7e5bef',
+      'light-purple': '#9da7ff',
       'pink': '#ff49db',
       'orange': '#ff7849',
       'green': '#13ce66',
@@ -16,6 +16,8 @@ module.exports = {
       'gray-dark': '#273444',
       'gray': '#8492a6',
       'gray-light': '#d3dce6',
+      'purple-grad': '#9F55FF',
+      'blue-grad': '#5479FF',
     },
     extend: {},
   },

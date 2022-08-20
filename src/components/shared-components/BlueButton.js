@@ -7,9 +7,9 @@ const BlueButton = styled(Button)(() => ({
   height: 45,
   borderRadius: "5px",
   color: "#ECFCFF",
-  backgroundColor: "#1BA8C7",
+  transition: "0.5s",
   "&:hover": {
-    backgroundColor: "rgba(27, 168, 199, 0.75)",
+    transition: ".5s"
   },
 }));
 

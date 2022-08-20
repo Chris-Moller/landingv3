@@ -29,7 +29,7 @@ const Link = styled(RouterLink)(() => ({
     width: 0,
     height: 3,
     borderRadius: "10px",
-    backgroundColor: "#1BA8C7",
+    backgroundColor: "#9da7ff",
     transition: "all .2s ease-out",
   },
   "&:hover": {

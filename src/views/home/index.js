@@ -21,9 +21,6 @@ const Link = styled(RouterLink)(() => ({
     left: 0,
     width: 0,
     height: 3,
-    borderRadius: "10px",
-    backgroundColor: "#1BA8C7",
-    transition: "all .2s ease-out",
   },
   "&:hover": {
     fontWeight: 700,
@@ -47,26 +44,29 @@ export default function Home() {
                 <Typography
                   variant="h2"
                   sx={{
-                    fontSize: "32px",
+                    fontSize: "40px",
                     lineHeight: 1.25,
                     fontWeight: "lighter",
                     marginTop: "50px",
                     color: "white",
                     "& span": {
                       fontWeight: "bold",
-                      color: "#9da7ff",
+                      background:
+                        "linear-gradient(90deg, hsla(266, 100%, 67%, 1) 0%, hsla(227, 100%, 66%, 1) 100%)",
+                      backgroundClip: "text",
+                      WebkitTextFillColor: "transparent",
                     },
                     [theme.breakpoints.down("xl")]: {
-                      fontSize: "36px",
+                      fontSize: "40px",
                       marginTop: "70px",
                     },
                     [theme.breakpoints.down("lg")]: {
-                      fontSize: "36px",
+                      fontSize: "40px",
                       marginTop: "20px",
                       width: "100%",
                     },
                     [theme.breakpoints.down("sm")]: { fontSize: "28px" },
-                    minWidth: "400px"
+                    minWidth: "400px",
                   }}
                 >
                   Leveraging <span>trust.</span>
@@ -80,6 +80,9 @@ export default function Home() {
               <Box>
                 <Link to="/resources">
                   <BlueButton
+                    className="hover:bg-gradient-to-r from-purple-grad to-blue-grad transition-property: all
+                  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+                  transition-duration: 3000ms border border-solid rounded-2xl shadow-lg shadow-light-purple-500/50"
                     sx={{ width: 154, position: "relative", zIndex: 2 }}
                   >
                     Learn More
@@ -93,7 +96,7 @@ export default function Home() {
                   "& img": {
                     position: "absolute",
                     top: "100px",
-                    marginLeft: "60px",
+                    marginLeft: "300px",
                     zIndex: -99,
                     width: "1000px",
                     [theme.breakpoints.down("xl")]: {
@@ -102,7 +105,6 @@ export default function Home() {
                     },
                     [theme.breakpoints.down("lg")]: {
                       width: 560,
-
                     },
                     [theme.breakpoints.down("md")]: {
                       width: 740,
@@ -121,7 +123,7 @@ export default function Home() {
                     textAlign: "right",
                   },
                   [theme.breakpoints.down("sm")]: {
-                    marginLeft: "-100px"
+                    marginLeft: "-100px",
                   },
                 }}
                 // sx={{
@@ -140,7 +142,7 @@ export default function Home() {
       <Box
         component="section"
         sx={{
-          marginTop: "470px",
+          marginTop: "570px",
           paddingBottom: "105px",
           [theme.breakpoints.down("xl")]: {
             marginTop: "250px",
@@ -160,16 +162,22 @@ export default function Home() {
           <Typography
             variant="h3"
             sx={{
-              fontSize: "28px",
+              fontSize: "32px",
               fontWeight: 400,
               textAlign: "center",
-              "& span": { fontWeight: 700 },
+              "& span": {
+                fontWeight: 700,
+                background:
+                  "linear-gradient(90deg, hsla(266, 100%, 67%, 1) 0%, hsla(227, 100%, 66%, 1) 100%)",
+                backgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+              },
             }}
           >
             Explore the <span>solutions:</span>
           </Typography>
           <Typography
-            sx={{ textAlign: "center", marginTop: "28px", fontWeight: 600 }}
+            sx={{ textAlign: "center", marginTop: "28px", fontWeight: 300, fontSize: "22px" }}
           >
             Our products provide cryptoeconomic security for services and
             companies in modular blockchain layers.
