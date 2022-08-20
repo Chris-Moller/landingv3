@@ -1,4 +1,4 @@
-import { Link as RouterLink} from "react-router-dom";
+import { Link as RouterLink } from "react-router-dom";
 import { styled, useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
@@ -39,21 +39,18 @@ export default function Home() {
 
   return (
     <>
-      <Box component="section"
-
-      >
+      <Box component="section">
         <MainContainer>
           <Grid container>
             <Grid>
-              <Box
-              >
+              <Box>
                 <Typography
                   variant="h2"
                   sx={{
                     fontSize: "32px",
                     lineHeight: 1.25,
                     fontWeight: "lighter",
-                    marginTop: "100px",
+                    marginTop: "50px",
                     color: "white",
                     "& span": {
                       fontWeight: "bold",
@@ -66,13 +63,14 @@ export default function Home() {
                     [theme.breakpoints.down("lg")]: {
                       fontSize: "36px",
                       marginTop: "20px",
-                      width: "100%"
+                      width: "100%",
                     },
                     [theme.breakpoints.down("sm")]: { fontSize: "28px" },
+                    minWidth: "400px"
                   }}
                 >
                   Leveraging <span>trust.</span>
-                  <br />                  
+                  <br />
                   Hyperscaling <span>blockchains.</span>
                   <br />
                   Unleashing <span>open innovation.</span>
@@ -80,28 +78,50 @@ export default function Home() {
               </Box>
               <br />
               <Box>
-              <Link to="/resources"><BlueButton sx={{ width: 154, position: "relative", zIndex: 2 }}>Learn More</BlueButton></Link>                
-              </Box>              
+                <Link to="/resources">
+                  <BlueButton
+                    sx={{ width: 154, position: "relative", zIndex: 2 }}
+                  >
+                    Learn More
+                  </BlueButton>
+                </Link>
+              </Box>
             </Grid>
             <Grid item md={8} xs={12}>
               <Box
                 sx={{
                   "& img": {
+                    position: "absolute",
+                    left: "150px",
+                    top: "100px",
+                    zIndex: -99,
                     width: "1200px",
                     [theme.breakpoints.down("xl")]: {
                       width: 800,
                       marginLeft: "200px",
                     },
-                    [theme.breakpoints.down("lg")]: { width: 560, marginLeft: "250px" },
-                    [theme.breakpoints.down("md")]: { width: 740, marginLeft: "30px" },
-                    [theme.breakpoints.down("sm")]: { width: 300, marginLeft: "100px" },
+                    [theme.breakpoints.down("lg")]: {
+                      width: 560,
+
+                    },
+                    [theme.breakpoints.down("md")]: {
+                      width: 740,
+                      marginLeft: "30px",
+                      position: "absolute",
+                      left: "150px",
+                      top: "100px",
+                    },
+                    [theme.breakpoints.down("sm")]: {
+                      width: 400,
+                      marginLeft: "-100px",
+                      marginTop: "100px",
+                    },
                   },
                   [theme.breakpoints.down("md")]: {
                     textAlign: "right",
-                    transform: "translateY(-40px)",
                   },
                   [theme.breakpoints.down("sm")]: {
-                    transform: "translateY(-70px)",
+                    marginLeft: "-100px"
                   },
                 }}
                 // sx={{
@@ -123,16 +143,16 @@ export default function Home() {
           marginTop: "120px",
           paddingBottom: "105px",
           [theme.breakpoints.down("xl")]: {
-            marginTop: "100px",
+            marginTop: "250px",
           },
           [theme.breakpoints.down("lg")]: {
-            marginTop: "80px",
+            marginTop: "200px",
           },
           [theme.breakpoints.down("md")]: {
-            marginTop: "30px",
+            marginTop: "320px",
           },
           [theme.breakpoints.down("sm")]: {
-            marginTop: "10px",
+            marginTop: "300px",
           },
         }}
       >
@@ -196,9 +216,9 @@ export default function Home() {
                 <Paper
                   className="my-card"
                   sx={{
-                    cursor: "pointer",                    
-                      background:
-                        "linear-gradient(180deg, rgba(18, 25, 39, 0) 0%, rgba(18, 25, 39, 0.25) 54.69%, rgba(206, 137, 33, 0.5) 100%)",                  
+                    cursor: "pointer",
+                    background:
+                      "linear-gradient(180deg, rgba(18, 25, 39, 0) 0%, rgba(18, 25, 39, 0.25) 54.69%, rgba(206, 137, 33, 0.5) 100%)",
                   }}
                 >
                   <Typography
@@ -218,16 +238,16 @@ export default function Home() {
                   className="my-card"
                   sx={{
                     cursor: "pointer",
-                    
-                      background:
-                        "linear-gradient(180deg, rgba(18, 25, 39, 0) 0%, rgba(18, 25, 39, 0.25) 54.69%, rgba(44, 138, 98, 0.5) 100%)",                    
+
+                    background:
+                      "linear-gradient(180deg, rgba(18, 25, 39, 0) 0%, rgba(18, 25, 39, 0.25) 54.69%, rgba(44, 138, 98, 0.5) 100%)",
                   }}
                 >
                   <Typography
                     variant="h4"
                     sx={{ "&:after": { backgroundColor: "#2C8A62" } }}
                   >
-                  Eigen<span>DA</span>
+                    Eigen<span>DA</span>
                   </Typography>
                   <Typography>
                     A highly customizable and hyperscaled data availability
@@ -237,7 +257,7 @@ export default function Home() {
                   {/* <BlueButton sx={{ width: 140, marginTop: "20px" }} href="http://18.224.169.114:3000/">
           Try Now!
               </BlueButton> */}
-                </Paper>              
+                </Paper>
               </Grid>
             </Grid>
             {/* <br />
