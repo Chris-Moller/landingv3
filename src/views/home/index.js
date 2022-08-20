@@ -145,7 +145,7 @@ export default function Home() {
           marginTop: "570px",
           paddingBottom: "105px",
           [theme.breakpoints.down("xl")]: {
-            marginTop: "250px",
+            marginTop: "350px",
           },
           [theme.breakpoints.down("lg")]: {
             marginTop: "200px",
