@@ -49,10 +49,16 @@ export default function Footer() {
                 fontSize: "10px",
                 lineHeight: 1.25,
                 marginTop: "18px",
-                "& span": { fontWeight: 700, color: "#9da7ff", },
+                "& span": {
+                  fontWeight: 700,
+                  background:
+                    "linear-gradient(90deg, hsla(266, 100%, 67%, 1) 0%, hsla(227, 100%, 66%, 1) 100%)",
+                  backgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                },
               }}
             >
-              Leveraging <span>trust.</span> <br />              
+              Leveraging <span>trust.</span> <br />
               Hyperscaling <span>blockchains.</span> <br />
               Unleashing <span>open innovation.</span>
             </Typography>
@@ -145,7 +151,6 @@ export default function Footer() {
           >
             <Grid container>
               <Grid item>
-                
                 <IconButton
                   sx={{
                     width: 30,
@@ -155,7 +160,12 @@ export default function Footer() {
                     padding: 0,
                   }}
                 >
-                  <TwitterIcon sx={{ width: 19 }} onClick={event =>  window.location.href='https://twitter.com/eigenlayer'} />
+                  <TwitterIcon
+                    sx={{ width: 19 }}
+                    onClick={(event) =>
+                      (window.location.href = "https://twitter.com/eigenlayer")
+                    }
+                  />
                 </IconButton>
               </Grid>
               {/* <Grid item>
