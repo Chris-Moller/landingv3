@@ -190,19 +190,27 @@ export default function Home() {
           sx={{
             backgroundImage: "url(/images/background-eigen.png)",
             backgroundSize: "cover",
-            height: "1500px"
+            height: "1500px",
           }}
         >
           <Box
             sx={{
               maxWidth: 1170,
-              margin: "auto",
+              marginLeft: "auto",
+              marginRight: "auto",
+              display: "flex",
+              position: "relative",
+              "& .topo-title": {
+                marginTop: "150px",
+              },
               "& .my-card": {
-                marginTop: "250px",
-                backgroundColor: "#121927",
                 borderRadius: "10px",
+                border: "solid",
+                borderWidth: "0.5px",
+                borderColor: "#817dac",
                 padding: "36px 56px 84px",
                 height: "100%",
+                marginTop: "150px",
                 [theme.breakpoints.down("lg")]: {
                   padding: "36px 36px 64px",
                 },
@@ -210,7 +218,7 @@ export default function Home() {
               "& h4": {
                 fontSize: "28px",
                 fontWeight: 400,
-                lineHeight: 2.1,
+
                 "& span": { fontWeight: 700 },
                 position: "relative",
                 "&:after": {
@@ -225,72 +233,177 @@ export default function Home() {
                 },
               },
               "& p": {
-                fontWeight: 600,
                 lineHeight: 1.875,
                 marginTop: "25px",
               },
+              "& .smallCube": {
+                width: "170px",
+                right: "-15%",
+                top: "-12%",
+                position: "absolute",
+                left: "auto",
+                bottom: "auto",
+                [theme.breakpoints.down("xxl")]: {
+                  width: "130px",
+                  right: "-3%",
+                  top: "0%",
+                },
+                [theme.breakpoints.down("xl")]: {
+                  width: "80px",
+                  right: "9%",
+                  top: "-2%",
+                },
+                [theme.breakpoints.down("lg")]: {
+                  width: "75px",
+                  right: "20%",
+                  top: "2%",
+                },
+                [theme.breakpoints.down("md")]: {
+                  width: "170px",
+                  right: 350,
+                  top: 1000,
+                },
+                [theme.breakpoints.down("sm")]: {
+                  width: "170px",
+                  right: 350,
+                  top: 1000,
+                },
+              },
+              "& .bigCube": {
+                width: "270px",
+                right: "-30%",
+                top: "10%",
+                position: "absolute",
+                left: "auto",
+                bottom: "auto",
+                [theme.breakpoints.down("xxl")]: {
+                  width: "200px",
+                  right: "-14%",
+                  top: "15%",
+                },
+                [theme.breakpoints.down("xl")]: {
+                  width: "145px",
+                  right: "0%",
+                  top: "10%",
+                },
+                [theme.breakpoints.down("lg")]: {
+                  width: "145px",
+                  right: "10%",
+                  top: "10%",
+                },
+                [theme.breakpoints.down("md")]: {
+                  width: "270px",
+                  right: "-30%",
+                  top: "10%",
+                },
+                [theme.breakpoints.down("sm")]: {
+                  width: "270px",
+                  right: "-30%",
+                  top: "10%",
+                },
+              },
             }}
           >
+            <img
+              className="smallCube"
+              src="/images/eigen-small-cube.png"
+              alt=""
+            />
+            <img className="bigCube" src="/images/eigen-big-cube.png" alt="" />
             <Grid container spacing={2.5}
             sx={{
-              "& img": {
-                position: "absolute",
-
-              }}}>
-              <img src="/images/eigen-small-cube.png"
-              style={{
-                width: "170px",
-                right: 200,
-                top: 1000
-              }} />
-              <img src="/images/eigen-big-cube.png"
-               style={{
-                width: "270px",
-                right: 320
-              }} />
-              <Grid item md={6} xs={12}>
+              "& span": {
+                background: "linear-gradient(90deg, hsla(266, 100%, 67%, 1) 0%, hsla(227, 100%, 66%, 1) 100%)",
+                backgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+              }
+            }}
+            >
+              <Grid item md={5}>
+                <Typography
+                  className="topo-title"
+                  variant="h4"
+                >
+                  Eigen<span>Layer</span>
+                </Typography>
+                <Typography>
+                  A platform to leverage Ethereum security through the
+                  innovative method of restaking.
+                </Typography>
+              </Grid>
+              <Grid
+                item
+                md={7}
+                xs={12}
+                sx={{
+                  [theme.breakpoints.down("lg")]: {
+                    marginLeft: "auto",
+                    marginRight: "auto",
+                  },
+                  [theme.breakpoints.down("md")]: {
+                    marginLeft: "auto",
+                    marginRight: "auto",
+                  },
+                  [theme.breakpoints.down("sm")]: {
+                    marginLeft: "auto",
+                    marginRight: "auto",
+                  },
+                  [theme.breakpoints.down("xs")]: {
+                    marginLeft: "auto",
+                    marginRight: "auto",
+                  },
+                }}
+              >
                 <Paper
-                  className="my-card"
+                  className="my-card bg-gray-card"
                   sx={{
                     cursor: "pointer",
-                    marginTop: "100px",
-                    background:
-                      "linear-gradient(180deg, rgba(18, 25, 39, 0) 0%, rgba(18, 25, 39, 0.25) 54.69%, rgba(206, 137, 33, 0.5) 100%)",
                   }}
                 >
-                  <Typography
-                    variant="h4"
-                    sx={{ "&:after": { backgroundColor: "#CE8921" } }}
-                  >
-                    <span>EigenLayer</span>
-                  </Typography>
-                  <Typography>
-                    A platform to leverage Ethereum security through the
-                    innovative method of restaking.
-                  </Typography>
+          
                 </Paper>
               </Grid>
-              <Grid item md={6} xs={12}>
+              <Grid item md={5}>
+                <Typography
+                  className="topo-title"
+                  variant="h4"
+                >
+                  Eigen<span>DA</span>
+                </Typography>
+                <Typography>
+                  A highly customizable and hyperscaled data availability
+                  service on EigenLayer, designed for Optimistic and ZK rollups.
+                </Typography>
+              </Grid>
+              <Grid
+                item
+                md={7}
+                xs={12}
+                sx={{
+                  [theme.breakpoints.down("lg")]: {
+                    marginLeft: "auto",
+                    marginRight: "auto",
+                  },
+                  [theme.breakpoints.down("md")]: {
+                    marginLeft: "auto",
+                    marginRight: "auto",
+                  },
+                  [theme.breakpoints.down("sm")]: {
+                    marginLeft: "auto",
+                    marginRight: "auto",
+                  },
+                  [theme.breakpoints.down("xs")]: {
+                    marginLeft: "auto",
+                    marginRight: "auto",
+                  },
+                }}
+              >
                 <Paper
-                  className="my-card"
+                  className="my-card bg-gray-card"
                   sx={{
                     cursor: "pointer",
-                    marginTop: "100px",
-                    background:
-                      "linear-gradient(180deg, rgba(18, 25, 39, 0) 0%, rgba(18, 25, 39, 0.25) 54.69%, rgba(44, 138, 98, 0.5) 100%)",
                   }}
                 >
-                  <Typography
-                    variant="h4"
-                    sx={{ "&:after": { backgroundColor: "#2C8A62" } }}
-                  >
-                    Eigen<span>DA</span>
-                  </Typography>
-                  <Typography>
-                    A highly customizable and hyperscaled data availability
-                    service on EigenLayer, designed for Optimistic and ZK
-                    rollups.
-                  </Typography>
                   {/* <BlueButton sx={{ width: 140, marginTop: "20px" }} href="http://18.224.169.114:3000/">
           Try Now!
               </BlueButton> */}
