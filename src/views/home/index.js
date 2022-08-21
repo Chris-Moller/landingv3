@@ -143,7 +143,7 @@ export default function Home() {
         sx={{
           marginTop: "550px",
           [theme.breakpoints.down("xl")]: {
-            marginTop: "250px",
+            marginTop: "350px",
           },
           [theme.breakpoints.down("lg")]: {
             marginTop: "200px",
