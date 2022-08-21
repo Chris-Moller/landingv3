@@ -198,7 +198,7 @@ export default function Home() {
               maxWidth: 1170,
               margin: "auto",
               "& .my-card": {
-                marginTop: "150px",
+                marginTop: "250px",
                 backgroundColor: "#121927",
                 borderRadius: "10px",
                 padding: "36px 56px 84px",
