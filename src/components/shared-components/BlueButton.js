@@ -7,10 +7,6 @@ const BlueButton = styled(Button)(() => ({
   height: 45,
   borderRadius: "5px",
   color: "#ECFCFF",
-  transition: "0.5s",
-  "&:hover": {
-    transition: ".5s"
-  },
 }));
 
 export default BlueButton

@@ -5,7 +5,14 @@ import BlueButton from "components/shared-components/BlueButton";
 
 export default function JoinTeam() {
   return (
-    <Box component="section" sx={{ textAlign: "center", padding: "70px 0", backgroundColor: "#0A1017" }}>
+    <Box
+      component="section"
+      sx={{
+        textAlign: "center",
+        padding: "70px 0",
+        backgroundColor: "#0A1017",
+      }}
+    >
       <MainContainer>
         <Typography variant="h3" sx={{ fontSize: "20px", fontWeight: 700 }}>
           Looking to join our team?
@@ -21,7 +28,12 @@ export default function JoinTeam() {
           Come work with us at Eigenlayer to build the platforms for innovation
           and the next generation of features and applications on blockchains.
         </Typography>
-        <BlueButton sx={{ width: 140, marginTop: "20px" }} href="mailto:jobs@layrlabs.org">
+        <BlueButton
+          variant="outlined"
+          className="hover:bg-gradient-to-r from-purple-grad to-blue-grad border border-solid rounded-2xl"
+          sx={{ width: 140, marginTop: "20px" }}
+          href="mailto:jobs@layrlabs.org"
+        >
           Apply Now
         </BlueButton>
       </MainContainer>

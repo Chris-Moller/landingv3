@@ -6,6 +6,7 @@ import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
 import BlueButton from "components/shared-components/BlueButton";
 import MainContainer from "components/shared-components/MainContainer";
+import { width } from "@mui/system";
 
 const Link = styled(RouterLink)(() => ({
   textDecoration: "none",
@@ -80,9 +81,8 @@ export default function Home() {
               <Box>
                 <Link to="/resources">
                   <BlueButton
-                    className="hover:bg-gradient-to-r from-purple-grad to-blue-grad transition-property: all
-                  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
-                  transition-duration: 3000ms border border-solid rounded-2xl shadow-lg shadow-light-purple-500/50"
+                    variant="outlined"
+                    className="hover:bg-gradient-to-r from-purple-grad to-blue-grad border border-solid rounded-2xl"
                     sx={{ width: 154, position: "relative", zIndex: 2 }}
                   >
                     Learn More
@@ -128,8 +128,7 @@ export default function Home() {
                 }}
                 // sx={{
                 //   backgroundImage: `url(${"/images/layr-hero-asset.png"})`,
-                //   backgroundSize: "contain",
-                //   backgroundRepeat: "no-repeat",
+
                 //   height: "800px"
                 // }}
               >
@@ -142,8 +141,7 @@ export default function Home() {
       <Box
         component="section"
         sx={{
-          marginTop: "570px",
-          paddingBottom: "105px",
+          marginTop: "550px",
           [theme.breakpoints.down("xl")]: {
             marginTop: "250px",
           },
@@ -162,7 +160,7 @@ export default function Home() {
           <Typography
             variant="h3"
             sx={{
-              fontSize: "32px",
+              fontSize: "36px",
               fontWeight: 400,
               textAlign: "center",
               "& span": {
@@ -177,18 +175,32 @@ export default function Home() {
             Explore the <span>solutions:</span>
           </Typography>
           <Typography
-            sx={{ textAlign: "center", marginTop: "28px", fontWeight: 300, fontSize: "22px" }}
+            sx={{
+              textAlign: "center",
+              marginTop: "28px",
+              fontWeight: 300,
+              fontSize: "22px",
+            }}
           >
             Our products provide cryptoeconomic security for services and
             companies in modular blockchain layers.
           </Typography>
+        </MainContainer>
+        <Box
+          sx={{
+            backgroundImage: "url(/images/background-eigen.png)",
+            backgroundSize: "cover",
+            height: "1500px"
+          }}
+        >
           <Box
             sx={{
               maxWidth: 1170,
-              margin: "58px auto 0",
+              margin: "auto",
               "& .my-card": {
+                marginTop: "150px",
                 backgroundColor: "#121927",
-                borderRadius: "5px",
+                borderRadius: "10px",
                 padding: "36px 56px 84px",
                 height: "100%",
                 [theme.breakpoints.down("lg")]: {
@@ -219,12 +231,29 @@ export default function Home() {
               },
             }}
           >
-            <Grid container spacing={2.5}>
+            <Grid container spacing={2.5}
+            sx={{
+              "& img": {
+                position: "absolute",
+
+              }}}>
+              <img src="/images/eigen-small-cube.png"
+              style={{
+                width: "170px",
+                right: 200,
+                top: 1000
+              }} />
+              <img src="/images/eigen-big-cube.png"
+               style={{
+                width: "270px",
+                right: 320
+              }} />
               <Grid item md={6} xs={12}>
                 <Paper
                   className="my-card"
                   sx={{
                     cursor: "pointer",
+                    marginTop: "100px",
                     background:
                       "linear-gradient(180deg, rgba(18, 25, 39, 0) 0%, rgba(18, 25, 39, 0.25) 54.69%, rgba(206, 137, 33, 0.5) 100%)",
                   }}
@@ -246,7 +275,7 @@ export default function Home() {
                   className="my-card"
                   sx={{
                     cursor: "pointer",
-
+                    marginTop: "100px",
                     background:
                       "linear-gradient(180deg, rgba(18, 25, 39, 0) 0%, rgba(18, 25, 39, 0.25) 54.69%, rgba(44, 138, 98, 0.5) 100%)",
                   }}
@@ -300,7 +329,7 @@ export default function Home() {
 
               </Typography>               */}
           </Box>
-        </MainContainer>
+        </Box>
       </Box>
     </>
   );
