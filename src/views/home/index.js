@@ -200,6 +200,19 @@ export default function Home() {
               marginRight: "auto",
               display: "flex",
               position: "relative",
+              [theme.breakpoints.down("lg")]: {
+                marginLeft: "3rem",
+                marginRight: "3rem",
+
+                },
+                [theme.breakpoints.down("md")]: {
+                  marginLeft: "3rem",
+                  marginRight: "3rem",
+                },
+                [theme.breakpoints.down("sm")]: {
+                  marginLeft: "3rem",
+                  marginRight: "3rem",
+                },
               "& .topo-title": {
                 marginTop: "150px",
               },
@@ -254,9 +267,9 @@ export default function Home() {
                   top: "-2%",
                 },
                 [theme.breakpoints.down("lg")]: {
-                  width: "75px",
-                  right: "20%",
-                  top: "2%",
+                  width: "80px",
+                  right: "7%",
+                  top: "-5%",
                 },
                 [theme.breakpoints.down("md")]: {
                   width: "170px",
@@ -284,12 +297,12 @@ export default function Home() {
                 [theme.breakpoints.down("xl")]: {
                   width: "145px",
                   right: "0%",
-                  top: "10%",
+                  top: "5%",
                 },
                 [theme.breakpoints.down("lg")]: {
                   width: "145px",
-                  right: "10%",
-                  top: "10%",
+                  right: "-3%",
+                  top: "5%",
                 },
                 [theme.breakpoints.down("md")]: {
                   width: "270px",
@@ -319,7 +332,7 @@ export default function Home() {
               }
             }}
             >
-              <Grid item md={5}>
+              <Grid item md={5} sm={12}>
                 <Typography
                   className="topo-title"
                   variant="h4"
@@ -334,6 +347,7 @@ export default function Home() {
               <Grid
                 item
                 md={7}
+                sm={12}
                 xs={12}
                 sx={{
                   [theme.breakpoints.down("lg")]: {
@@ -348,22 +362,19 @@ export default function Home() {
                     marginLeft: "auto",
                     marginRight: "auto",
                   },
-                  [theme.breakpoints.down("xs")]: {
-                    marginLeft: "auto",
-                    marginRight: "auto",
-                  },
                 }}
               >
                 <Paper
                   className="my-card bg-gray-card"
                   sx={{
                     cursor: "pointer",
+                    
                   }}
                 >
           
                 </Paper>
               </Grid>
-              <Grid item md={5}>
+              <Grid item md={5} xs={12}>
                 <Typography
                   className="topo-title"
                   variant="h4"
@@ -378,7 +389,7 @@ export default function Home() {
               <Grid
                 item
                 md={7}
-                xs={12}
+                sm={12}
                 sx={{
                   [theme.breakpoints.down("lg")]: {
                     marginLeft: "auto",
@@ -389,10 +400,6 @@ export default function Home() {
                     marginRight: "auto",
                   },
                   [theme.breakpoints.down("sm")]: {
-                    marginLeft: "auto",
-                    marginRight: "auto",
-                  },
-                  [theme.breakpoints.down("xs")]: {
                     marginLeft: "auto",
                     marginRight: "auto",
                   },
