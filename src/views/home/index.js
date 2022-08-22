@@ -6,7 +6,7 @@ import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
 import BlueButton from "components/shared-components/BlueButton";
 import MainContainer from "components/shared-components/MainContainer";
-import { width } from "@mui/system";
+import { display, width } from "@mui/system";
 
 const Link = styled(RouterLink)(() => ({
   textDecoration: "none",
@@ -190,7 +190,7 @@ export default function Home() {
           sx={{
             backgroundImage: "url(/images/background-eigen.png)",
             backgroundSize: "cover",
-            height: "1500px",
+            height: "1200px",
           }}
         >
           <Box
@@ -336,8 +336,18 @@ export default function Home() {
                 <Typography
                   className="topo-title"
                   variant="h4"
+                  sx={{
+                    display: "flex",
+                    flexDirection: "row",
+                    "& img": {
+                      marginLeft: "7px",
+                      width: "32px",
+
+                    },
+                  }}
                 >
                   Eigen<span>Layer</span>
+                  <img src="/images/EL-icon.svg" alt=""/>
                 </Typography>
                 <Typography>
                   A platform to leverage Ethereum security through the
@@ -378,8 +388,17 @@ export default function Home() {
                 <Typography
                   className="topo-title"
                   variant="h4"
+                  sx={{
+                    display: "flex",
+                    flexDirection: "row",
+                    "& img": {
+                      marginLeft: "7px",
+                      width: "32px",
+                    },
+                  }}
                 >
                   Eigen<span>DA</span>
+                  <img src="/images/EDA-icon.svg" alt=""/>
                 </Typography>
                 <Typography>
                   A highly customizable and hyperscaled data availability
