@@ -25,6 +25,14 @@ export default function Router() {
           element: <Resources />,
         },
         {
+          path: "Products",
+          element: <Products />,
+        },
+        {
+          path: "Developers",
+          element: <Developers />,
+        },
+        {
           path: "careers",
           element: <Careers />,
         },
@@ -51,6 +59,12 @@ const Home = Loadable(
 );
 const Resources = Loadable(
   lazy(() => import("views/resources"))
+);
+const Products = Loadable(
+  lazy(() => import("views/products"))
+);
+const Developers = Loadable(
+  lazy(() => import("views/developers"))
 );
 const Careers = Loadable(
   lazy(() => import("views/careers"))

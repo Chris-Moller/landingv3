@@ -198,10 +198,10 @@ export default function TemporaryDrawer() {
                 sx={{ marginBottom: 0 }}
               >
                 <Grid item component="li">
-                  <Link to="/">Products</Link>
+                  <Link to="/products">Products</Link>
                 </Grid>
                 <Grid item component="li">
-                  <Link to="/">Developers</Link>
+                  <Link to="/developers">Developers</Link>
                 </Grid>
                 <Grid item component="li">
                   <Link to="/resources">Company</Link>
