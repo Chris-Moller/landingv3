@@ -29,7 +29,8 @@ const Link = styled(RouterLink)(() => ({
     width: 0,
     height: 3,
     borderRadius: "10px",
-    background: "linear-gradient(90deg, hsla(266, 100%, 67%, 1) 0%, hsla(227, 100%, 66%, 1) 100%)",
+    background:
+      "linear-gradient(90deg, hsla(266, 100%, 67%, 1) 0%, hsla(227, 100%, 66%, 1) 100%)",
     transition: "all .2s ease-out",
   },
   "&:hover": {
@@ -120,20 +121,20 @@ export default function TemporaryDrawer() {
   return (
     <Box>
       <Box
-      className="bg-black text-2xl backdrop-blur-sm"
+        className="bg-black text-2xl backdrop-blur-sm"
         sx={{
           position: "fixed",
           top: 0,
           right: 0,
           left: 0,
           zIndex: 99,
-          height: "70px"
+          height: "70px",
         }}
       >
         <MainContainer
           sx={{
             height: "70px",
-            display: "flex"
+            display: "flex",
             // transition: "all .3s ease-out",
             // marginTop: scrollPosition > 100 ? "20px" : "69px",
             // marginBottom: scrollPosition > 100 ? "20px" : "30px",
@@ -155,14 +156,36 @@ export default function TemporaryDrawer() {
             container
             sx={{ justifyContent: "space-between", alignItems: "center" }}
           >
-            <Grid item sx={{ width: 50 }}>
+            <Grid
+              item
+              sx={{
+                width: 50,
+                display: "flex",
+                flexDirection: "row",
+                "& img": {
+                  marginRight: "5px",
+                  width: "32px",
+                },
+              }}
+              onClick={() => {
+                navigate("/");
+              }}
+            >
               {/* <Button
                 onClick={() => navigate("/")}
                 sx={{ padding: 0, minWidth: "unset" }}
               >
                 <img src="/images/logo.svg" width={64} height={64} alt="Logo" />
-              </Button>               */}
-              <h1>EigenLayer</h1>
+              </Button>
+                             */}
+              <img src="/images/EigenPlaceHolder.png" alt="" />
+              <h1
+                style={{
+                  cursor: "pointer",
+                }}
+              >
+                EigenLayer
+              </h1>
             </Grid>
             <Grid
               item
@@ -175,10 +198,13 @@ export default function TemporaryDrawer() {
                 sx={{ marginBottom: 0 }}
               >
                 <Grid item component="li">
-                  <Link to="/">Home</Link>
+                  <Link to="/">Products</Link>
                 </Grid>
                 <Grid item component="li">
-                  <Link to="/resources">Resources</Link>
+                  <Link to="/">Developers</Link>
+                </Grid>
+                <Grid item component="li">
+                  <Link to="/resources">Company</Link>
                 </Grid>
                 <Grid item component="li">
                   <Link to="/careers">Careers</Link>

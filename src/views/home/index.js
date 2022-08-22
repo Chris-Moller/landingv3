@@ -90,7 +90,7 @@ export default function Home() {
                 </Link>
               </Box>
             </Grid>
-            <Grid item md={8} xs={12}>
+            <Grid xs={12}>
               <Box
                 sx={{
                   "& img": {
@@ -190,7 +190,7 @@ export default function Home() {
           sx={{
             backgroundImage: "url(/images/background-eigen.png)",
             backgroundSize: "cover",
-            height: "1200px",
+            minHeight: "1000px",
           }}
         >
           <Box
@@ -203,16 +203,15 @@ export default function Home() {
               [theme.breakpoints.down("lg")]: {
                 marginLeft: "3rem",
                 marginRight: "3rem",
-
-                },
-                [theme.breakpoints.down("md")]: {
-                  marginLeft: "3rem",
-                  marginRight: "3rem",
-                },
-                [theme.breakpoints.down("sm")]: {
-                  marginLeft: "3rem",
-                  marginRight: "3rem",
-                },
+              },
+              [theme.breakpoints.down("md")]: {
+                marginLeft: "3rem",
+                marginRight: "3rem",
+              },
+              [theme.breakpoints.down("sm")]: {
+                marginLeft: "3rem",
+                marginRight: "3rem",
+              },
               "& .topo-title": {
                 marginTop: "150px",
               },
@@ -323,16 +322,19 @@ export default function Home() {
               alt=""
             />
             <img className="bigCube" src="/images/eigen-big-cube.png" alt="" />
-            <Grid container spacing={2.5}
-            sx={{
-              "& span": {
-                background: "linear-gradient(90deg, hsla(266, 100%, 67%, 1) 0%, hsla(227, 100%, 66%, 1) 100%)",
-                backgroundClip: "text",
-                WebkitTextFillColor: "transparent",
-              }
-            }}
+            <Grid
+              container
+              spacing={2.5}
+              sx={{
+                "& span": {
+                  background:
+                    "linear-gradient(90deg, hsla(266, 100%, 67%, 1) 0%, hsla(227, 100%, 66%, 1) 100%)",
+                  backgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                },
+              }}
             >
-              <Grid item md={5} sm={12}>
+              <Grid item md={5}>
                 <Typography
                   className="topo-title"
                   variant="h4"
@@ -342,12 +344,11 @@ export default function Home() {
                     "& img": {
                       marginLeft: "7px",
                       width: "32px",
-
                     },
                   }}
                 >
                   Eigen<span>Layer</span>
-                  <img src="/images/EL-icon.svg" alt=""/>
+                  <img src="/images/EL-icon.svg" alt="" />
                 </Typography>
                 <Typography>
                   A platform to leverage Ethereum security through the
@@ -358,7 +359,6 @@ export default function Home() {
                 item
                 md={7}
                 sm={12}
-                xs={12}
                 sx={{
                   [theme.breakpoints.down("lg")]: {
                     marginLeft: "auto",
@@ -375,16 +375,35 @@ export default function Home() {
                 }}
               >
                 <Paper
-                  className="my-card bg-gray-card"
+                  className="my-card"
                   sx={{
                     cursor: "pointer",
-                    
+                    backgroundImage: "url(/images/Eigen-product-bg.png)",
+                    backgroundSize: "cover",
                   }}
                 >
-          
+                  <Typography variant="h4">
+                    Integrate with the Ecosystem
+                  </Typography>
+                  <Box>
+                  <Link to="/resources">
+                    <BlueButton
+                      variant="outlined"
+                      className="hover:bg-gradient-to-r from-purple-grad to-blue-grad border border-solid rounded-2xl font-thin"
+                      sx={{
+                        width: 154,
+                        position: "relative",
+                        zIndex: 2,
+                        marginTop: "16px",
+                      }}
+                    >
+                      Learn More →
+                    </BlueButton>
+                  </Link>
+                </Box>
                 </Paper>
               </Grid>
-              <Grid item md={5} xs={12}>
+              <Grid item md={5} sm={12}>
                 <Typography
                   className="topo-title"
                   variant="h4"
@@ -398,7 +417,7 @@ export default function Home() {
                   }}
                 >
                   Eigen<span>DA</span>
-                  <img src="/images/EDA-icon.svg" alt=""/>
+                  <img src="/images/EDA-icon.svg" alt="" />
                 </Typography>
                 <Typography>
                   A highly customizable and hyperscaled data availability
@@ -425,11 +444,32 @@ export default function Home() {
                 }}
               >
                 <Paper
-                  className="my-card bg-gray-card"
-                  sx={{
-                    cursor: "pointer",
-                  }}
-                >
+                                    className="my-card"
+                                    sx={{
+                                      cursor: "pointer",
+                                      backgroundImage: "url(/images/Eigen-product-EDA-bg.png)",
+                                      backgroundSize: "cover",
+                                    }}
+                                  >
+                                    <Typography variant="h4">
+                                      Hyperscale your dApp
+                                    </Typography>
+                                    <Box>
+                                    <Link to="/resources">
+                                      <BlueButton
+                                        variant="outlined"
+                                        className="hover:bg-gradient-to-r from-purple-grad to-blue-grad border border-solid rounded-2xl font-thin"
+                                        sx={{
+                                          width: 154,
+                                          position: "relative",
+                                          zIndex: 2,
+                                          marginTop: "16px",
+                                        }}
+                                      >
+                                        Learn More →
+                                      </BlueButton>
+                                    </Link>
+                                  </Box>
                   {/* <BlueButton sx={{ width: 140, marginTop: "20px" }} href="http://18.224.169.114:3000/">
           Try Now!
               </BlueButton> */}
