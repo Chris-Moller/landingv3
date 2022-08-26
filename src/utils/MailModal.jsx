@@ -1,9 +1,7 @@
 import MailchimpSubscribe from "react-mailchimp-subscribe";
-import BlueButton from "components/shared-components/BlueButton";
-import Button from "theme/overrides/Button";
 import { BsArrowRight } from "react-icons/bs";
 import Box from "@mui/material/Box";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 const CustomForm = ({ status, message, onValidated }) => {
   const [email, setEmail] = useState("");

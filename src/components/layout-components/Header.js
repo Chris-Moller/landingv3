@@ -1,5 +1,5 @@
 import { Link as RouterLink, useNavigate } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { styled, useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
@@ -44,7 +44,7 @@ const Link = styled(RouterLink)(() => ({
 
 export default function TemporaryDrawer() {
   const [isOpened, setIsOpened] = useState(false);
-  const [scrollPosition, setScrollPosition] = useState(0);
+  // const [scrollPosition, setScrollPosition] = useState(0);
   const navigate = useNavigate();
   const theme = useTheme();
 
@@ -60,18 +60,18 @@ export default function TemporaryDrawer() {
     console.log("Open!")
   };
 
-  const handleScroll = () => {
-    const position = window.pageYOffset;
-    setScrollPosition(position);
-  };
+  // const handleScroll = () => {
+  //   const position = window.pageYOffset;
+  //   setScrollPosition(position);
+  // };
 
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll, { passive: true });
+  // useEffect(() => {
+  //   window.addEventListener("scroll", handleScroll, { passive: true });
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
 
   const list = () => (
     <Box

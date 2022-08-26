@@ -1,12 +1,8 @@
 import MainContainer from "components/shared-components/MainContainer";
 // import { Link as RouterLink} from "react-router-dom";
-import { useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
-import Grid from "@mui/material/Grid";
-import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
-import BlueButton from "components/shared-components/BlueButton";
-import { TwitterTimelineEmbed, TwitterTweetEmbed } from "react-twitter-embed";
+import { TwitterTimelineEmbed } from "react-twitter-embed";
 import { BsDiscord, BsTwitter, BsGithub, BsYoutube } from"react-icons/bs"
 
 // const Link = styled(RouterLink)(() => ({
@@ -37,7 +33,6 @@ import { BsDiscord, BsTwitter, BsGithub, BsYoutube } from"react-icons/bs"
 // }));
 
 export default function Community() {
-  const theme = useTheme();
 
   return (
     <MainContainer sx={{}}>

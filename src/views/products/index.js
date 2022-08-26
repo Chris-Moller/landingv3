@@ -1,13 +1,11 @@
 import MainContainer from "components/shared-components/MainContainer";
 
-import { Link, Link as RouterLink} from "react-router-dom";
-import { useTheme } from "@mui/material/styles";
+import { Link } from "react-router-dom";
 import Box from "@mui/material/Box";
-import Grid from "@mui/material/Grid";
-import Paper from "@mui/material/Paper";
+// import Grid from "@mui/material/Grid";
+// import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
 import BlueButton from "components/shared-components/BlueButton";
-import { fontSize } from "@mui/system";
 
 // const Link = styled(RouterLink)(() => ({
 //   textDecoration: "none",
@@ -37,7 +35,6 @@ import { fontSize } from "@mui/system";
 // }));
 
 export default function Products() {
-  const theme = useTheme();
 
   return (
     <MainContainer

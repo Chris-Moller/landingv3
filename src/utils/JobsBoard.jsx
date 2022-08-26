@@ -2,7 +2,6 @@ import React from "react";
 import MainContainer from "components/shared-components/MainContainer";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
-import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
 
 const JobsBoard = ({ jobs }) => {

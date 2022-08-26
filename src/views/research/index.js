@@ -6,7 +6,6 @@ import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
 import BlueButton from "components/shared-components/BlueButton";
-import { fontSize } from "@mui/system";
 
 // const Link = styled(RouterLink)(() => ({
 //   textDecoration: "none",

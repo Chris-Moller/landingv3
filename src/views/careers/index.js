@@ -1,16 +1,12 @@
 import React from "react";
 import MainContainer from "components/shared-components/MainContainer";
-import { useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
-import Grid from "@mui/material/Grid";
-import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
 import { useEffect, useState } from "react";
 import JobsBoard from "utils/JobsBoard"
 import { masterJobsList } from "utils/interact"
 
 export default function Careers() {
-  const theme = useTheme();
   const [jobs, setJobs] = useState()
 
   useEffect(() => {
