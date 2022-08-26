@@ -57,6 +57,7 @@ export default function TemporaryDrawer() {
     }
 
     setIsOpened(open);
+    console.log("Open!")
   };
 
   const handleScroll = () => {
@@ -201,10 +202,10 @@ export default function TemporaryDrawer() {
                   <Link to="/products">Products</Link>
                 </Grid>
                 <Grid item component="li">
-                  <Link to="/developers">Developers</Link>
+                  <Link to="/community">Community</Link>
                 </Grid>
                 <Grid item component="li">
-                  <Link to="/resources">Company</Link>
+                  <Link to="/resources">Resources</Link>
                 </Grid>
                 <Grid item component="li">
                   <Link to="/careers">Careers</Link>

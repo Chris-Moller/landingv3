@@ -1,11 +1,13 @@
 import MainContainer from "components/shared-components/MainContainer";
-// import { Link as RouterLink} from "react-router-dom";
+
+import { Link, Link as RouterLink} from "react-router-dom";
 import { useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
 import BlueButton from "components/shared-components/BlueButton";
+import { fontSize } from "@mui/system";
 
 // const Link = styled(RouterLink)(() => ({
 //   textDecoration: "none",
@@ -34,13 +36,56 @@ import BlueButton from "components/shared-components/BlueButton";
 //   },
 // }));
 
-
 export default function Products() {
   const theme = useTheme();
 
   return (
-    <MainContainer sx={{ padding: "100px 0", minHeight: "600px" }}>
-      
+    <MainContainer
+      sx={{
+        padding: "100px",
+        minHeight: "600px",
+        backgroundImage: "url(/images/BackgroundExp.png)",
+        backgroundSize: "cover",
+        borderRadius: "20px",
+        border: "solid",
+        borderWidth: "0.5px",
+        borderColor: "#817dac",
+        marginBottom: "200px",
+      }}
+    >
+      <Typography
+        variant="h1"
+        sx={{
+          width: "70%",
+          fontSize: "22pt",
+          marginBottom: "50px",
+        }}
+      >
+        <h1>We're in the process of updating our products page.</h1>
+      </Typography>
+      <Typography
+        variant="h1"
+        sx={{
+          width: "70%",
+          fontSize: "22pt",
+          marginBottom: "50px",
+        }}
+      >
+        <h1>Please check back soon!</h1>
+      </Typography>
+      <BlueButton>
+        <Box>
+          <Link to="/">
+            <BlueButton
+              variant="outlined"
+              className="hover:bg-gradient-to-r from-purple-grad to-blue-grad border border-solid rounded-2xl"
+              sx={{ width: 200, position: "relative", zIndex: 2 }}
+            >
+              Back home
+            </BlueButton>
+          </Link>
+        </Box>
+      </BlueButton>
     </MainContainer>
   );
 }

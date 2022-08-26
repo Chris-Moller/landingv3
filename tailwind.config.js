@@ -6,6 +6,7 @@ module.exports = {
   important:"#root",
   theme: {
     colors: {
+      'white': "rbga(255,255,255)",
       'black':  'rgba(0,0,0,0.75)',
       'gray-card':  'rgba(24, 1, 70, 0.521)',
       'blueish': '#7f1d1d',

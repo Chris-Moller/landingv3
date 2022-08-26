@@ -29,8 +29,8 @@ export default function Router() {
           element: <Products />,
         },
         {
-          path: "Developers",
-          element: <Developers />,
+          path: "Community",
+          element: <Community />,
         },
         {
           path: "careers",
@@ -63,8 +63,8 @@ const Resources = Loadable(
 const Products = Loadable(
   lazy(() => import("views/products"))
 );
-const Developers = Loadable(
-  lazy(() => import("views/developers"))
+const Community = Loadable(
+  lazy(() => import("views/community"))
 );
 const Careers = Loadable(
   lazy(() => import("views/careers"))

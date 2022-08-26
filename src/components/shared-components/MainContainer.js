@@ -4,6 +4,7 @@ import { styled } from "@mui/material/styles";
 const MainContainer = styled(Box)(({ theme }) => ({
   maxWidth: 1300,
   margin: "auto",
+
   [theme.breakpoints.down("xl")]: { maxWidth: 1000 },
   [theme.breakpoints.down("lg")]: { maxWidth: 750 },
   [theme.breakpoints.down("md")]: { maxWidth: 600 },

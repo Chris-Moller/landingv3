@@ -62,6 +62,7 @@ export default function Footer() {
               Hyperscaling <span>blockchains.</span> <br />
               Unleashing <span>open innovation.</span>
             </Typography>
+
             <Typography
               sx={{
                 fontSize: "10px",
@@ -90,7 +91,7 @@ export default function Footer() {
                       width: 25,
                       height: 3,
                       borderRadius: "10px",
-                      backgroundColor: "#1BA8C7",
+                      backgroundColor: "#630feb",
                       margin: "14px 0 16px",
                     }}
                   />
@@ -163,10 +164,20 @@ export default function Footer() {
                   <TwitterIcon
                     sx={{ width: 19 }}
                     onClick={(event) =>
-                      (window.location.href = "https://twitter.com/eigenlayer")
+                      window.open("https://twitter.com/eigenlayer")
                     }
                   />
                 </IconButton>
+                <Typography
+              sx={{
+                fontSize: "10px",
+                fontWeight: 600,
+                marginTop: "80px",
+                [theme.breakpoints.down("md")]: { display: "none" },
+              }}
+            >
+              Made with Love by LayrLabs
+            </Typography>
               </Grid>
               {/* <Grid item>
                 <IconButton

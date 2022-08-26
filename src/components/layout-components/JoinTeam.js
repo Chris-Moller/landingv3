@@ -32,7 +32,7 @@ export default function JoinTeam() {
           variant="outlined"
           className="hover:bg-gradient-to-r from-purple-grad to-blue-grad border border-solid rounded-2xl"
           sx={{ width: 140, marginTop: "20px" }}
-          href="mailto:jobs@layrlabs.org"
+          href="https://boards.greenhouse.io/layrlabs"
         >
           Apply Now
         </BlueButton>

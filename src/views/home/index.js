@@ -7,6 +7,10 @@ import Typography from "@mui/material/Typography";
 import BlueButton from "components/shared-components/BlueButton";
 import MainContainer from "components/shared-components/MainContainer";
 import { display, width } from "@mui/system";
+import MailchimpSubscribe from "react-mailchimp-subscribe";
+
+const mailchimpURL =
+  "https://xyz.us17.list-manage.com/subscribe/post?u=54af6646f38c112ee787028bd&amp;id=d946eb9dbf&amp;f_id=00924fe0f0";
 
 const Link = styled(RouterLink)(() => ({
   textDecoration: "none",
@@ -377,7 +381,6 @@ export default function Home() {
                 <Paper
                   className="my-card"
                   sx={{
-                    cursor: "pointer",
                     backgroundImage: "url(/images/Eigen-product-bg.png)",
                     backgroundSize: "cover",
                   }}
@@ -386,21 +389,21 @@ export default function Home() {
                     Integrate with the Ecosystem
                   </Typography>
                   <Box>
-                  <Link to="/resources">
-                    <BlueButton
-                      variant="outlined"
-                      className="hover:bg-gradient-to-r from-purple-grad to-blue-grad border border-solid rounded-2xl font-thin"
-                      sx={{
-                        width: 154,
-                        position: "relative",
-                        zIndex: 2,
-                        marginTop: "16px",
-                      }}
-                    >
-                      Learn More →
-                    </BlueButton>
-                  </Link>
-                </Box>
+                    <Link to="/products">
+                      <BlueButton
+                        variant="outlined"
+                        className="hover:bg-gradient-to-r from-purple-grad to-blue-grad border border-solid rounded-2xl font-thin"
+                        sx={{
+                          width: 154,
+                          position: "relative",
+                          zIndex: 2,
+                          marginTop: "16px",
+                        }}
+                      >
+                        Learn More →
+                      </BlueButton>
+                    </Link>
+                  </Box>
                 </Paper>
               </Grid>
               <Grid item md={5} sm={12}>
@@ -444,38 +447,36 @@ export default function Home() {
                 }}
               >
                 <Paper
-                                    className="my-card"
-                                    sx={{
-                                      cursor: "pointer",
-                                      backgroundImage: "url(/images/Eigen-product-EDA-bg.png)",
-                                      backgroundSize: "cover",
-                                    }}
-                                  >
-                                    <Typography variant="h4">
-                                      Hyperscale your dApp
-                                    </Typography>
-                                    <Box>
-                                    <Link to="/resources">
-                                      <BlueButton
-                                        variant="outlined"
-                                        className="hover:bg-gradient-to-r from-purple-grad to-blue-grad border border-solid rounded-2xl font-thin"
-                                        sx={{
-                                          width: 154,
-                                          position: "relative",
-                                          zIndex: 2,
-                                          marginTop: "16px",
-                                        }}
-                                      >
-                                        Learn More →
-                                      </BlueButton>
-                                    </Link>
-                                  </Box>
+                  className="my-card"
+                  sx={{
+                    backgroundImage: "url(/images/Eigen-product-EDA-bg.png)",
+                    backgroundSize: "cover",
+                  }}
+                >
+                  <Typography variant="h4">Hyperscale your dApp</Typography>
+                  <Box>
+                    <Link to="/products">
+                      <BlueButton
+                        variant="outlined"
+                        className="hover:bg-gradient-to-r from-purple-grad to-blue-grad border border-solid rounded-2xl font-thin"
+                        sx={{
+                          width: 154,
+                          position: "relative",
+                          zIndex: 2,
+                          marginTop: "16px",
+                        }}
+                      >
+                        Learn More →
+                      </BlueButton>
+                    </Link>
+                  </Box>
                   {/* <BlueButton sx={{ width: 140, marginTop: "20px" }} href="http://18.224.169.114:3000/">
           Try Now!
               </BlueButton> */}
                 </Paper>
               </Grid>
             </Grid>
+
             {/* <br />
               <br />
               <Typography
@@ -508,6 +509,49 @@ export default function Home() {
 
               </Typography>               */}
           </Box>
+        </Box>
+        <Box
+          sx={{
+            textAlign: "center",
+            paddingBottom: "40px",
+            background:
+              "linear-gradient(90deg, hsla(266, 100%, 67%, 1) 0%, hsla(227, 100%, 66%, 1) 100%)",
+            "& h1": {
+              fontSize: "26pt",
+              paddingTop: "30px",
+              paddingBottom: "8px",
+              fontWeight: "700",
+              color: "white",
+            },
+            "& p": {
+              paddingBottom: "8px",
+            },
+          }}
+        >
+          <Typography variant="h1">
+            <h1>Don't miss an update</h1>
+          </Typography>
+          <Typography variant="p">
+            <p>
+              Sign up for our newsletter to get the latest updates on our
+              products.
+            </p>
+          </Typography>
+          <BlueButton
+          onClick={() => {
+            window.open(mailchimpURL)
+          }}
+            className="hover:bg-light-purple border border-solid rounded-2xl font-thin"
+            sx={{
+              width: 154,
+              position: "relative",
+              zIndex: 2,
+              marginTop: "16px",
+              marginBottom: "20px",
+            }}
+          >
+            Sign up
+          </BlueButton>
         </Box>
       </Box>
     </>
