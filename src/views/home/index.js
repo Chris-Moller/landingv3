@@ -6,11 +6,8 @@ import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
 import BlueButton from "components/shared-components/BlueButton";
 import MainContainer from "components/shared-components/MainContainer";
-import { display, width } from "@mui/system";
-import MailchimpSubscribe from "react-mailchimp-subscribe";
-
-const mailchimpURL =
-  "https://xyz.us17.list-manage.com/subscribe/post?u=54af6646f38c112ee787028bd&amp;id=d946eb9dbf&amp;f_id=00924fe0f0";
+import MailModal from "utils/MailModal";
+import { BsArrowRight } from "react-icons/bs"
 
 const Link = styled(RouterLink)(() => ({
   textDecoration: "none",
@@ -400,7 +397,7 @@ export default function Home() {
                           marginTop: "16px",
                         }}
                       >
-                        Learn More →
+                        Learn More <BsArrowRight style={{ marginLeft: "5px"}}/>
                       </BlueButton>
                     </Link>
                   </Box>
@@ -466,7 +463,7 @@ export default function Home() {
                           marginTop: "16px",
                         }}
                       >
-                        Learn More →
+                        Learn More <BsArrowRight style={{ marginLeft: "5px"}}/>
                       </BlueButton>
                     </Link>
                   </Box>
@@ -513,7 +510,7 @@ export default function Home() {
         <Box
           sx={{
             textAlign: "center",
-            paddingBottom: "40px",
+            paddingBottom: "60px",
             background:
               "linear-gradient(90deg, hsla(266, 100%, 67%, 1) 0%, hsla(227, 100%, 66%, 1) 100%)",
             "& h1": {
@@ -524,7 +521,7 @@ export default function Home() {
               color: "white",
             },
             "& p": {
-              paddingBottom: "8px",
+              paddingBottom: "25px",
             },
           }}
         >
@@ -537,21 +534,7 @@ export default function Home() {
               products.
             </p>
           </Typography>
-          <BlueButton
-          onClick={() => {
-            window.open(mailchimpURL)
-          }}
-            className="hover:bg-light-purple border border-solid rounded-2xl font-thin"
-            sx={{
-              width: 154,
-              position: "relative",
-              zIndex: 2,
-              marginTop: "16px",
-              marginBottom: "20px",
-            }}
-          >
-            Sign up
-          </BlueButton>
+          <MailModal/>
         </Box>
       </Box>
     </>

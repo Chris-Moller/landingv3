@@ -3,7 +3,9 @@ import Typography from "@mui/material/Typography";
 
 export default function Resources() {
   return (
-    <MainContainer sx={{ padding: "10px 0" }}>
+    <MainContainer sx={{ padding: "10px 0", marginBottom: "50px", "& h2": {
+      fontSize: "16pt", fontWeight: "700"
+    } }}>
       <div>
         <Typography variant="h1" sx={{
            background:
@@ -11,8 +13,7 @@ export default function Resources() {
          backgroundClip: "text",
          WebkitTextFillColor: "transparent",
          paddingBottom: "1.2rem",
-         fontSize: "28px",
-         textAlign: "center",
+         fontSize: "24pt",
          fontWeight: 700,
         }}>
         <h1>Featured videos</h1>
