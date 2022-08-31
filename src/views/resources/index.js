@@ -20,7 +20,7 @@ export default function Resources() {
         </Typography>
 
         <p align="center">
-        <h2>EigenLayr: Permissionless Feature Addition to Ethereum with Sreeram Kannan | a16z crypto research</h2>
+        <h2>a16z Crypto: Permissionless Feature Addition to Ethereum with Sreeram Kannan</h2>
         <iframe width="100%" height="400" style={{ paddingBottom: "20px" }} src="https://www.youtube.com/embed/-V-fG4J1N_M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <h2>Eigenlayer @ ETHConomics Amsterdam</h2>
         <iframe width="100%" height="400" src="https://www.youtube.com/embed/01xDSwMO5U4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
