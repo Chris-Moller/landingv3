@@ -67,8 +67,8 @@ export default function Home() {
                       marginTop: "20px",
                       width: "100%",
                     },
-                    [theme.breakpoints.down("sm")]: { fontSize: "28px" },
-                    minWidth: "400px",
+                    [theme.breakpoints.down("sm")]: { fontSize: "28px", minWidth: "300px", },
+                    [theme.breakpoints.down("xs")]: { fontSize: "24px", minWidth: "300px", },
                   }}
                 >
                   Leveraging <span>trust.</span>
@@ -108,30 +108,29 @@ export default function Home() {
                       width: 560,
                     },
                     [theme.breakpoints.down("md")]: {
-                      width: 740,
-                      marginLeft: "-100px",
+                      width: 600,
                       position: "absolute",
-                      left: "150px",
+                      marginLeft: "auto",
                       top: "100px",
                     },
                     [theme.breakpoints.down("sm")]: {
                       width: 400,
-                      marginLeft: "-100px",
+                      marginLeft: "auto",
+                      marginTop: "100px",
+                    },
+                    [theme.breakpoints.down("xs")]: {
                       marginTop: "100px",
                     },
                   },
                   [theme.breakpoints.down("md")]: {
                     textAlign: "right",
                   },
-                  [theme.breakpoints.down("sm")]: {
-                    marginLeft: "-100px",
+                  [theme.breakpoints.down("xs")]: {
+                    width: 320,
+                    marginRight: "auto",
+                    
                   },
                 }}
-                // sx={{
-                //   backgroundImage: `url(${"/images/layr-hero-asset.png"})`,
-
-                //   height: "800px"
-                // }}
               >
                 <img src="/images/layr-hero-asset.png" alt="Background" />
               </Box>
@@ -153,7 +152,7 @@ export default function Home() {
             marginTop: "320px",
           },
           [theme.breakpoints.down("sm")]: {
-            marginTop: "300px",
+            marginTop: "200px",
           },
         }}
       >
@@ -171,6 +170,7 @@ export default function Home() {
                 backgroundClip: "text",
                 WebkitTextFillColor: "transparent",
               },
+              [theme.breakpoints.down("xs")]: { fontSize: "24px"},
             }}
           >
             Explore the <span>solutions:</span>
@@ -181,6 +181,7 @@ export default function Home() {
               marginTop: "28px",
               fontWeight: 300,
               fontSize: "22px",
+              [theme.breakpoints.down("xs")]: { fontSize: "18px"},
             }}
           >
             Our products provide cryptoeconomic security for services and
@@ -192,6 +193,15 @@ export default function Home() {
             backgroundImage: "url(/images/background-eigen.png)",
             backgroundSize: "cover",
             minHeight: "1000px",
+            [theme.breakpoints.down("md")]: {
+              minHeight: "1250px",
+            },
+            [theme.breakpoints.down("sm")]: {
+              minHeight: "1400px",
+            },
+            [theme.breakpoints.down("xs")]: {
+              minHeight: "1500px",
+            },
           }}
         >
           <Box
@@ -226,6 +236,11 @@ export default function Home() {
                 marginTop: "150px",
                 [theme.breakpoints.down("lg")]: {
                   padding: "36px 36px 64px",
+                },
+                [theme.breakpoints.down("md")]: {
+                  padding: "36px 36px 64px",
+                  marginTop: "20px",
+                  height: "160%"
                 },
               },
               "& h4": {
@@ -272,14 +287,19 @@ export default function Home() {
                   top: "-5%",
                 },
                 [theme.breakpoints.down("md")]: {
-                  width: "170px",
-                  right: 350,
-                  top: 1000,
+                  width: "80px",
+                  right: "13%",
+                  top: "12%",
                 },
                 [theme.breakpoints.down("sm")]: {
-                  width: "170px",
-                  right: 350,
-                  top: 1000,
+                  width: "80px",
+                  right: "20%",
+                  top: "2%",
+                },
+                [theme.breakpoints.down("xs")]: {
+                  width: "67px",
+                  right: "20%",
+                  top: "1%",
                 },
               },
               "& .bigCube": {
@@ -305,14 +325,19 @@ export default function Home() {
                   top: "5%",
                 },
                 [theme.breakpoints.down("md")]: {
-                  width: "270px",
-                  right: "-30%",
-                  top: "10%",
+                  width: "160px",
+                  right: "-4%",
+                  top: "-2%",
                 },
                 [theme.breakpoints.down("sm")]: {
-                  width: "270px",
-                  right: "-30%",
-                  top: "10%",
+                  width: "140px",
+                  right: "-10%",
+                  top: "5%",
+                },
+                [theme.breakpoints.down("xs")]: {
+                  width: "110px",
+                  right: "-18%",
+                  top: "4%",
                 },
               },
             }}
@@ -361,18 +386,18 @@ export default function Home() {
                 md={7}
                 sm={12}
                 sx={{
-                  [theme.breakpoints.down("lg")]: {
-                    marginLeft: "auto",
-                    marginRight: "auto",
-                  },
-                  [theme.breakpoints.down("md")]: {
-                    marginLeft: "auto",
-                    marginRight: "auto",
-                  },
-                  [theme.breakpoints.down("sm")]: {
-                    marginLeft: "auto",
-                    marginRight: "auto",
-                  },
+                  // [theme.breakpoints.down("lg")]: {
+                  //   marginLeft: "auto",
+                  //   marginRight: "auto",
+                  // },
+                  // [theme.breakpoints.down("md")]: {
+                  //   marginLeft: "auto",
+                  //   marginRight: "auto",
+                  // },
+                  // [theme.breakpoints.down("sm")]: {
+                  //   marginLeft: "auto",
+                  //   marginRight: "auto",
+                  // },
                 }}
               >
                 <Paper
@@ -403,13 +428,24 @@ export default function Home() {
                   </Box>
                 </Paper>
               </Grid>
-              <Grid item md={5} sm={12}>
+              <Grid item md={5}
+                sx={{
+                  [theme.breakpoints.down("md")]: {
+                    marginTop: "60px",
+                  },
+                  [theme.breakpoints.down("sm")]: {
+                    marginTop: "50px",
+                  },
+
+                }}
+              >
                 <Typography
                   className="topo-title"
                   variant="h4"
                   sx={{
                     display: "flex",
                     flexDirection: "row",
+
                     "& img": {
                       marginLeft: "7px",
                       width: "32px",
@@ -436,10 +472,7 @@ export default function Home() {
                   [theme.breakpoints.down("md")]: {
                     marginLeft: "auto",
                     marginRight: "auto",
-                  },
-                  [theme.breakpoints.down("sm")]: {
-                    marginLeft: "auto",
-                    marginRight: "auto",
+                    width: "100%"
                   },
                 }}
               >

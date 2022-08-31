@@ -2,6 +2,7 @@ import MailchimpSubscribe from "react-mailchimp-subscribe";
 import { BsArrowRight } from "react-icons/bs";
 import Box from "@mui/material/Box";
 import { useState } from "react";
+import { useTheme } from "@mui/material/styles";
 
 const CustomForm = ({ status, message, onValidated }) => {
   const [email, setEmail] = useState("");
@@ -68,6 +69,7 @@ const CustomForm = ({ status, message, onValidated }) => {
 };
 
 const MailModal = () => {
+  const theme = useTheme();
   const mailchimpURL =
     "https://xyz.us17.list-manage.com/subscribe/post?u=54af6646f38c112ee787028bd&amp;id=d946eb9dbf&amp;f_id=00924fe0f0";
   return (
@@ -78,7 +80,16 @@ const MailModal = () => {
         marginTop: "24px",
         marginBottom: "30px",
         margin: "auto",
-        width: "30%",
+        width: "40%",
+        [theme.breakpoints.down("lg")]: {
+          width: "50%",
+        },
+        [theme.breakpoints.down("md")]: {
+          width: "60%",
+        },
+        [theme.breakpoints.down("sm")]: {
+          width: "80%",
+        },
         display: "flex",
         flexDirection: "row",
         "& input": {

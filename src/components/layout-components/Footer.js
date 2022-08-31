@@ -73,6 +73,16 @@ export default function Footer() {
             >
               © 2022 EigenLayer, all rights reserved
             </Typography>
+            <Typography
+              sx={{
+                fontSize: "10px",
+                fontWeight: 600,
+                marginTop: "5px",
+                [theme.breakpoints.down("md")]: { display: "none" },
+              }}
+            >
+              Made with love by LayrLabs
+            </Typography>
           </Grid>
           <Grid
             item
@@ -97,7 +107,10 @@ export default function Footer() {
                   />
                 </Box>
                 <Box>
-                  <Link to="/">Home</Link>
+                  <Link to="/products">Products</Link>
+                </Box>
+                <Box>
+                  <Link to="/community">Community</Link>
                 </Box>
                 <Box>
                   <Link to="/resources">Resources</Link>
@@ -168,16 +181,6 @@ export default function Footer() {
                     }
                   />
                 </IconButton>
-                <Typography
-              sx={{
-                fontSize: "10px",
-                fontWeight: 600,
-                marginTop: "80px",
-                [theme.breakpoints.down("md")]: { display: "none" },
-              }}
-            >
-              Made with Love by LayrLabs
-            </Typography>
               </Grid>
               {/* <Grid item>
                 <IconButton
@@ -215,11 +218,23 @@ export default function Footer() {
           textAlign: "center",
           fontSize: "10px",
           fontWeight: 600,
-          padding: "50px 0",
+          paddingTop: "50px",
           [theme.breakpoints.up("md")]: { display: "none" },
         }}
       >
         © 2022 Eigenlayer, all rights reserved
+      </Typography>
+      <Typography
+        sx={{
+          textAlign: "center",
+          fontSize: "10px",
+          fontWeight: 600,
+          paddingTop: "5px",
+          paddingBottom: "50px",
+          [theme.breakpoints.up("md")]: { display: "none" },
+        }}
+      >
+        Made with love by LayrLabs
       </Typography>
     </Box>
   );

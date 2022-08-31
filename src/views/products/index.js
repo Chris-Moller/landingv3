@@ -1,5 +1,5 @@
 import MainContainer from "components/shared-components/MainContainer";
-
+import { useTheme } from "@mui/material/styles";
 import { Link } from "react-router-dom";
 import Box from "@mui/material/Box";
 // import Grid from "@mui/material/Grid";
@@ -35,7 +35,7 @@ import BlueButton from "components/shared-components/BlueButton";
 // }));
 
 export default function Products() {
-
+  const theme = useTheme();
   return (
     <MainContainer
       sx={{
@@ -48,6 +48,24 @@ export default function Products() {
         borderWidth: "0.5px",
         borderColor: "#817dac",
         marginBottom: "200px",
+        [theme.breakpoints.down("lg")]: {
+          padding: "35px",
+          minHeight: "500px",
+
+        },
+        [theme.breakpoints.down("md")]: {
+          padding: "25px",
+          minHeight: "300px",
+
+        },
+        [theme.breakpoints.down("sm")]: {
+          padding: "15px",
+          minHeight: "200px",
+
+        },
+        [theme.breakpoints.down("xs")]: {
+
+        },
       }}
     >
       <Typography
@@ -56,6 +74,22 @@ export default function Products() {
           width: "70%",
           fontSize: "22pt",
           marginBottom: "50px",
+          [theme.breakpoints.down("lg")]: {
+
+          },
+          [theme.breakpoints.down("md")]: {
+            fontSize: "16pt",
+            marginBottom: "50px",
+
+          },
+          [theme.breakpoints.down("sm")]: {
+            fontSize: "14pt",
+            marginBottom: "50px",
+
+          },
+          [theme.breakpoints.down("xs")]: {
+
+          },
         }}
       >
         <h1>We're in the process of updating our products page.</h1>
@@ -66,6 +100,21 @@ export default function Products() {
           width: "70%",
           fontSize: "22pt",
           marginBottom: "50px",
+          [theme.breakpoints.down("lg")]: {
+
+          },
+          [theme.breakpoints.down("md")]: {
+            fontSize: "16pt",
+            marginBottom: "50px",
+          },
+          [theme.breakpoints.down("sm")]: {
+            fontSize: "14pt",
+            marginBottom: "50px",
+
+          },
+          [theme.breakpoints.down("xs")]: {
+
+          },
         }}
       >
         <h1>Please check back soon!</h1>

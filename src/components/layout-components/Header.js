@@ -57,7 +57,7 @@ export default function TemporaryDrawer() {
     }
 
     setIsOpened(open);
-    console.log("Open!")
+    console.log("Open!");
   };
 
   // const handleScroll = () => {
@@ -81,7 +81,9 @@ export default function TemporaryDrawer() {
       sx={{
         width: 250,
         paddingTop: "20px",
-        "& .MuiListItem-root": { padding: "10px 10px 0" },
+        "& .MuiListItem-root": {
+          padding: "10px 10px 0",
+        },
         "& .MuiListItemButton-root": {
           borderRadius: "10px",
           fontWeight: 600,
@@ -90,9 +92,14 @@ export default function TemporaryDrawer() {
       }}
     >
       <List>
-        <ListItem key="home" disablePadding>
-          <ListItemButton onClick={() => navigate("/")}>
-            <ListItemText primary="Home" />
+        <ListItem key="Products" disablePadding>
+          <ListItemButton onClick={() => navigate("/products")}>
+            <ListItemText primary="Products" />
+          </ListItemButton>
+        </ListItem>
+        <ListItem key="Community" disablePadding>
+          <ListItemButton onClick={() => navigate("/community")}>
+            <ListItemText primary="Community" />
           </ListItemButton>
         </ListItem>
         <ListItem key="resources" disablePadding>
@@ -136,6 +143,13 @@ export default function TemporaryDrawer() {
           sx={{
             height: "70px",
             display: "flex",
+            [theme.breakpoints.down("lg")]: {
+              maxWidth: 870,
+            },
+            [theme.breakpoints.down("md")]: {
+              maxWidth: 550,
+            },
+
             // transition: "all .3s ease-out",
             // marginTop: scrollPosition > 100 ? "20px" : "69px",
             // marginBottom: scrollPosition > 100 ? "20px" : "30px",
@@ -190,7 +204,7 @@ export default function TemporaryDrawer() {
             </Grid>
             <Grid
               item
-              sx={{ [theme.breakpoints.down("sm")]: { display: "none" } }}
+              sx={{ [theme.breakpoints.down("md")]: { display: "none" } }}
             >
               <Grid
                 container
@@ -220,7 +234,7 @@ export default function TemporaryDrawer() {
               sx={{
                 width: 50,
                 textAlign: "right",
-                [theme.breakpoints.up("sm")]: { visibility: "hidden" },
+                [theme.breakpoints.up("md")]: { visibility: "hidden" },
               }}
             >
               <IconButton onClick={toggleDrawer(true)}>

@@ -12,6 +12,10 @@ const MainContainer = styled(Box)(({ theme }) => ({
     maxWidth: "450px",
     padding: "0 20px",
   },
+  [theme.breakpoints.down("xs")]: {
+    maxWidth: "450px",
+    padding: "0 0px"
+  },
 }));
 
 export default MainContainer;
