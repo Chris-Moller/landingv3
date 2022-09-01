@@ -40,7 +40,7 @@ export default function Products() {
   return (
     <Box
           sx={{
-            backgroundImage: "url(/images/background-eigen.png)",
+            backgroundImage: "url(/images/ambient-products-pg-bg.png)",
             backgroundSize: "cover",
             minHeight: "1000px",
             [theme.breakpoints.down("md")]: {

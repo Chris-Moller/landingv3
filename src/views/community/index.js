@@ -3,7 +3,7 @@ import MainContainer from "components/shared-components/MainContainer";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import { TwitterTimelineEmbed } from "react-twitter-embed";
-import { BsDiscord, BsTwitter, BsGithub } from "react-icons/bs";
+// import { BsDiscord, BsTwitter, BsGithub } from "react-icons/bs";
 import { useTheme } from "@mui/material/styles";
 
 // const Link = styled(RouterLink)(() => ({
@@ -62,7 +62,7 @@ export default function Community() {
               backgroundClip: "text",
               WebkitTextFillColor: "transparent",
               paddingBottom: "1.2rem",
-              fontSize: "32px",
+              fontSize: "36px",
               fontWeight: 700,
             }}
           >
@@ -75,7 +75,7 @@ export default function Community() {
               marginTop: "20px",
             }}
           >
-            <div
+            {/* <div
               onClick={() => {
                 window.open("https://discord.com");
               }}
@@ -113,7 +113,7 @@ export default function Community() {
                   height: "32px",
                 }}
               />
-            </div>
+            </div> */}
             {/* <div onClick={() => { window.open("https://youtube.com")}} className=" rounded-2xl border p-4 hover:bg-purple-grad cursor-pointer">
             <BsYoutube style={{
               width: "32px",
