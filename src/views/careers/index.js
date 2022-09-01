@@ -5,9 +5,11 @@ import Typography from "@mui/material/Typography";
 import { useEffect, useState } from "react";
 import JobsBoard from "utils/JobsBoard"
 import { masterJobsList } from "utils/interact"
+import { useTheme } from "@mui/material/styles";
 
 export default function Careers() {
   const [jobs, setJobs] = useState()
+  const theme = useTheme();
 
   useEffect(() => {
     masterJobsList()
@@ -18,6 +20,21 @@ export default function Careers() {
 
 
   return (
+    <Box
+    component="main"
+    sx={{
+      paddingTop: "250px",
+      [theme.breakpoints.down("xl")]: {
+        paddingTop: "250px",
+      },
+      [theme.breakpoints.down("md")]: {
+        paddingTop: "150px",
+      },
+      [theme.breakpoints.down("sm")]: {
+        paddingTop: "100px",
+      },
+    }}
+  >
     <MainContainer>
       <Box component="section">
         <MainContainer>
@@ -67,5 +84,6 @@ export default function Careers() {
         <JobsBoard jobs={jobs}/>
       </Box>
     </MainContainer>
+    </Box>
   );
 }

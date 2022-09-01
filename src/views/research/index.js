@@ -38,6 +38,21 @@ export default function Research() {
   const theme = useTheme();
 
   return (
+    <Box
+    component="main"
+    sx={{
+      paddingTop: "250px",
+      [theme.breakpoints.down("xl")]: {
+        paddingTop: "250px",
+      },
+      [theme.breakpoints.down("md")]: {
+        paddingTop: "150px",
+      },
+      [theme.breakpoints.down("sm")]: {
+        paddingTop: "100px",
+      },
+    }}
+  >
     <MainContainer>
       <div>
         <Box
@@ -437,5 +452,6 @@ export default function Research() {
         </Box>
       </div>
     </MainContainer>
+    </Box>
   );
 }

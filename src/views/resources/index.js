@@ -1,8 +1,28 @@
 import MainContainer from "components/shared-components/MainContainer";
 import Typography from "@mui/material/Typography";
+import { useTheme } from "@mui/material/styles";
+import Box from "@mui/material/Box";
 
 export default function Resources() {
+  
+  const theme = useTheme();
+
   return (
+    <Box
+    component="main"
+    sx={{
+      paddingTop: "250px",
+      [theme.breakpoints.down("xl")]: {
+        paddingTop: "250px",
+      },
+      [theme.breakpoints.down("md")]: {
+        paddingTop: "150px",
+      },
+      [theme.breakpoints.down("sm")]: {
+        paddingTop: "100px",
+      },
+    }}
+  >
     <MainContainer sx={{ padding: "10px 0", marginBottom: "50px", "& h2": {
       fontSize: "16pt", fontWeight: "700"
     } }}>
@@ -29,5 +49,6 @@ export default function Resources() {
         <iframe width="100%" height="400" src="https://www.youtube.com/embed/OtUOXTqrSyg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        </p>
       </div>
     </MainContainer>
+    </Box>
   );
 }
