@@ -58,10 +58,10 @@ export default function Home() {
             <Grid container>
               <Grid>
                 <Box>
-                  <Typography
-                    variant="h2"
+                <Typography
+                    variant="h1"
                     sx={{
-                      fontSize: "46px",
+                      fontSize: "48px",
                       lineHeight: 1.25,
                       fontWeight: "lighter",
                       marginTop: "50px",
@@ -79,6 +79,42 @@ export default function Home() {
                       },
                       [theme.breakpoints.down("lg")]: {
                         fontSize: "40px",
+                        marginTop: "20px",
+                        width: "100%",
+                      },
+                      [theme.breakpoints.down("sm")]: {
+                        fontSize: "32px",
+                        minWidth: "300px",
+                      },
+                      [theme.breakpoints.down("xs")]: {
+                        fontSize: "28px",
+                        minWidth: "300px",
+                      },
+                    }}
+                  >
+                    The Ethereum <span>Restaking Collective.</span>
+                  </Typography>
+                  <Typography
+                    variant="h2"
+                    sx={{
+                      fontSize: "38px",
+                      lineHeight: 1.25,
+                      fontWeight: "lighter",
+                      marginTop: "50px",
+                      color: "white",
+                      "& span": {
+                        fontWeight: "bold",
+                        background:
+                          "linear-gradient(90deg, hsla(266, 100%, 67%, 1) 0%, hsla(227, 100%, 66%, 1) 100%)",
+                        backgroundClip: "text",
+                        WebkitTextFillColor: "transparent",
+                      },
+                      [theme.breakpoints.down("xl")]: {
+                        fontSize: "38px",
+                        marginTop: "70px",
+                      },
+                      [theme.breakpoints.down("lg")]: {
+                        fontSize: "36px",
                         marginTop: "20px",
                         width: "100%",
                       },
@@ -260,7 +296,7 @@ export default function Home() {
                   [theme.breakpoints.down("md")]: {
                     padding: "36px 36px 64px",
                     marginTop: "20px",
-                    height: "160%",
+                    height: "120%",
                   },
                 },
                 "& h4": {
@@ -431,6 +467,11 @@ export default function Home() {
                     sx={{
                       backgroundImage: "url(/images/Eigen-product-bg.png)",
                       backgroundSize: "cover",
+                      [theme.breakpoints.down("md")]: {
+                        marginLeft: "auto",
+                        marginRight: "auto",
+                        width: "100%",
+                      },
                     }}
                   >
                     <Typography variant="h4">
@@ -512,7 +553,7 @@ export default function Home() {
                       backgroundSize: "cover",
                     }}
                   >
-                    <Typography variant="h4">Hyperscale your dApp</Typography>
+                    <Typography variant="h4">Integrate Data Availability for Rollups</Typography>
                     <Box>
                       <Link to="/products">
                         <BlueButton

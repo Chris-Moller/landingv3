@@ -90,7 +90,7 @@ export default function Products() {
                 [theme.breakpoints.down("md")]: {
                   padding: "36px 36px 64px",
                   marginTop: "20px",
-                  height: "160%"
+                  height: "120%"
                 },
               },
               "& h4": {
@@ -317,7 +317,7 @@ export default function Products() {
                     backgroundSize: "cover",
                   }}
                 >
-                  <Typography variant="h4">Hyperscale your dApp</Typography>
+                  <Typography variant="h4">Integrate Data Availability for Rollups</Typography>
                   {/* <BlueButton sx={{ width: 140, marginTop: "20px" }} href="http://18.224.169.114:3000/">
           Try Now!
               </BlueButton> */}
