@@ -88,6 +88,7 @@ export default function Research() {
           >
             <Grid className="backdrop-blur-sm rounded-lg" item md={7} sx={{
                 backgroundImage: "url(/images/research-bg.png)",
+                aspectRatio: "16 / 9",
                   backgroundSize: "cover",
                 [theme.breakpoints.down("xxl")]: {
 
@@ -109,6 +110,7 @@ export default function Research() {
                   padding: "2rem",
                   borderRadius: "10px",
                   border: "solid",
+                  height: "100%",
                   borderWidth: "0.5px",
                   background: "none",
                   borderColor: "#817dac",
@@ -119,6 +121,9 @@ export default function Research() {
                   sx={{
                     fontSize: "18pt",
                     fontWeight: "100",
+                    [theme.breakpoints.down("lg")]: {
+                      fontSize: "14pt",
+                    },
                   }}
                 >
                   <h3
@@ -154,6 +159,9 @@ export default function Research() {
                   borderColor: "#817dac",
                   marginLeft: "1.25rem",
                   height: "100%",
+                  [theme.breakpoints.down("md")]: {
+                    visibility: "hidden"
+                  },
                 }}
               ></Paper>
             </Grid>
@@ -199,7 +207,6 @@ export default function Research() {
           </Typography> */}
             <Box
               sx={{
-                maxWidth: 1170,
                 margin: "58px auto 0",
                 "& .my-card": {
                   borderRadius: "10px",
@@ -355,7 +362,7 @@ export default function Research() {
                       variant="h4"
                       sx={{ "&:after": { backgroundColor: "#0027d4" } }}
                     >
-                      Consensus<span>(longest chain)</span>
+                      <span>Longest Chain Consensus</span>
                     </Typography>
                     <Typography>
                       The hallmarks of an excellent consensus protocol are high
@@ -423,7 +430,7 @@ export default function Research() {
                       variant="h4"
                       sx={{ "&:after": { backgroundColor: "#5100d4" } }}
                     >
-                      Consensus<span>(BFT)</span>
+                      <span>BFT Consensus</span>
                     </Typography>
                     <Typography>
                       BFT protocols provisions the guarantee that protocol is

@@ -137,6 +137,10 @@ export default function TemporaryDrawer() {
           left: 0,
           zIndex: 99,
           height: "70px",
+          [theme.breakpoints.down("sm")]: {
+            paddingLeft: "10px",
+            paddingRight: "10px",
+          },
         }}
       >
         <MainContainer

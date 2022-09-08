@@ -49,7 +49,7 @@ export default function Home() {
             paddingTop: "150px",
           },
           [theme.breakpoints.down("sm")]: {
-            paddingTop: "100px",
+            paddingTop: "150px",
           },
         }}
       >
@@ -58,7 +58,7 @@ export default function Home() {
             <Grid container>
               <Grid>
                 <Box>
-                <Typography
+                  <Typography
                     variant="h1"
                     sx={{
                       fontSize: "48px",
@@ -73,22 +73,39 @@ export default function Home() {
                         backgroundClip: "text",
                         WebkitTextFillColor: "transparent",
                       },
+                      [theme.breakpoints.down("xxxl")]: {
+                        fontSize: "70px",
+                        marginTop: "70px",
+                      },
                       [theme.breakpoints.down("xl")]: {
-                        fontSize: "46px",
+                        fontSize: "60px",
                         marginTop: "70px",
                       },
                       [theme.breakpoints.down("lg")]: {
-                        fontSize: "40px",
+                        fontSize: "65px",
                         marginTop: "20px",
                         width: "100%",
+                        paddingRight: "60px",
+                      },
+                      [theme.breakpoints.down("md")]: {
+                        fontSize: "54px",
+                        marginTop: "100px",
+                        width: "100%",
+                        paddingLeft: "40px",
+                        paddingRight: "40px",
                       },
                       [theme.breakpoints.down("sm")]: {
-                        fontSize: "32px",
+                        fontSize: "36px",
                         minWidth: "300px",
+                        textAlign: "center",
+                        paddingLeft: "20px",
+                        paddingRight: "20px",
                       },
                       [theme.breakpoints.down("xs")]: {
-                        fontSize: "28px",
+                        fontSize: "34px",
                         minWidth: "300px",
+                        paddingLeft: "10px",
+                        paddingRight: "10px",
                       },
                     }}
                   >
@@ -117,13 +134,24 @@ export default function Home() {
                         fontSize: "36px",
                         marginTop: "20px",
                         width: "100%",
+                        
+                      },
+                      [theme.breakpoints.down("md")]: {
+                        fontSize: "36px",
+                        marginTop: "20px",
+                        width: "100%",
+                        paddingLeft: "40px",
+                        paddingRight: "40px",
                       },
                       [theme.breakpoints.down("sm")]: {
                         fontSize: "28px",
                         minWidth: "300px",
+                        textAlign: "center",
+                        paddingLeft: "10px",
+                        paddingRight: "10px",
                       },
                       [theme.breakpoints.down("xs")]: {
-                        fontSize: "24px",
+                        fontSize: "22px",
                         minWidth: "300px",
                       },
                     }}
@@ -136,12 +164,34 @@ export default function Home() {
                   </Typography>
                 </Box>
                 <br />
-                <Box>
+                <Box
+                  sx={{
+                    [theme.breakpoints.down("md")]: {
+                      paddingLeft: "40px",
+                      paddingRight: "40px",
+                    },
+                    [theme.breakpoints.down("sm")]: {
+                      paddingLeft: "25px",
+                      paddingRight: "25px",
+                    },
+
+                  }}
+                >
                   <Link to="/resources">
                     <BlueButton
                       variant="outlined"
                       className="hover:bg-gradient-to-r from-purple-grad to-blue-grad border border-solid rounded-2xl"
-                      sx={{ width: 154, position: "relative", zIndex: 2 }}
+                      sx={{
+                        width: 154,
+                        position: "relative",
+                        zIndex: 2,
+                        [theme.breakpoints.down("md")]: {
+                          width: 450,
+                        },
+                        [theme.breakpoints.down("sm")]: {
+                          width: "100%",
+                        },
+                      }}
                     >
                       Learn More
                     </BlueButton>
@@ -153,22 +203,21 @@ export default function Home() {
                   sx={{
                     "& img": {
                       position: "absolute",
-                      top: "100px",
+                      top: "300px",
                       marginLeft: "300px",
                       zIndex: -99,
                       width: "1000px",
                       [theme.breakpoints.down("xl")]: {
                         width: 800,
                         marginLeft: "200px",
+                        marginTop: "100px",
                       },
                       [theme.breakpoints.down("lg")]: {
                         width: 560,
                       },
                       [theme.breakpoints.down("md")]: {
                         width: 600,
-                        position: "absolute",
                         marginLeft: "auto",
-                        top: "100px",
                       },
                       [theme.breakpoints.down("sm")]: {
                         width: 400,
@@ -289,6 +338,7 @@ export default function Home() {
                   borderColor: "#817dac",
                   padding: "36px 56px 84px",
                   height: "100%",
+                  width: "100%",
                   marginTop: "150px",
                   [theme.breakpoints.down("lg")]: {
                     padding: "36px 36px 64px",
@@ -447,18 +497,7 @@ export default function Home() {
                   sm={12}
                   sx={
                     {
-                      // [theme.breakpoints.down("lg")]: {
-                      //   marginLeft: "auto",
-                      //   marginRight: "auto",
-                      // },
-                      // [theme.breakpoints.down("md")]: {
-                      //   marginLeft: "auto",
-                      //   marginRight: "auto",
-                      // },
-                      // [theme.breakpoints.down("sm")]: {
-                      //   marginLeft: "auto",
-                      //   marginRight: "auto",
-                      // },
+                      width: "100%",
                     }
                   }
                 >
@@ -553,7 +592,9 @@ export default function Home() {
                       backgroundSize: "cover",
                     }}
                   >
-                    <Typography variant="h4">Integrate Data Availability for Rollups</Typography>
+                    <Typography variant="h4">
+                      Integrate Data Availability for Rollups
+                    </Typography>
                     <Box>
                       <Link to="/products">
                         <BlueButton

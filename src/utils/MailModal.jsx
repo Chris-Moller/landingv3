@@ -81,8 +81,10 @@ const MailModal = () => {
         marginBottom: "30px",
         margin: "auto",
         width: "40%",
+        maxWidth: "600px",
         [theme.breakpoints.down("lg")]: {
           width: "50%",
+          
         },
         [theme.breakpoints.down("md")]: {
           width: "60%",
