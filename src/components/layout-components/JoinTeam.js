@@ -2,14 +2,16 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import MainContainer from "components/shared-components/MainContainer";
 import BlueButton from "components/shared-components/BlueButton";
+import { useTheme } from "@mui/material/styles";
 
 export default function JoinTeam() {
+  const theme = useTheme();
   return (
     <Box
       component="section"
       sx={{
         textAlign: "center",
-        padding: "70px 0",
+        padding: "70px 20px",
         backgroundColor: "#0A1017",
       }}
     >
@@ -31,7 +33,9 @@ export default function JoinTeam() {
         <BlueButton
           variant="outlined"
           className="hover:bg-gradient-to-r from-purple-grad to-blue-grad border border-solid rounded-2xl"
-          sx={{ width: 140, marginTop: "20px" }}
+          sx={{ width: 140, marginTop: "20px",[theme.breakpoints.down("sm")]: {
+            width: "90%",
+          }, }}
           href="https://boards.greenhouse.io/layrlabs"
         >
           Apply Now

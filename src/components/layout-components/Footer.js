@@ -6,6 +6,7 @@ import Typography from "@mui/material/Typography";
 import MainContainer from "components/shared-components/MainContainer";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import IconButton from "@mui/material/IconButton";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 const Link = styled(RouterLink)(() => ({
   textDecoration: "none",
@@ -30,7 +31,7 @@ export default function Footer() {
       component="footer"
       sx={{
         backgroundColor: "black",
-        padding: "52px 0 85px",
+        padding: "52px 20px 85px",
         [theme.breakpoints.down("md")]: { paddingBottom: 0 },
       }}
     >
@@ -71,7 +72,7 @@ export default function Footer() {
                 [theme.breakpoints.down("md")]: { display: "none" },
               }}
             >
-              © 2022 EigenLayer, all rights reserved
+              Made with love by LayrLabs
             </Typography>
             <Typography
               sx={{
@@ -81,7 +82,7 @@ export default function Footer() {
                 [theme.breakpoints.down("md")]: { display: "none" },
               }}
             >
-              Made with love by LayrLabs
+              © 2022 EigenLayer, all rights reserved
             </Typography>
           </Grid>
           <Grid
@@ -109,9 +110,9 @@ export default function Footer() {
                 <Box>
                   <Link to="/products">Products</Link>
                 </Box>
-                <Box>
+                {/* <Box>
                   <Link to="/community">Community</Link>
-                </Box>
+                </Box> */}
                 <Box>
                   <Link to="/resources">Resources</Link>
                 </Box>
@@ -182,19 +183,6 @@ export default function Footer() {
                   />
                 </IconButton>
               </Grid>
-              {/* <Grid item>
-                <IconButton
-                  sx={{
-                    width: 30,
-                    hegiht: 30,
-                    minWidth: 30,
-                    minHeight: 30,
-                    padding: 0,
-                  }}
-                >
-                  <GoogleIcon sx={{ width: 16 }} />
-                </IconButton>
-              </Grid>
               <Grid item>
                 <IconButton
                   sx={{
@@ -203,12 +191,16 @@ export default function Footer() {
                     minWidth: 30,
                     minHeight: 30,
                     padding: 0,
-                    "& img": { width: 9 },
                   }}
                 >
-                  <img src="/icons/f.svg" alt="f" />
+                  <LinkedInIcon
+                    sx={{ width: 19 }}
+                    onClick={(event) =>
+                      window.open("https://www.linkedin.com/company/layrlabs/")
+                    }
+                  />
                 </IconButton>
-              </Grid> */}
+              </Grid>
             </Grid>
           </Grid>
         </Grid>
@@ -222,7 +214,7 @@ export default function Footer() {
           [theme.breakpoints.up("md")]: { display: "none" },
         }}
       >
-        © 2022 Eigenlayer, all rights reserved
+        Made with love by LayrLabs
       </Typography>
       <Typography
         sx={{
@@ -234,7 +226,7 @@ export default function Footer() {
           [theme.breakpoints.up("md")]: { display: "none" },
         }}
       >
-        Made with love by LayrLabs
+        © 2022 Eigenlayer, all rights reserved
       </Typography>
     </Box>
   );

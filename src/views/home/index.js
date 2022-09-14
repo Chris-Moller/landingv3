@@ -134,7 +134,6 @@ export default function Home() {
                         fontSize: "36px",
                         marginTop: "20px",
                         width: "100%",
-                        
                       },
                       [theme.breakpoints.down("md")]: {
                         fontSize: "36px",
@@ -174,7 +173,6 @@ export default function Home() {
                       paddingLeft: "25px",
                       paddingRight: "25px",
                     },
-
                   }}
                 >
                   <Link to="/resources">
@@ -261,7 +259,18 @@ export default function Home() {
             },
           }}
         >
-          <MainContainer>
+          <MainContainer
+            sx={{
+              [theme.breakpoints.down("sm")]: {
+                paddingLeft: "20px",
+                paddingRight: "20px",
+              },
+              [theme.breakpoints.down("xs")]: {
+                paddingLeft: "10px",
+                paddingRight: "10px",
+              },
+            }}
+          >
             <Typography
               variant="h3"
               sx={{
@@ -495,11 +504,9 @@ export default function Home() {
                   item
                   md={7}
                   sm={12}
-                  sx={
-                    {
-                      width: "100%",
-                    }
-                  }
+                  sx={{
+                    width: "100%",
+                  }}
                 >
                   <Paper
                     className="my-card"
@@ -667,6 +674,16 @@ export default function Home() {
               },
               "& p": {
                 paddingBottom: "25px",
+              },
+              [theme.breakpoints.down("sm")]: {
+                minWidth: "300px",
+                paddingLeft: "20px",
+                paddingRight: "20px",
+              },
+              [theme.breakpoints.down("xs")]: {
+                minWidth: "300px",
+                paddingLeft: "10px",
+                paddingRight: "10px",
               },
             }}
           >

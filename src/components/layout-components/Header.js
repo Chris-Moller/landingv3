@@ -13,6 +13,7 @@ import IconButton from "@mui/material/IconButton";
 import MainContainer from "components/shared-components/MainContainer";
 // import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import CustomMenu from "utils/CustomMenu";
 
 const Link = styled(RouterLink)(() => ({
   textDecoration: "none",
@@ -43,6 +44,7 @@ const Link = styled(RouterLink)(() => ({
 }));
 
 export default function TemporaryDrawer() {
+  const [prodOpened, setProdOpen] = useState(false);
   const [isOpened, setIsOpened] = useState(false);
   // const [scrollPosition, setScrollPosition] = useState(0);
   const navigate = useNavigate();
@@ -97,11 +99,11 @@ export default function TemporaryDrawer() {
             <ListItemText primary="Products" />
           </ListItemButton>
         </ListItem>
-        <ListItem key="Community" disablePadding>
+        {/* <ListItem key="Community" disablePadding>
           <ListItemButton onClick={() => navigate("/community")}>
             <ListItemText primary="Community" />
           </ListItemButton>
-        </ListItem>
+        </ListItem> */}
         <ListItem key="resources" disablePadding>
           <ListItemButton onClick={() => navigate("/resources")}>
             <ListItemText primary="Resources" />
@@ -173,7 +175,11 @@ export default function TemporaryDrawer() {
         >
           <Grid
             container
-            sx={{ justifyContent: "space-between", alignItems: "center" }}
+            sx={{
+              justifyContent: "space-between",
+              alignItems: "end",
+              display: "flex",
+            }}
           >
             <Grid
               item
@@ -181,8 +187,9 @@ export default function TemporaryDrawer() {
                 width: 50,
                 display: "flex",
                 flexDirection: "row",
+                paddingBottom: "20px",
                 "& img": {
-                  marginRight: "5px",
+                  marginRight: "10px",
                   width: "32px",
                 },
               }}
@@ -197,10 +204,21 @@ export default function TemporaryDrawer() {
                 <img src="/images/logo.svg" width={64} height={64} alt="Logo" />
               </Button>
                              */}
-              <img src="/images/EigenPlaceHolder.png" alt="" />
+              <img
+                onClick={() => {
+                  navigate("/");
+                }}
+                style={{
+                  cursor: "pointer",
+                  margin: "auto"
+                }}
+                src="/images/EigenPlaceHolder.png"
+                alt=""
+              />
               <h1
                 style={{
                   cursor: "pointer",
+                  margin: "auto"
                 }}
               >
                 EigenLayer
@@ -208,20 +226,45 @@ export default function TemporaryDrawer() {
             </Grid>
             <Grid
               item
-              sx={{ [theme.breakpoints.down("md")]: { display: "none" } }}
+              sx={{
+                
+                display: "flex",
+                marginLeft: "13%",
+                [theme.breakpoints.down("md")]: { display: "none" },
+              }}
             >
               <Grid
                 container
                 spacing={5}
                 component="ul"
-                sx={{ marginBottom: 0 }}
+                sx={{
+                  
+                  "& li.MuiGrid-item": {
+                    paddingLeft: "80px",
+                    paddingBottom: "20px"
+                    
+                  },
+                }}
               >
-                <Grid item component="li">
+                <Grid
+                  onMouseEnter={() => setProdOpen(true)}
+                  onMouseLeave={() => setProdOpen(false)}
+                  item
+                  component="li"
+                  sx={{ position: "relative"}}
+                >
                   <Link to="/products">Products</Link>
+                  {prodOpened ? (
+                    <CustomMenu
+        
+                    >
+
+                    </CustomMenu>
+                  ) : null}
                 </Grid>
-                <Grid item component="li">
+                {/* <Grid item component="li">
                   <Link to="/community">Community</Link>
-                </Grid>
+                </Grid> */}
                 <Grid item component="li">
                   <Link to="/resources">Resources</Link>
                 </Grid>
@@ -238,6 +281,7 @@ export default function TemporaryDrawer() {
               sx={{
                 width: 50,
                 textAlign: "right",
+                paddingBottom: "14px",
                 [theme.breakpoints.up("md")]: { visibility: "hidden" },
               }}
             >

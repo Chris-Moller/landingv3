@@ -10,7 +10,6 @@ const MainContainer = styled(Box)(({ theme }) => ({
   [theme.breakpoints.down("md")]: { maxWidth: 600 },
   [theme.breakpoints.down("sm")]: {
     maxWidth: "450px",
-    padding: "0 20px",
   },
   [theme.breakpoints.down("xs")]: {
     maxWidth: "450px",

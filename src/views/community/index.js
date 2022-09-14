@@ -46,9 +46,11 @@ export default function Community() {
         },
         [theme.breakpoints.down("md")]: {
           paddingTop: "150px",
+
         },
         [theme.breakpoints.down("sm")]: {
           paddingTop: "100px",
+
         },
       }}
     >
