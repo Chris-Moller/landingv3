@@ -605,83 +605,10 @@ export default function Products() {
               src="/images/EigenDAplace.png"
               alt=""
             />
-
-            {/* <Typography
-              sx={{
-                marginTop: "50px",
-                maxWidth: "75%"
-              }}
-              variant="h6"
-            >
-              <h6>With minimal bandwidth and storage requirements, you can validate EigenDA, the most scalable and performant data availability service in the market. As more modular blockchain services and applications adopt EigenLayer for their crypto-economic security, you can launch additional validation services in just a few clicks.</h6>
-            </Typography> */}
           </Grid>
 
         </Grid>
       </Box>
-
-      {/* <Box>
-          <Grid item md={5}
-                sx={{
-                  [theme.breakpoints.down("md")]: {
-                    marginTop: "60px",
-                  },
-                  [theme.breakpoints.down("sm")]: {
-                    marginTop: "50px",
-                  },
-
-                }}
-              >
-                <Typography
-                  className="topo-title"
-                  variant="h4"
-                  sx={{
-                    display: "flex",
-                    flexDirection: "row",
-
-                    "& img": {
-                      marginLeft: "7px",
-                      width: "32px",
-                    },
-                  }}
-                >
-                  Eigen<span>DA</span>
-                  <img src="/images/EDA-icon.svg" alt="" />
-                </Typography>
-                <Typography>
-                  A highly customizable and hyperscaled data availability
-                  service on EigenLayer, designed for Optimistic and ZK rollups.
-                </Typography>
-              </Grid>
-              <Grid
-                item
-                md={7}
-                sm={12}
-                sx={{
-                  [theme.breakpoints.down("lg")]: {
-                    marginLeft: "auto",
-                    marginRight: "auto",
-                  },
-                  [theme.breakpoints.down("md")]: {
-                    marginLeft: "auto",
-                    marginRight: "auto",
-                    width: "100%"
-                  },
-                }}
-              >
-                <Paper
-                  className="my-card"
-                  sx={{
-                    backgroundImage: "url(/images/Eigen-product-EDA-bg.png)",
-                    backgroundSize: "cover",
-                  }}
-                >
-                  <Typography variant="h4">Integrate Data Availability for Rollups</Typography>
-                </Paper>
-              </Grid>
-            
-
-          </Box> */}
     </Box>
   );
 }
