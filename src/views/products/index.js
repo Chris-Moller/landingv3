@@ -190,7 +190,7 @@ export default function Products() {
           </Grid>
           <Grid
             sx={{
-              height: "170vh",
+              height: "100%",
             }}
             item
             md={5}
@@ -229,7 +229,7 @@ export default function Products() {
         <Grid container spacing={10}>
         <Grid
             sx={{
-              height: "170vh",
+              height: "100%",
             }}
             item
             md={5}
