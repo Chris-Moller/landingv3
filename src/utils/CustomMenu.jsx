@@ -18,7 +18,7 @@ const CustomMenu = () => {
           position: "absolute",
           top: 93,
           left: 50,
-          backgroundColor: "#0A0421",
+          backgroundColor: "#00001D",
           borderRadius: "10px",
           padding: "5px",
           border: "solid",

@@ -3,7 +3,7 @@ import { useTheme } from "@mui/material/styles";
 // import { Link } from "react-router-dom";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
-import Paper from "@mui/material/Paper";
+
 import Typography from "@mui/material/Typography";
 // import BlueButton from "components/shared-components/BlueButton";
 // import { BsArrowRight } from "react-icons/bs"
@@ -37,232 +37,334 @@ import Typography from "@mui/material/Typography";
 
 export default function Products() {
   const theme = useTheme();
+  // const [scrollPosition, setScrollPosition] = useState(0);
+  // const [fixed, setFixed] = useState("fixed");
+
+  // const handleScroll = () => {
+  //   const position = window.pageYOffset;
+  //   setScrollPosition(position);
+  // };
+
+  // useEffect(() => {
+  //   window.addEventListener("scroll", handleScroll, { passive: true });
+
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
+
   return (
     <Box
-          sx={{
-            backgroundImage: "url(/images/ambient-products-pg-bg.png)",
-            backgroundSize: "cover",
-            minHeight: "1000px",
-            [theme.breakpoints.down("md")]: {
-              minHeight: "1250px",
-            },
-            [theme.breakpoints.down("sm")]: {
-              minHeight: "1400px",
-            },
-            [theme.breakpoints.down("xs")]: {
-              minHeight: "1500px",
-            },
-          }}
-        >
-          <Box
+      sx={{
+        backgroundColor: "#00001D",
+        backgroundSize: "cover",
+        minHeight: "1000px",
+        paddingTop: "150px",
+      }}
+    >
+      <Box
+        sx={{
+          display: "flex",
+          margin: "auto",
+          maxWidth: "1300px",
+          paddingBottom: "120px",
+          [theme.breakpoints.down("xl")]: {
+            maxWidth: "1150px",
+          },
+          [theme.breakpoints.down("lg")]: {
+            maxWidth: "850px",
+          },
+          [theme.breakpoints.down("md")]: {
+            maxWidth: "550px",
+          },
+          [theme.breakpoints.down("sm")]: {
+            maxWidth: "300px",
+          },
+        }}
+      >
+        <Grid container spacing={10}>
+          <Grid item md={7} sx={{}}>
+            <Typography
+              sx={{
+                background:
+                  "linear-gradient(-180deg, hsla(266, 100%, 67%, 1) 0%, hsla(227, 100%, 66%, 1) 100%)",
+                backgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+              }}
+              variant="h2"
+            >
+              <h1>EigenLayer</h1>
+            </Typography>
+            <Typography sx={{}} variant="h4">
+              <h1>The Ethereum Restaking Collective</h1>
+            </Typography>
+            <Typography
+              sx={{
+                marginTop: "120px",
+                fontWeight: "900",
+              }}
+              variant="h5"
+            >
+              <h5>
+                Eigenlayer is a proof of stake validation marketplace that
+                reuses staked capital and existing validation infrastructure.
+              </h5>
+            </Typography>
+            <div
+              style={{
+                marginTop: "50px",
+                height: "1px",
+                backgroundColor: "#5100d4",
+              }}
+            ></div>
+            <Typography
+              sx={{
+                marginTop: "100px",
+                textAlign: "center",
+              }}
+              variant="h4"
+            >
+              <h1>How does EigenLayer work?</h1>
+            </Typography>
+            <img
+              style={{
+                marginTop: "100px",
+                justifySelf: "center",
+                position: "relative",
+                marginLeft: "auto",
+                marginRight: "auto",
+                borderRadius: "10px",
+                width: "70%",
+                border: "solid",
+                borderWidth: "0.5px",
+                borderColor: "#817dac",
+              }}
+              src="/images/EigenDiagram.png"
+              alt=""
+            />
+            <Typography
+              sx={{
+                marginTop: "120px",
+              }}
+              variant="h5"
+            >
+              <h5>
+                Nodes stake their ETH into securing the Ethereum consensus.
+              </h5>
+            </Typography>
+            <Typography
+              sx={{
+                marginTop: "40px",
+              }}
+              variant="h5"
+            >
+              <h5>
+                Restaking can then be leveraged to secure EigenLayer via
+                delegating withdraw credential or re-staking
+                staking derivatives.
+              </h5>
+            </Typography>
+            <Typography
+              sx={{
+                marginTop: "40px",
+              }}
+              variant="h5"
+            >
+              <h5>
+                Nodes in Ethereum's trust network can permissionlessly opt-in
+                to secure the protocols of their choice.
+              </h5>
+            </Typography>
+            
+
+
+            {/* <Typography
+              sx={{
+                marginTop: "50px",
+                maxWidth: "75%"
+              }}
+              variant="h6"
+            >
+              <h6>With minimal bandwidth and storage requirements, you can validate EigenDA, the most scalable and performant data availability service in the market. As more modular blockchain services and applications adopt EigenLayer for their crypto-economic security, you can launch additional validation services in just a few clicks.</h6>
+            </Typography> */}
+          </Grid>
+          <Grid
             sx={{
-              maxWidth: 1170,
-              marginLeft: "auto",
-              marginRight: "auto",
-              display: "flex",
-              position: "relative",
-              [theme.breakpoints.down("lg")]: {
-                marginLeft: "3rem",
-                marginRight: "3rem",
-              },
-              [theme.breakpoints.down("md")]: {
-                marginLeft: "3rem",
-                marginRight: "3rem",
-              },
-              [theme.breakpoints.down("sm")]: {
-                marginLeft: "3rem",
-                marginRight: "3rem",
-              },
-              "& .topo-title": {
-                marginTop: "150px",
-              },
-              "& .my-card": {
+              height: "170vh",
+            }}
+            item
+            md={5}
+          >
+            <img
+              style={{
+                position: "sticky",
+                top: "140px",
+              }}
+              src="/images/test1.png"
+              alt=""
+            />
+          </Grid>
+        </Grid>
+      </Box>
+      <Box
+        sx={{
+          display: "flex",
+          margin: "auto",
+          maxWidth: "1300px",
+          paddingBottom: "120px",
+          [theme.breakpoints.down("xl")]: {
+            maxWidth: "1150px",
+          },
+          [theme.breakpoints.down("lg")]: {
+            maxWidth: "850px",
+          },
+          [theme.breakpoints.down("md")]: {
+            maxWidth: "550px",
+          },
+          [theme.breakpoints.down("sm")]: {
+            maxWidth: "300px",
+          },
+        }}
+      >
+        <Grid container spacing={10}>
+        <Grid
+            sx={{
+              height: "170vh",
+            }}
+            item
+            md={5}
+          >
+            <img
+              style={{
+                position: "sticky",
+                top: "140px",
+              }}
+              src="/images/test2.png"
+              alt=""
+            />
+          </Grid>
+          <Grid item md={7} sx={{}}>
+            <Typography
+              sx={{
+                background:
+                  "linear-gradient(-180deg, hsla(266, 100%, 67%, 1) 0%, hsla(227, 100%, 66%, 1) 100%)",
+                backgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+              }}
+              variant="h3"
+            >
+              <h3>Most validators have excess computing capacity</h3>
+            </Typography>
+            <div
+              style={{
+                marginTop: "50px",
+                height: "1px",
+                backgroundColor: "#5100d4",
+              }}
+            ></div>
+            <Typography
+              sx={{
+                marginTop: "60px",
+              }}
+              variant="h5"
+            >
+              <h5>
+              Earn tokens for providing validation services with low system hardware requirements (including the majority of existing hardware) 
+              </h5>
+            </Typography>
+            <img
+              style={{
+                marginTop: "70px",
+                justifySelf: "center",
+                position: "relative",
+                marginLeft: "auto",
+                marginRight: "auto",
                 borderRadius: "10px",
                 border: "solid",
                 borderWidth: "0.5px",
                 borderColor: "#817dac",
-                padding: "36px 56px 84px",
-                height: "100%",
-                marginTop: "150px",
-                [theme.breakpoints.down("lg")]: {
-                  padding: "36px 36px 64px",
-                },
-                [theme.breakpoints.down("md")]: {
-                  padding: "36px 36px 64px",
-                  marginTop: "20px",
-                  height: "120%"
-                },
-              },
-              "& h4": {
-                fontSize: "28px",
-                fontWeight: 400,
-
-                "& span": { fontWeight: 700 },
-                position: "relative",
-                "&:after": {
-                  content: "''",
-                  display: "block",
-                  position: "absolute",
-                  left: 0,
-                  bottom: 0,
-                  width: 25,
-                  height: 3,
-                  borderRadius: "10px",
-                },
-              },
-              "& p": {
-                lineHeight: 1.875,
-                marginTop: "25px",
-              },
-              "& .smallCube": {
-                width: "170px",
-                right: "-15%",
-                top: "-12%",
-                position: "absolute",
-                left: "auto",
-                bottom: "auto",
-                [theme.breakpoints.down("xxl")]: {
-                  width: "130px",
-                  right: "-3%",
-                  top: "0%",
-                },
-                [theme.breakpoints.down("xl")]: {
-                  width: "80px",
-                  right: "9%",
-                  top: "-2%",
-                },
-                [theme.breakpoints.down("lg")]: {
-                  width: "80px",
-                  right: "7%",
-                  top: "-5%",
-                },
-                [theme.breakpoints.down("md")]: {
-                  width: "80px",
-                  right: "13%",
-                  top: "12%",
-                },
-                [theme.breakpoints.down("sm")]: {
-                  width: "80px",
-                  right: "20%",
-                  top: "2%",
-                },
-                [theme.breakpoints.down("xs")]: {
-                  width: "67px",
-                  right: "20%",
-                  top: "1%",
-                },
-              },
-              "& .bigCube": {
-                width: "270px",
-                right: "-30%",
-                top: "10%",
-                position: "absolute",
-                left: "auto",
-                bottom: "auto",
-                [theme.breakpoints.down("xxl")]: {
-                  width: "200px",
-                  right: "-14%",
-                  top: "15%",
-                },
-                [theme.breakpoints.down("xl")]: {
-                  width: "145px",
-                  right: "0%",
-                  top: "5%",
-                },
-                [theme.breakpoints.down("lg")]: {
-                  width: "145px",
-                  right: "-3%",
-                  top: "5%",
-                },
-                [theme.breakpoints.down("md")]: {
-                  width: "160px",
-                  right: "-4%",
-                  top: "-2%",
-                },
-                [theme.breakpoints.down("sm")]: {
-                  width: "140px",
-                  right: "-10%",
-                  top: "5%",
-                },
-                [theme.breakpoints.down("xs")]: {
-                  width: "110px",
-                  right: "-18%",
-                  top: "4%",
-                },
-              },
-            }}
-          >
-            {/* <img
-              className="smallCube"
-              src="/images/eigen-small-cube.png"
+              }}
+              src="/images/earnTokens.png"
               alt=""
             />
-            <img className="bigCube" src="/images/eigen-big-cube.png" alt="" /> */}
-            <Grid
-              container
-              spacing={2.5}
+                        <Typography
               sx={{
-                "& span": {
-                  background:
-                    "linear-gradient(90deg, hsla(266, 100%, 67%, 1) 0%, hsla(227, 100%, 66%, 1) 100%)",
-                  backgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                },
+                marginTop: "60px",
+                background:
+                  "linear-gradient(-180deg, hsla(266, 100%, 67%, 1) 0%, hsla(227, 100%, 66%, 1) 100%)",
+                backgroundClip: "text",
+                WebkitTextFillColor: "transparent",
               }}
+              variant="h3"
             >
-              <Grid item md={5}>
-                <Typography
-                  className="topo-title"
-                  variant="h4"
-                  sx={{
-                    display: "flex",
-                    flexDirection: "row",
-                    "& img": {
-                      marginLeft: "7px",
-                      width: "32px",
-                    },
-                  }}
-                >
-                  Eigen<span>Layer</span>
-                  <img src="/images/EL-icon.svg" alt="" />
-                </Typography>
-                <Typography>
-                  A platform to leverage Ethereum security through the
-                  innovative method of restaking.
-                </Typography>
-              </Grid>
-              <Grid
-                item
-                md={7}
-                sm={12}
-                sx={{
-                  // [theme.breakpoints.down("lg")]: {
-                  //   marginLeft: "auto",
-                  //   marginRight: "auto",
-                  // },
-                  // [theme.breakpoints.down("md")]: {
-                  //   marginLeft: "auto",
-                  //   marginRight: "auto",
-                  // },
-                  // [theme.breakpoints.down("sm")]: {
-                  //   marginLeft: "auto",
-                  //   marginRight: "auto",
-                  // },
-                }}
-              >
-                <Paper
-                  className="my-card"
-                  sx={{
-                    backgroundImage: "url(/images/Eigen-product-bg.png)",
-                    backgroundSize: "cover",
-                  }}
-                >
-                  <Typography variant="h4">
-                    Integrate with the Ecosystem
-                  </Typography>
-                </Paper>
-              </Grid>
-              <Grid item md={5}
+              <h3>Bringing agility to Ethereum</h3>
+            </Typography>
+            <div
+              style={{
+                marginTop: "50px",
+                height: "1px",
+                backgroundColor: "#5100d4",
+              }}
+            ></div>
+            <Typography
+              sx={{
+                marginTop: "60px",
+              }}
+              variant="h5"
+            >
+              <h5>
+            Ethereum unleashed innovation of DApps with the introduction of EVM, while building a democractic and stable ecosystem. 
+              </h5>
+            </Typography>
+            <Typography
+              sx={{
+                marginTop: "60px",
+              }}
+              variant="h5"
+            >
+              <h5>
+              Eigenlayer attempts to solve this agility →  stability tradeoff, hyperscaling innovation on Ethereum 
+              </h5>
+            </Typography>
+            <Typography sx={{marginTop: "70px",                 background:
+                  "linear-gradient(-180deg, hsla(266, 100%, 67%, 1) 0%, hsla(227, 100%, 66%, 1) 100%)",
+                backgroundClip: "text",
+                WebkitTextFillColor: "transparent",}} variant="h4">
+              <h1>Agility VS democratic governance</h1>
+            </Typography>
+            <img
+              style={{
+                marginTop: "20px",
+                justifySelf: "center",
+                position: "relative",
+                marginLeft: "auto",
+                marginRight: "auto",
+                borderRadius: "10px",
+                border: "solid",
+                borderWidth: "0.5px",
+                borderColor: "#817dac",
+              }}
+              src="/images/chart-agility.png"
+              alt=""
+            />
+
+
+            {/* <Typography
+              sx={{
+                marginTop: "50px",
+                maxWidth: "75%"
+              }}
+              variant="h6"
+            >
+              <h6>With minimal bandwidth and storage requirements, you can validate EigenDA, the most scalable and performant data availability service in the market. As more modular blockchain services and applications adopt EigenLayer for their crypto-economic security, you can launch additional validation services in just a few clicks.</h6>
+            </Typography> */}
+          </Grid>
+          
+        </Grid>
+      </Box>
+
+      {/* <Box>
+          <Grid item md={5}
                 sx={{
                   [theme.breakpoints.down("md")]: {
                     marginTop: "60px",
@@ -318,45 +420,11 @@ export default function Products() {
                   }}
                 >
                   <Typography variant="h4">Integrate Data Availability for Rollups</Typography>
-                  {/* <BlueButton sx={{ width: 140, marginTop: "20px" }} href="http://18.224.169.114:3000/">
-          Try Now!
-              </BlueButton> */}
                 </Paper>
               </Grid>
-            </Grid>
+            
 
-            {/* <br />
-              <br />
-              <Typography
-              
-                  variant="h4"
-                  sx={{
-                    fontSize: "12px",
-                    textAlign: "center",
-                    lineHeight: 1.25,
-                    fontWeight: 400,
-                    marginTop: "100px",
-                    "& span": {
-                      fontWeight: 700,
-                    },
-                    [theme.breakpoints.down("xl")]: {
-                      fontSize: "32px",
-                      marginTop: "70px",
-                    },
-                    [theme.breakpoints.down("lg")]: {
-                      fontSize: "32px",
-                      marginTop: "20px",
-                    },
-                    [theme.breakpoints.down("sm")]: { fontSize: "28px" },
-                  }}
-                >                  
-                <span>Subscribe to our newsletter:</span>
-                <br />
-
-              <iframe title="Newsletter" src="https://docs.google.com/forms/d/e/1FAIpQLSdLKTn5zy4Eyf9mG_puv7WL-0mPOkxuzRNjvcyAKP_cCPXWuQ/viewform?embedded=true" width="600" height="400" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-
-              </Typography>               */}
-          </Box>
-        </Box>
+          </Box> */}
+    </Box>
   );
 }
