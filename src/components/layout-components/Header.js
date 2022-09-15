@@ -13,7 +13,7 @@ import IconButton from "@mui/material/IconButton";
 import MainContainer from "components/shared-components/MainContainer";
 // import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import CustomMenu from "utils/CustomMenu";
+// import CustomMenu from "utils/CustomMenu";
 
 const Link = styled(RouterLink)(() => ({
   textDecoration: "none",
@@ -44,7 +44,7 @@ const Link = styled(RouterLink)(() => ({
 }));
 
 export default function TemporaryDrawer() {
-  const [prodOpened, setProdOpen] = useState(false);
+  // const [prodOpened, setProdOpen] = useState(false);
   const [isOpened, setIsOpened] = useState(false);
   // const [scrollPosition, setScrollPosition] = useState(0);
   const navigate = useNavigate();
@@ -247,20 +247,20 @@ export default function TemporaryDrawer() {
                 }}
               >
                 <Grid
-                  onMouseEnter={() => setProdOpen(true)}
-                  onMouseLeave={() => setProdOpen(false)}
+                  // onMouseEnter={() => setProdOpen(true)}
+                  // onMouseLeave={() => setProdOpen(false)}
                   item
                   component="li"
                   sx={{ position: "relative"}}
                 >
                   <Link to="/products">Products</Link>
-                  {prodOpened ? (
+                  {/* {prodOpened ? (
                     <CustomMenu
         
                     >
 
                     </CustomMenu>
-                  ) : null}
+                  ) : null} */}
                 </Grid>
                 {/* <Grid item component="li">
                   <Link to="/community">Community</Link>

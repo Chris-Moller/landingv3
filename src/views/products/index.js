@@ -160,8 +160,8 @@ export default function Products() {
             >
               <h5>
                 Restaking can then be leveraged to secure EigenLayer via
-                delegating withdraw credential or re-staking
-                staking derivatives.
+                delegating withdraw credential or re-staking staking
+                derivatives.
               </h5>
             </Typography>
             <Typography
@@ -171,12 +171,10 @@ export default function Products() {
               variant="h5"
             >
               <h5>
-                Nodes in Ethereum's trust network can permissionlessly opt-in
-                to secure the protocols of their choice.
+                Nodes in Ethereum's trust network can permissionlessly opt-in to
+                secure the protocols of their choice.
               </h5>
             </Typography>
-            
-
 
             {/* <Typography
               sx={{
@@ -199,6 +197,7 @@ export default function Products() {
               style={{
                 position: "sticky",
                 top: "140px",
+                
               }}
               src="/images/test1.png"
               alt=""
@@ -227,7 +226,7 @@ export default function Products() {
         }}
       >
         <Grid container spacing={10}>
-        <Grid
+          <Grid
             sx={{
               height: "100%",
             }}
@@ -269,7 +268,9 @@ export default function Products() {
               variant="h5"
             >
               <h5>
-              Earn tokens for providing validation services with low system hardware requirements (including the majority of existing hardware) 
+                Earn tokens for providing validation services with low system
+                hardware requirements (including the majority of existing
+                hardware).
               </h5>
             </Typography>
             <img
@@ -287,7 +288,7 @@ export default function Products() {
               src="/images/earnTokens.png"
               alt=""
             />
-                        <Typography
+            <Typography
               sx={{
                 marginTop: "60px",
                 background:
@@ -313,7 +314,8 @@ export default function Products() {
               variant="h5"
             >
               <h5>
-            Ethereum unleashed innovation of DApps with the introduction of EVM, while building a democractic and stable ecosystem. 
+                Ethereum unleashed innovation of DApps with the introduction of
+                EVM, while building a democractic and stable ecosystem.
               </h5>
             </Typography>
             <Typography
@@ -323,13 +325,20 @@ export default function Products() {
               variant="h5"
             >
               <h5>
-              Eigenlayer attempts to solve this agility →  stability tradeoff, hyperscaling innovation on Ethereum 
+                Eigenlayer attempts to solve this agility → stability tradeoff,
+                hyperscaling innovation on Ethereum.
               </h5>
             </Typography>
-            <Typography sx={{marginTop: "70px",                 background:
+            <Typography
+              sx={{
+                marginTop: "70px",
+                background:
                   "linear-gradient(-180deg, hsla(266, 100%, 67%, 1) 0%, hsla(227, 100%, 66%, 1) 100%)",
                 backgroundClip: "text",
-                WebkitTextFillColor: "transparent",}} variant="h4">
+                WebkitTextFillColor: "transparent",
+              }}
+              variant="h4"
+            >
               <h1>Agility VS democratic governance</h1>
             </Typography>
             <img
@@ -347,7 +356,255 @@ export default function Products() {
               src="/images/chart-agility.png"
               alt=""
             />
+            <Typography
+              sx={{
+                marginTop: "60px",
+              }}
+              variant="h5"
+            >
+              <h5>
+                With EigenLayer, Ethereum can still focus on governance for
+                long-term growth and allow anyone to permissionlessly add
+                features for fast innovation.
+              </h5>
+            </Typography>
+          </Grid>
+        </Grid>
+      </Box>
+      <Box
+        sx={{
+          display: "flex",
+          margin: "auto",
+          maxWidth: "1300px",
+          paddingBottom: "120px",
+          [theme.breakpoints.down("xl")]: {
+            maxWidth: "1150px",
+          },
+          [theme.breakpoints.down("lg")]: {
+            maxWidth: "850px",
+          },
+          [theme.breakpoints.down("md")]: {
+            maxWidth: "550px",
+          },
+          [theme.breakpoints.down("sm")]: {
+            maxWidth: "300px",
+          },
+        }}
+      >
+        <Grid container spacing={10}>
+          <Grid item md={7} sx={{}}>
+            <Typography
+              sx={{
+                background:
+                  "linear-gradient(-180deg, hsla(266, 100%, 67%, 1) 0%, hsla(227, 100%, 66%, 1) 100%)",
+                backgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+              }}
+              variant="h3"
+            >
+              <h3>Leveraging Trust</h3>
+            </Typography>
+            <div
+              style={{
+                marginTop: "50px",
+                height: "1px",
+                backgroundColor: "#5100d4",
+              }}
+            ></div>
+            <Typography
+              sx={{
+                marginTop: "60px",
+              }}
+              variant="h5"
+            >
+              <h5>
+                Decoupling the consensus protocol from the trust network of
+                validators allows us to eliminate the bootstrapping problem for
+                projects.
+              </h5>
+            </Typography>
+            <img
+              style={{
+                marginTop: "70px",
+                justifySelf: "center",
+                position: "relative",
+                marginLeft: "auto",
+                marginRight: "auto",
+                borderRadius: "10px",
+                border: "solid",
+                borderWidth: "0.5px",
+                borderColor: "#817dac",
+              }}
+              src="/images/decoupled.png"
+              alt=""
+            />
+            <Typography
+              sx={{
+                marginTop: "60px",
+              }}
+              variant="h5"
+            >
+              <h5>
+                Deploying in proof of stake systems has never been easier
+                allowing Eigenlayer to enable open innovation on Ethereum.
+              </h5>
+            </Typography>
+            <Typography
+              sx={{
+                marginTop: "60px",
+                background:
+                  "linear-gradient(-180deg, hsla(266, 100%, 67%, 1) 0%, hsla(227, 100%, 66%, 1) 100%)",
+                backgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+              }}
+              variant="h3"
+            >
+              <h3>Earn Yield supporting Innovation</h3>
+            </Typography>
+            <div
+              style={{
+                marginTop: "50px",
+                height: "1px",
+                backgroundColor: "#5100d4",
+              }}
+            ></div>
+            <Typography
+              sx={{
+                marginTop: "60px",
+              }}
+              variant="h5"
+            >
+              <h5>
+                Validators on Ethereum can opt-in to self-operate or delegate to
+                operators. 
+              </h5>
+            </Typography>
+            <Typography
+              sx={{
+                marginTop: "60px",
+              }}
+              variant="h5"
+            >
+              <h5>
+              These validators will earn yield for supporting new
+                middleware and projects bringing stakers closer to innovation.
+              </h5>
+            </Typography>
+          </Grid>
+          <Grid
+            sx={{
+              height: "100%",
+            }}
+            item
+            md={5}
+          >
+            <img
+              style={{
+                position: "sticky",
+                top: "140px",
+              }}
+              src="/images/test3.png"
+              alt=""
+            />
+          </Grid>
+        </Grid>
+      </Box>
+      <Box
+        sx={{
+          paddingTop: "150px",
+          display: "flex",
+          margin: "auto",
+          maxWidth: "1300px",
+          paddingBottom: "120px",
+          [theme.breakpoints.down("xl")]: {
+            maxWidth: "1150px",
+          },
+          [theme.breakpoints.down("lg")]: {
+            maxWidth: "850px",
+          },
+          [theme.breakpoints.down("md")]: {
+            maxWidth: "550px",
+          },
+          [theme.breakpoints.down("sm")]: {
+            maxWidth: "300px",
+          },
+        }}
+      >
+        <Grid container spacing={10}>
+        <Grid
+            sx={{
+              height: "100%",
+            }}
+            item
+            md={5}
+          >
+            <img
+              style={{
+                position: "sticky",
+                top: "140px",
+              }}
+              src="/images/test4.png"
+              alt=""
+            />
+          </Grid>
+          <Grid item md={7} sx={{}}>
+            <Typography
+              sx={{
+                background:
+                  "linear-gradient(-180deg, rgb(255, 49, 186) 0%, hsla(227, 100%, 66%, 1) 100%)",
+                backgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+              }}
+              variant="h2"
+            >
+              <h1>EigenDA</h1>
+            </Typography>
+            <Typography sx={{}} variant="h4">
+              <h1>A highly customizable and hyperscaled data availability service, designed for Optimistic and ZK rollups.</h1>
+            </Typography>
+            <div
+              style={{
+                marginTop: "50px",
+                height: "1px",
+                backgroundColor: "#5100d4",
+              }}
+            ></div>
 
+            <Typography
+              sx={{
+                marginTop: "50px",
+              }}
+              variant="h5"
+            >
+              <h5>
+              With minimal bandwidth and storage requirements, you can validate EigenDA, the most scalable and performant data availability service in the market.
+              </h5>
+            </Typography>
+            <Typography
+              sx={{
+                marginTop: "40px",
+              }}
+              variant="h5"
+            >
+              <h5>
+              As more modular blockchain services and applications adopt EigenLayer for their crypto-economic security, you can launch additional validation services in just a few clicks.
+              </h5>
+            </Typography>
+            <img
+              style={{
+                marginTop: "20px",
+                justifySelf: "center",
+                position: "relative",
+                marginLeft: "auto",
+                marginRight: "auto",
+                borderRadius: "10px",
+                border: "solid",
+                borderWidth: "0.5px",
+                borderColor: "#817dac",
+              }}
+              src="/images/EigenDAplace.png"
+              alt=""
+            />
 
             {/* <Typography
               sx={{
@@ -359,7 +616,7 @@ export default function Products() {
               <h6>With minimal bandwidth and storage requirements, you can validate EigenDA, the most scalable and performant data availability service in the market. As more modular blockchain services and applications adopt EigenLayer for their crypto-economic security, you can launch additional validation services in just a few clicks.</h6>
             </Typography> */}
           </Grid>
-          
+
         </Grid>
       </Box>
 
