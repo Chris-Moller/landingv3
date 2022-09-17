@@ -85,17 +85,6 @@ export default function Resources() {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>
-            <h2>Eigenlayer @ ETHConomics Amsterdam</h2>
-            <iframe
-              width="100%"
-              style={{ aspectRatio: "16 / 9" }}
-              src="https://www.youtube.com/embed/01xDSwMO5U4"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
-            <br />
             <h2>Eigenspace @ ZKSummit 7 Amsterdam</h2>
             <iframe
               width="100%"

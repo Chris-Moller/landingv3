@@ -53,13 +53,22 @@ export default function Products() {
   //   };
   // }, []);
 
+
+
   return (
     <Box
       sx={{
         backgroundColor: "#00001D",
-        backgroundSize: "cover",
-        minHeight: "1000px",
-        paddingTop: "150px",
+        paddingTop: "250px",
+        [theme.breakpoints.down("xl")]: {
+          paddingTop: "250px",
+        },
+        [theme.breakpoints.down("md")]: {
+          paddingTop: "150px",
+        },
+        [theme.breakpoints.down("sm")]: {
+          paddingTop: "150px",
+        },
       }}
     >
       <Box
@@ -78,7 +87,9 @@ export default function Products() {
             maxWidth: "550px",
           },
           [theme.breakpoints.down("sm")]: {
-            maxWidth: "300px",
+            marginLeft: "20px",
+            marginRight: "20px",
+            paddingBottom: "0px",
           },
         }}
       >
@@ -90,18 +101,36 @@ export default function Products() {
                   "linear-gradient(-180deg, hsla(266, 100%, 67%, 1) 0%, hsla(227, 100%, 66%, 1) 100%)",
                 backgroundClip: "text",
                 WebkitTextFillColor: "transparent",
+                [theme.breakpoints.down("sm")]: {
+                  fontSize: "42pt",
+                  textAlign: "center"
+                },
               }}
               variant="h2"
             >
               <h1>EigenLayer</h1>
             </Typography>
-            <Typography sx={{}} variant="h4">
+            <Typography
+              sx={{
+                [theme.breakpoints.down("sm")]: {
+                  fontSize: "22pt",
+                  textAlign: "center"
+                },
+              }}
+              variant="h4"
+            >
               <h1>The Ethereum Restaking Collective</h1>
             </Typography>
             <Typography
               sx={{
                 marginTop: "120px",
                 fontWeight: "900",
+                [theme.breakpoints.down("sm")]: {
+                  marginTop: "80px",
+                  fontSize: "16pt",
+                  textAlign: "center"
+                },
+                
               }}
               variant="h5"
             >
@@ -121,13 +150,18 @@ export default function Products() {
               sx={{
                 marginTop: "100px",
                 textAlign: "center",
+                [theme.breakpoints.down("sm")]: {
+                  marginTop: "80px",
+                  fontSize: "24pt",
+                },
               }}
               variant="h4"
             >
               <h1>How does EigenLayer work?</h1>
             </Typography>
-            <img
-              style={{
+            <Box
+            component="img"
+              sx={{
                 marginTop: "100px",
                 justifySelf: "center",
                 position: "relative",
@@ -138,6 +172,9 @@ export default function Products() {
                 border: "solid",
                 borderWidth: "0.5px",
                 borderColor: "#817dac",
+                [theme.breakpoints.down("sm")]: {
+                  width: "100%",
+                },
               }}
               src="/images/EigenDiagram.png"
               alt=""
@@ -145,6 +182,11 @@ export default function Products() {
             <Typography
               sx={{
                 marginTop: "120px",
+                [theme.breakpoints.down("sm")]: {
+                  marginTop: "60px",
+                  textAlign: "center",
+                  fontSize: "16pt"
+                },
               }}
               variant="h5"
             >
@@ -155,6 +197,11 @@ export default function Products() {
             <Typography
               sx={{
                 marginTop: "40px",
+                [theme.breakpoints.down("sm")]: {
+                  marginTop: "30px",
+                  textAlign: "center",
+                  fontSize: "16pt"
+                },
               }}
               variant="h5"
             >
@@ -167,6 +214,11 @@ export default function Products() {
             <Typography
               sx={{
                 marginTop: "40px",
+                [theme.breakpoints.down("sm")]: {
+                  marginTop: "30px",
+                  textAlign: "center",
+                  fontSize: "16pt"
+                },
               }}
               variant="h5"
             >
@@ -175,20 +227,13 @@ export default function Products() {
                 secure the protocols of their choice.
               </h5>
             </Typography>
-
-            {/* <Typography
-              sx={{
-                marginTop: "50px",
-                maxWidth: "75%"
-              }}
-              variant="h6"
-            >
-              <h6>With minimal bandwidth and storage requirements, you can validate EigenDA, the most scalable and performant data availability service in the market. As more modular blockchain services and applications adopt EigenLayer for their crypto-economic security, you can launch additional validation services in just a few clicks.</h6>
-            </Typography> */}
           </Grid>
           <Grid
             sx={{
-              height: "100%",
+              [theme.breakpoints.down("md")]: {
+                visibility: "hidden",
+                height: "0px",
+              },
             }}
             item
             md={5}
@@ -197,7 +242,6 @@ export default function Products() {
               style={{
                 position: "sticky",
                 top: "140px",
-                
               }}
               src="/images/test1.png"
               alt=""
@@ -221,17 +265,22 @@ export default function Products() {
             maxWidth: "550px",
           },
           [theme.breakpoints.down("sm")]: {
-            maxWidth: "300px",
+            marginLeft: "20px",
+            marginRight: "20px",
           },
         }}
       >
         <Grid container spacing={10}>
           <Grid
             sx={{
-              height: "100%",
+              [theme.breakpoints.down("md")]: {
+                visibility: "hidden",
+                height: "0px",
+              },
             }}
             item
             md={5}
+            sm={0}
           >
             <img
               style={{
@@ -249,6 +298,10 @@ export default function Products() {
                   "linear-gradient(-180deg, hsla(266, 100%, 67%, 1) 0%, hsla(227, 100%, 66%, 1) 100%)",
                 backgroundClip: "text",
                 WebkitTextFillColor: "transparent",
+                [theme.breakpoints.down("sm")]: {
+                  fontSize: "26pt",
+                  textAlign: "center"
+                },
               }}
               variant="h3"
             >
@@ -264,6 +317,11 @@ export default function Products() {
             <Typography
               sx={{
                 marginTop: "60px",
+                [theme.breakpoints.down("sm")]: {
+                  textAlign: "center",
+                  fontSize: "16pt"
+                },
+
               }}
               variant="h5"
             >
@@ -295,6 +353,10 @@ export default function Products() {
                   "linear-gradient(-180deg, hsla(266, 100%, 67%, 1) 0%, hsla(227, 100%, 66%, 1) 100%)",
                 backgroundClip: "text",
                 WebkitTextFillColor: "transparent",
+                [theme.breakpoints.down("sm")]: {
+                  fontSize: "26pt",
+                  textAlign: "center"
+                },
               }}
               variant="h3"
             >
@@ -310,6 +372,10 @@ export default function Products() {
             <Typography
               sx={{
                 marginTop: "60px",
+                [theme.breakpoints.down("sm")]: {
+                  textAlign: "center",
+                  fontSize: "16pt"
+                },
               }}
               variant="h5"
             >
@@ -321,6 +387,10 @@ export default function Products() {
             <Typography
               sx={{
                 marginTop: "60px",
+                [theme.breakpoints.down("sm")]: {
+                  textAlign: "center",
+                  fontSize: "16pt"
+                },
               }}
               variant="h5"
             >
@@ -336,6 +406,10 @@ export default function Products() {
                   "linear-gradient(-180deg, hsla(266, 100%, 67%, 1) 0%, hsla(227, 100%, 66%, 1) 100%)",
                 backgroundClip: "text",
                 WebkitTextFillColor: "transparent",
+                [theme.breakpoints.down("sm")]: {
+                  textAlign: "center",
+                  fontSize: "19pt",
+                },
               }}
               variant="h4"
             >
@@ -359,6 +433,10 @@ export default function Products() {
             <Typography
               sx={{
                 marginTop: "60px",
+                [theme.breakpoints.down("sm")]: {
+                  textAlign: "center",
+                  fontSize: "16pt"
+                },
               }}
               variant="h5"
             >
@@ -387,7 +465,8 @@ export default function Products() {
             maxWidth: "550px",
           },
           [theme.breakpoints.down("sm")]: {
-            maxWidth: "300px",
+            marginLeft: "20px",
+            marginRight: "20px"
           },
         }}
       >
@@ -399,6 +478,10 @@ export default function Products() {
                   "linear-gradient(-180deg, hsla(266, 100%, 67%, 1) 0%, hsla(227, 100%, 66%, 1) 100%)",
                 backgroundClip: "text",
                 WebkitTextFillColor: "transparent",
+                [theme.breakpoints.down("sm")]: {
+                  fontSize: "26pt",
+                  textAlign: "center"
+                },
               }}
               variant="h3"
             >
@@ -414,6 +497,10 @@ export default function Products() {
             <Typography
               sx={{
                 marginTop: "60px",
+                [theme.breakpoints.down("sm")]: {
+                  textAlign: "center",
+                  fontSize: "16pt"
+                },
               }}
               variant="h5"
             >
@@ -441,6 +528,10 @@ export default function Products() {
             <Typography
               sx={{
                 marginTop: "60px",
+                [theme.breakpoints.down("sm")]: {
+                  textAlign: "center",
+                  fontSize: "16pt"
+                },
               }}
               variant="h5"
             >
@@ -456,6 +547,10 @@ export default function Products() {
                   "linear-gradient(-180deg, hsla(266, 100%, 67%, 1) 0%, hsla(227, 100%, 66%, 1) 100%)",
                 backgroundClip: "text",
                 WebkitTextFillColor: "transparent",
+                [theme.breakpoints.down("sm")]: {
+                  textAlign: "center",
+                  fontSize: "26pt",
+                },
               }}
               variant="h3"
             >
@@ -471,29 +566,40 @@ export default function Products() {
             <Typography
               sx={{
                 marginTop: "60px",
+                [theme.breakpoints.down("sm")]: {
+                  textAlign: "center",
+                  fontSize: "16pt",
+                },
               }}
               variant="h5"
             >
               <h5>
                 Validators on Ethereum can opt-in to self-operate or delegate to
-                operators. 
+                operators.
               </h5>
             </Typography>
             <Typography
               sx={{
                 marginTop: "60px",
+                [theme.breakpoints.down("sm")]: {
+                  textAlign: "center",
+                  fontSize: "16pt",
+                },
               }}
               variant="h5"
             >
               <h5>
-              These validators will earn yield for supporting new
-                middleware and projects bringing stakers closer to innovation.
+                These validators will earn yield for supporting new middleware
+                and projects bringing stakers closer to innovation.
               </h5>
             </Typography>
           </Grid>
           <Grid
             sx={{
-              height: "100%",
+              [theme.breakpoints.down("md")]: {
+                visibility: "hidden",
+                height: "0px",
+              },
             }}
             item
             md={5}
@@ -507,106 +613,6 @@ export default function Products() {
               alt=""
             />
           </Grid>
-        </Grid>
-      </Box>
-      <Box
-        sx={{
-          paddingTop: "150px",
-          display: "flex",
-          margin: "auto",
-          maxWidth: "1300px",
-          paddingBottom: "120px",
-          [theme.breakpoints.down("xl")]: {
-            maxWidth: "1150px",
-          },
-          [theme.breakpoints.down("lg")]: {
-            maxWidth: "850px",
-          },
-          [theme.breakpoints.down("md")]: {
-            maxWidth: "550px",
-          },
-          [theme.breakpoints.down("sm")]: {
-            maxWidth: "300px",
-          },
-        }}
-      >
-        <Grid container spacing={10}>
-        <Grid
-            sx={{
-              height: "100%",
-            }}
-            item
-            md={5}
-          >
-            <img
-              style={{
-                position: "sticky",
-                top: "140px",
-              }}
-              src="/images/test4.png"
-              alt=""
-            />
-          </Grid>
-          <Grid item md={7} sx={{}}>
-            <Typography
-              sx={{
-                background:
-                  "linear-gradient(-180deg, rgb(255, 49, 186) 0%, hsla(227, 100%, 66%, 1) 100%)",
-                backgroundClip: "text",
-                WebkitTextFillColor: "transparent",
-              }}
-              variant="h2"
-            >
-              <h1>EigenDA</h1>
-            </Typography>
-            <Typography sx={{}} variant="h4">
-              <h1>A highly customizable and hyperscaled data availability service, designed for Optimistic and ZK rollups.</h1>
-            </Typography>
-            <div
-              style={{
-                marginTop: "50px",
-                height: "1px",
-                backgroundColor: "#5100d4",
-              }}
-            ></div>
-
-            <Typography
-              sx={{
-                marginTop: "50px",
-              }}
-              variant="h5"
-            >
-              <h5>
-              With minimal bandwidth and storage requirements, you can validate EigenDA, the most scalable and performant data availability service in the market.
-              </h5>
-            </Typography>
-            <Typography
-              sx={{
-                marginTop: "40px",
-              }}
-              variant="h5"
-            >
-              <h5>
-              As more modular blockchain services and applications adopt EigenLayer for their crypto-economic security, you can launch additional validation services in just a few clicks.
-              </h5>
-            </Typography>
-            <img
-              style={{
-                marginTop: "20px",
-                justifySelf: "center",
-                position: "relative",
-                marginLeft: "auto",
-                marginRight: "auto",
-                borderRadius: "10px",
-                border: "solid",
-                borderWidth: "0.5px",
-                borderColor: "#817dac",
-              }}
-              src="/images/EigenDAplace.png"
-              alt=""
-            />
-          </Grid>
-
         </Grid>
       </Box>
     </Box>

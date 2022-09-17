@@ -57,14 +57,20 @@ export default function Products() {
     <Box
       sx={{
         backgroundColor: "#00001D",
-        backgroundSize: "cover",
-        minHeight: "1000px",
-        paddingTop: "150px",
+        paddingTop: "250px",
+        [theme.breakpoints.down("xl")]: {
+          paddingTop: "250px",
+        },
+        [theme.breakpoints.down("md")]: {
+          paddingTop: "150px",
+        },
+        [theme.breakpoints.down("sm")]: {
+          paddingTop: "150px",
+        },
       }}
     >
       <Box
         sx={{
-          paddingTop: "150px",
           display: "flex",
           margin: "auto",
           maxWidth: "1300px",
@@ -79,7 +85,8 @@ export default function Products() {
             maxWidth: "550px",
           },
           [theme.breakpoints.down("sm")]: {
-            maxWidth: "300px",
+            marginLeft: "20px",
+            marginRight: "20px",
           },
         }}
       >
@@ -87,6 +94,10 @@ export default function Products() {
           <Grid
             sx={{
               height: "100%",
+              [theme.breakpoints.down("md")]: {
+                visibility: "hidden",
+                height: "0px",
+              },
             }}
             item
             md={5}
@@ -107,12 +118,25 @@ export default function Products() {
                   "linear-gradient(-180deg, rgb(255, 49, 186) 0%, hsla(227, 100%, 66%, 1) 100%)",
                 backgroundClip: "text",
                 WebkitTextFillColor: "transparent",
+                [theme.breakpoints.down("sm")]: {
+                  fontSize: "42pt",
+                  textAlign: "center",
+                },
               }}
               variant="h2"
             >
               <h1>EigenDA</h1>
             </Typography>
-            <Typography sx={{}} variant="h4">
+            <Typography
+              sx={{
+                [theme.breakpoints.down("sm")]: {
+                  marginTop: "20px",
+                  fontSize: "20pt",
+                  textAlign: "center",
+                },
+              }}
+              variant="h4"
+            >
               <h1>
                 A highly customizable and hyperscaled data availability service,
                 designed for Optimistic and ZK rollups.
@@ -129,6 +153,10 @@ export default function Products() {
             <Typography
               sx={{
                 marginTop: "50px",
+                [theme.breakpoints.down("sm")]: {
+                  fontSize: "16pt",
+                  textAlign: "center"
+                },
               }}
               variant="h5"
             >
@@ -141,6 +169,10 @@ export default function Products() {
             <Typography
               sx={{
                 marginTop: "40px",
+                [theme.breakpoints.down("sm")]: {
+                  fontSize: "16pt",
+                  textAlign: "center"
+                },
               }}
               variant="h5"
             >
@@ -152,7 +184,7 @@ export default function Products() {
             </Typography>
             <img
               style={{
-                marginTop: "20px",
+                marginTop: "50px",
                 justifySelf: "center",
                 position: "relative",
                 marginLeft: "auto",

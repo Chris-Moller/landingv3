@@ -61,7 +61,7 @@ export default function Home() {
                   <Typography
                     variant="h1"
                     sx={{
-                      fontSize: "48px",
+                      fontSize: "70px",
                       lineHeight: 1.25,
                       fontWeight: "lighter",
                       marginTop: "50px",

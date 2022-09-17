@@ -1,5 +1,5 @@
 import { Link as RouterLink, useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { styled, useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
@@ -43,12 +43,15 @@ const Link = styled(RouterLink)(() => ({
   },
 }));
 
+
 export default function TemporaryDrawer() {
   const [prodOpened, setProdOpen] = useState(false);
   const [isOpened, setIsOpened] = useState(false);
   // const [scrollPosition, setScrollPosition] = useState(0);
   const navigate = useNavigate();
   const theme = useTheme();
+
+
 
   const toggleDrawer = (open) => (event) => {
     if (
@@ -74,6 +77,16 @@ export default function TemporaryDrawer() {
   //     window.removeEventListener("scroll", handleScroll);
   //   };
   // }, []);
+
+
+
+    useEffect(() => {
+    window.addEventListener("load", setProdOpen(false));
+
+    return () => {
+      window.removeEventListener("load", setIsOpened(false));
+    };
+  }, []);
 
   const list = () => (
     <Box
@@ -241,7 +254,7 @@ export default function TemporaryDrawer() {
                   
                   "& li.MuiGrid-item": {
                     paddingLeft: "80px",
-                    paddingBottom: "20px"
+                    paddingBottom: "18px"
                     
                   },
                 }}
@@ -253,13 +266,9 @@ export default function TemporaryDrawer() {
                   component="li"
                   sx={{ position: "relative"}}
                 >
-                  <Link to="/products">Products</Link>
+                  <Link to="">Products</Link>
                   {prodOpened ? (
-                    <CustomMenu
-        
-                    >
-
-                    </CustomMenu>
+                    <CustomMenu/>
                   ) : null}
                 </Grid>
                 {/* <Grid item component="li">

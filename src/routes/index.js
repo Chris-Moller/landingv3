@@ -25,8 +25,12 @@ export default function Router() {
           element: <Resources />,
         },
         {
-          path: "Products",
-          element: <Products />,
+          path: "EigenLayer",
+          element: <EigenLayer />,
+        },
+        {
+          path: "EigenDA",
+          element: <EigenDA />,
         },
         {
           path: "Community",
@@ -60,8 +64,11 @@ const Home = Loadable(
 const Resources = Loadable(
   lazy(() => import("views/resources"))
 );
-const Products = Loadable(
-  lazy(() => import("views/products"))
+const EigenLayer = Loadable(
+  lazy(() => import("views/EigenLayer"))
+);
+const EigenDA = Loadable(
+  lazy(() => import("views/EigenDA"))
 );
 const Community = Loadable(
   lazy(() => import("views/community"))

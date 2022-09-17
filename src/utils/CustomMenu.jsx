@@ -4,11 +4,18 @@ const CustomMenu = () => {
   return (
     <>
       <div
+      className="rotate-45 rounded-sm"
         style={{
-          background: "none",
           height: "20px",
+          width: "20px",
           display: "flex",
+          top: 85,
+          left: 100,
           position: "absolute",
+          border: "solid",
+          borderWidth: "0.5px",
+          borderColor: "#817dac",
+          
         }}
       />
       <div
@@ -29,12 +36,12 @@ const CustomMenu = () => {
         <CustomMenuItem
           image="/images/EL-icon.svg"
           name="EigenLayer"
-          link="products"
+          link="EigenLayer"
         ></CustomMenuItem>
         <CustomMenuItem
           image="/images/EDA-icon.svg"
           name="EigenDA"
-          link="products"
+          link="EigenDA"
         ></CustomMenuItem>
       </div>
     </>
