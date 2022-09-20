@@ -123,7 +123,7 @@ export default function Products() {
             </Typography>
             <Typography
               sx={{
-                marginTop: "120px",
+                marginTop: "60px",
                 fontWeight: "900",
                 [theme.breakpoints.down("sm")]: {
                   marginTop: "80px",

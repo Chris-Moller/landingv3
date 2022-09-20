@@ -1,6 +1,6 @@
 import CustomMenuItem from "./CustomMenuItem";
 
-const CustomMenu = () => {
+const CustomMenu = ({ setProdOpen }) => {
   return (
     <>
       <div
@@ -34,6 +34,7 @@ const CustomMenu = () => {
         }}
       >
         <CustomMenuItem
+          setProdOpen={setProdOpen}
           image="/images/EL-icon.svg"
           name="EigenLayer"
           link="EigenLayer"

@@ -1,5 +1,5 @@
 import { Link as RouterLink, useNavigate } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { styled, useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
@@ -43,15 +43,12 @@ const Link = styled(RouterLink)(() => ({
   },
 }));
 
-
 export default function TemporaryDrawer() {
   const [prodOpened, setProdOpen] = useState(false);
   const [isOpened, setIsOpened] = useState(false);
   // const [scrollPosition, setScrollPosition] = useState(0);
   const navigate = useNavigate();
   const theme = useTheme();
-
-
 
   const toggleDrawer = (open) => (event) => {
     if (
@@ -62,7 +59,6 @@ export default function TemporaryDrawer() {
     }
 
     setIsOpened(open);
-    console.log("Open!");
   };
 
   // const handleScroll = () => {
@@ -78,23 +74,13 @@ export default function TemporaryDrawer() {
   //   };
   // }, []);
 
-
-
-    useEffect(() => {
-    window.addEventListener("load", setProdOpen(false));
-
-    return () => {
-      window.removeEventListener("load", setIsOpened(false));
-    };
-  }, []);
-
   const list = () => (
     <Box
       role="presentation"
       onClick={toggleDrawer(false)}
       onKeyDown={toggleDrawer(false)}
       sx={{
-        width: 250,
+        width: 300,
         paddingTop: "20px",
         "& .MuiListItem-root": {
           padding: "10px 10px 0",
@@ -107,9 +93,14 @@ export default function TemporaryDrawer() {
       }}
     >
       <List>
-        <ListItem key="Products" disablePadding>
-          <ListItemButton onClick={() => navigate("/products")}>
-            <ListItemText primary="Products" />
+        <ListItem key="EigenLayer" disablePadding>
+          <ListItemButton onClick={() => navigate("/EigenLayer")}>
+            <ListItemText primary="EigenLayer" />
+          </ListItemButton>
+        </ListItem>
+        <ListItem key="EigenDA" disablePadding>
+          <ListItemButton onClick={() => navigate("/EigenDA")}>
+            <ListItemText primary="EigenDA" />
           </ListItemButton>
         </ListItem>
         {/* <ListItem key="Community" disablePadding>
@@ -223,7 +214,7 @@ export default function TemporaryDrawer() {
                 }}
                 style={{
                   cursor: "pointer",
-                  margin: "auto"
+                  margin: "auto",
                 }}
                 src="/images/EigenPlaceHolder.png"
                 alt=""
@@ -231,7 +222,7 @@ export default function TemporaryDrawer() {
               <h1
                 style={{
                   cursor: "pointer",
-                  margin: "auto"
+                  margin: "auto",
                 }}
               >
                 EigenLayer
@@ -240,7 +231,6 @@ export default function TemporaryDrawer() {
             <Grid
               item
               sx={{
-                
                 display: "flex",
                 marginLeft: "13%",
                 [theme.breakpoints.down("md")]: { display: "none" },
@@ -251,11 +241,9 @@ export default function TemporaryDrawer() {
                 spacing={5}
                 component="ul"
                 sx={{
-                  
                   "& li.MuiGrid-item": {
                     paddingLeft: "80px",
-                    paddingBottom: "18px"
-                    
+                    paddingBottom: "18px",
                   },
                 }}
               >
@@ -264,12 +252,10 @@ export default function TemporaryDrawer() {
                   onMouseLeave={() => setProdOpen(false)}
                   item
                   component="li"
-                  sx={{ position: "relative"}}
+                  sx={{ position: "relative" }}
                 >
-                  <Link to="">Products</Link>
-                  {prodOpened ? (
-                    <CustomMenu/>
-                  ) : null}
+                  <Link to="/EigenLayer">Products</Link>
+                  {prodOpened ? <CustomMenu setProdOpen={setProdOpen} /> : null}
                 </Grid>
                 {/* <Grid item component="li">
                   <Link to="/community">Community</Link>
@@ -306,18 +292,30 @@ export default function TemporaryDrawer() {
         anchor="right"
         open={isOpened}
         onClose={toggleDrawer(false)}
-        sx={{ backgroundColor: "#000308" }}
       >
-        <Typography
-          sx={{
-            padding: "24px 24px 0",
-            fontSize: "30px",
-            fontWeight: 700,
-            letterSpacing: "2px",
-          }}
-        >
-          Eigenlayer
-        </Typography>
+        <div style={{ display: "flex", flexDirection: "row" }}>
+          <img
+            style={{
+              cursor: "pointer",
+              width: "40px",
+              height: "40px",
+              marginTop: "24px",
+              marginLeft: "10px",
+            }}
+            src="/images/EigenPlaceHolder.png"
+            alt=""
+          />
+          <Typography
+            sx={{
+              padding: "24px 7px 0",
+              fontSize: "30px",
+              fontWeight: 700,
+              letterSpacing: "2px",
+            }}
+          >
+            Eigenlayer
+          </Typography>
+        </div>
         {list()}
       </Drawer>
     </Box>

@@ -1,10 +1,16 @@
 import { Link } from "react-router-dom";
 
-const CustomMenuItem = ({ name, link, image }) => {
+const CustomMenuItem = ({ setProdOpen, name, link, image }) => {
+
+  const closeMenu = () => {
+    setProdOpen(false)
+  }
+
   return (
     <Link
       className="hover:bg-blueish rounded-lg"
       to={`/${link}`}
+      onClick={closeMenu}
       style={{
         width: "200px",
         color: "white",
