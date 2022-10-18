@@ -1,0 +1,28 @@
+.el-container {
+    background-color: rgba(71, 14, 162, 0.523);
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    gap: 10px;
+
+}
+
+.layer-label {
+    background-color: rgb(81, 0, 212);
+    width: 30%;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px 3px rgb(22, 0, 56);
+
+}
+
+.layer-exp {
+    background-color: rgb(81, 0, 212);
+    width: 70%;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px 3px rgb(22, 0, 56);
+
+}

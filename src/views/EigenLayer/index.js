@@ -3,7 +3,7 @@ import { useTheme } from "@mui/material/styles";
 // import { Link } from "react-router-dom";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
-
+import "./product.css"
 import Typography from "@mui/material/Typography";
 // import BlueButton from "components/shared-components/BlueButton";
 // import { BsArrowRight } from "react-icons/bs"
@@ -53,8 +53,6 @@ export default function Products() {
   //   };
   // }, []);
 
-
-
   return (
     <Box
       sx={{
@@ -103,7 +101,7 @@ export default function Products() {
                 WebkitTextFillColor: "transparent",
                 [theme.breakpoints.down("sm")]: {
                   fontSize: "42pt",
-                  textAlign: "center"
+                  textAlign: "center",
                 },
               }}
               variant="h2"
@@ -114,7 +112,7 @@ export default function Products() {
               sx={{
                 [theme.breakpoints.down("sm")]: {
                   fontSize: "22pt",
-                  textAlign: "center"
+                  textAlign: "center",
                 },
               }}
               variant="h4"
@@ -128,9 +126,8 @@ export default function Products() {
                 [theme.breakpoints.down("sm")]: {
                   marginTop: "80px",
                   fontSize: "16pt",
-                  textAlign: "center"
+                  textAlign: "center",
                 },
-                
               }}
               variant="h5"
             >
@@ -148,7 +145,7 @@ export default function Products() {
             ></div>
             <Typography
               sx={{
-                marginTop: "100px",
+                marginTop: "50px",
                 textAlign: "center",
                 [theme.breakpoints.down("sm")]: {
                   marginTop: "80px",
@@ -162,7 +159,7 @@ export default function Products() {
             <Box
             component="img"
               sx={{
-                marginTop: "100px",
+                marginTop: "50px",
                 justifySelf: "center",
                 position: "relative",
                 marginLeft: "auto",
@@ -185,7 +182,7 @@ export default function Products() {
                 [theme.breakpoints.down("sm")]: {
                   marginTop: "60px",
                   textAlign: "center",
-                  fontSize: "16pt"
+                  fontSize: "16pt",
                 },
               }}
               variant="h5"
@@ -200,7 +197,7 @@ export default function Products() {
                 [theme.breakpoints.down("sm")]: {
                   marginTop: "30px",
                   textAlign: "center",
-                  fontSize: "16pt"
+                  fontSize: "16pt",
                 },
               }}
               variant="h5"
@@ -217,7 +214,7 @@ export default function Products() {
                 [theme.breakpoints.down("sm")]: {
                   marginTop: "30px",
                   textAlign: "center",
-                  fontSize: "16pt"
+                  fontSize: "16pt",
                 },
               }}
               variant="h5"
@@ -230,22 +227,63 @@ export default function Products() {
           </Grid>
           <Grid
             sx={{
-              [theme.breakpoints.down("md")]: {
-                visibility: "hidden",
-                height: "0px",
-              },
+              marginTop: "25rem"
             }}
             item
             md={5}
           >
-            <img
-              style={{
-                position: "sticky",
-                top: "140px",
+            <Typography
+              sx={{
+                marginTop: "40px",
+                [theme.breakpoints.down("sm")]: {
+                  marginTop: "30px",
+                  textAlign: "center",
+                  fontSize: "16pt",
+                },
               }}
-              src="/images/test1.png"
-              alt=""
-            />
+              variant="h5"
+            >
+              <h5>
+                Ethereum brought modularity to blockchains with the decoupling
+                of trust and innovation. With the introduction of a fixed
+                consensus protocol, trust provided from validators staking ETH
+                along with EVM, the DApp innovation phase was kickstarted.
+              </h5>
+            </Typography>
+            <Typography
+              sx={{
+                marginTop: "40px",
+                [theme.breakpoints.down("sm")]: {
+                  marginTop: "30px",
+                  textAlign: "center",
+                  fontSize: "16pt",
+                },
+              }}
+              variant="h5"
+            >
+              <h5>
+                Eigenlayer Restaking: Validators can enter the Eigenlayer
+                platform by simply changing withdrawal credentials or using
+                liquid-staking derivatives.
+              </h5>
+            </Typography>
+            <Typography
+              sx={{
+                marginTop: "40px",
+                [theme.breakpoints.down("sm")]: {
+                  marginTop: "30px",
+                  textAlign: "center",
+                  fontSize: "16pt",
+                },
+              }}
+              variant="h5"
+            >
+              <h5>
+                Restaked validators in Ethereum's trust network can
+                permissionlessly opt-in to secure and bootstrap projects of
+                their choice, earning additional yield.
+              </h5>
+            </Typography>
           </Grid>
         </Grid>
       </Box>
@@ -271,26 +309,6 @@ export default function Products() {
         }}
       >
         <Grid container spacing={10}>
-          <Grid
-            sx={{
-              [theme.breakpoints.down("md")]: {
-                visibility: "hidden",
-                height: "0px",
-              },
-            }}
-            item
-            md={5}
-            sm={0}
-          >
-            <img
-              style={{
-                position: "sticky",
-                top: "140px",
-              }}
-              src="/images/test2.png"
-              alt=""
-            />
-          </Grid>
           <Grid item md={7} sx={{}}>
             <Typography
               sx={{
@@ -300,187 +318,7 @@ export default function Products() {
                 WebkitTextFillColor: "transparent",
                 [theme.breakpoints.down("sm")]: {
                   fontSize: "26pt",
-                  textAlign: "center"
-                },
-              }}
-              variant="h3"
-            >
-              <h3>Most validators have excess computing capacity</h3>
-            </Typography>
-            <div
-              style={{
-                marginTop: "50px",
-                height: "1px",
-                backgroundColor: "#5100d4",
-              }}
-            ></div>
-            <Typography
-              sx={{
-                marginTop: "60px",
-                [theme.breakpoints.down("sm")]: {
                   textAlign: "center",
-                  fontSize: "16pt"
-                },
-
-              }}
-              variant="h5"
-            >
-              <h5>
-                Earn tokens for providing validation services with low system
-                hardware requirements (including the majority of existing
-                hardware).
-              </h5>
-            </Typography>
-            <img
-              style={{
-                marginTop: "70px",
-                justifySelf: "center",
-                position: "relative",
-                marginLeft: "auto",
-                marginRight: "auto",
-                borderRadius: "10px",
-                border: "solid",
-                borderWidth: "0.5px",
-                borderColor: "#817dac",
-              }}
-              src="/images/earnTokens.png"
-              alt=""
-            />
-            <Typography
-              sx={{
-                marginTop: "60px",
-                background:
-                  "linear-gradient(-180deg, hsla(266, 100%, 67%, 1) 0%, hsla(227, 100%, 66%, 1) 100%)",
-                backgroundClip: "text",
-                WebkitTextFillColor: "transparent",
-                [theme.breakpoints.down("sm")]: {
-                  fontSize: "26pt",
-                  textAlign: "center"
-                },
-              }}
-              variant="h3"
-            >
-              <h3>Bringing agility to Ethereum</h3>
-            </Typography>
-            <div
-              style={{
-                marginTop: "50px",
-                height: "1px",
-                backgroundColor: "#5100d4",
-              }}
-            ></div>
-            <Typography
-              sx={{
-                marginTop: "60px",
-                [theme.breakpoints.down("sm")]: {
-                  textAlign: "center",
-                  fontSize: "16pt"
-                },
-              }}
-              variant="h5"
-            >
-              <h5>
-                Ethereum unleashed innovation of DApps with the introduction of
-                EVM, while building a democractic and stable ecosystem.
-              </h5>
-            </Typography>
-            <Typography
-              sx={{
-                marginTop: "60px",
-                [theme.breakpoints.down("sm")]: {
-                  textAlign: "center",
-                  fontSize: "16pt"
-                },
-              }}
-              variant="h5"
-            >
-              <h5>
-                Eigenlayer attempts to solve this agility → stability tradeoff,
-                hyperscaling innovation on Ethereum.
-              </h5>
-            </Typography>
-            <Typography
-              sx={{
-                marginTop: "70px",
-                background:
-                  "linear-gradient(-180deg, hsla(266, 100%, 67%, 1) 0%, hsla(227, 100%, 66%, 1) 100%)",
-                backgroundClip: "text",
-                WebkitTextFillColor: "transparent",
-                [theme.breakpoints.down("sm")]: {
-                  textAlign: "center",
-                  fontSize: "19pt",
-                },
-              }}
-              variant="h4"
-            >
-              <h1>Agility VS democratic governance</h1>
-            </Typography>
-            <img
-              style={{
-                marginTop: "20px",
-                justifySelf: "center",
-                position: "relative",
-                marginLeft: "auto",
-                marginRight: "auto",
-                borderRadius: "10px",
-                border: "solid",
-                borderWidth: "0.5px",
-                borderColor: "#817dac",
-              }}
-              src="/images/chart-agility.png"
-              alt=""
-            />
-            <Typography
-              sx={{
-                marginTop: "60px",
-                [theme.breakpoints.down("sm")]: {
-                  textAlign: "center",
-                  fontSize: "16pt"
-                },
-              }}
-              variant="h5"
-            >
-              <h5>
-                With EigenLayer, Ethereum can still focus on governance for
-                long-term growth and allow anyone to permissionlessly add
-                features for fast innovation.
-              </h5>
-            </Typography>
-          </Grid>
-        </Grid>
-      </Box>
-      <Box
-        sx={{
-          display: "flex",
-          margin: "auto",
-          maxWidth: "1300px",
-          paddingBottom: "120px",
-          [theme.breakpoints.down("xl")]: {
-            maxWidth: "1150px",
-          },
-          [theme.breakpoints.down("lg")]: {
-            maxWidth: "850px",
-          },
-          [theme.breakpoints.down("md")]: {
-            maxWidth: "550px",
-          },
-          [theme.breakpoints.down("sm")]: {
-            marginLeft: "20px",
-            marginRight: "20px"
-          },
-        }}
-      >
-        <Grid container spacing={10}>
-          <Grid item md={7} sx={{}}>
-            <Typography
-              sx={{
-                background:
-                  "linear-gradient(-180deg, hsla(266, 100%, 67%, 1) 0%, hsla(227, 100%, 66%, 1) 100%)",
-                backgroundClip: "text",
-                WebkitTextFillColor: "transparent",
-                [theme.breakpoints.down("sm")]: {
-                  fontSize: "26pt",
-                  textAlign: "center"
                 },
               }}
               variant="h3"
@@ -499,7 +337,7 @@ export default function Products() {
                 marginTop: "60px",
                 [theme.breakpoints.down("sm")]: {
                   textAlign: "center",
-                  fontSize: "16pt"
+                  fontSize: "16pt",
                 },
               }}
               variant="h5"
@@ -530,7 +368,7 @@ export default function Products() {
                 marginTop: "60px",
                 [theme.breakpoints.down("sm")]: {
                   textAlign: "center",
-                  fontSize: "16pt"
+                  fontSize: "16pt",
                 },
               }}
               variant="h5"
